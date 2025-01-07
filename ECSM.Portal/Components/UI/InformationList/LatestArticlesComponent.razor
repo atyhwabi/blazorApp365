@@ -1,0 +1,28 @@
+﻿@using ECSM.Models.DTO
+@inject IKnowledgeService knowledgeService
+@inject SearchResults SearchResults;
+
+<BaseList>
+    <div class="col col-md-6 col-sm-12">
+        <MainHeading HeadingText="Latest Articles" />
+        <div class="border">
+            <div class="case-row">
+                @foreach (var item in knowledgeArticle)
+                {
+                    <p class="cases-information">
+                        <a @onclick="@(() => SetSearch(item.PublicNumber))">
+                            <i class="material-symbols-outlined">Article</i> @item.Title
+                        </a>
+                    </p>
+                }
+            </div>
+        </div>
+        <div class="border-info">
+            <ViewAllHeading>
+
+                <p class="view-all-heading"><a @onclick="@(() => navKnowledgebasePage())">Visit the Knowledge Base<i class="material-symbols-outlined">Article</i></a></p>
+                
+            </ViewAllHeading>
+        </div>
+    </div>
+</BaseList>

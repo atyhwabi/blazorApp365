@@ -1,0 +1,410 @@
+﻿@page "/logTicket/{ServiceCatalogueItemId}"
+@page "/{PublicParameter}/logTicket/{ServiceCatalogueItemId}"
+@using ECSM.Models.Dynamics
+@using ECSM.Models.DTO.Sites
+@inherits BaseComponent
+
+<div class="container">
+  <div class="custom-container-card">
+    <span class="case-heading">@ServiceCatalogueItemDTO.Name</span>
+    <p class="case-description" style="color: var(--primary-color);">@ServiceCatalogueItemDTO.Description</p>
+  </div>
+
+  <div class="custom-container-card">
+    <div>
+      <label class="Custom-form-label">Please Provide a Description<span class="required">*</span></label>
+      <TelerikButton Icon="@SvgIcon.InfoCircle" Title="Please Provide a description for the Ticket" Class="tooltip-target" />
+
+      <TelerikTextArea @bind-Value="@NewCase.CaseDescription"
+                       Placeholder="Description"
+                       OnChange="(value) => ValidateValue(true, value, DescriptionGuid)">
+      </TelerikTextArea>
+      
+      <label id="error-message-@DescriptionGuid" class="required @GetClass($"error-message-{DescriptionGuid}")">Description: required fields must be filled in</label>
+    </div>
+    <div class="content-form-section">
+
+      @if (ServiceCatalogueItemDTO.CatalogueItemDTO.EnableSite)
+      {
+        <div class="question-section">
+          <label class="Custom-form-label">Site:<span class="required">*</span></label>
+          <TelerikButton Icon="@SvgIcon.InfoCircle" Title="Please Select the site to log the ticket for" Class="tooltip-target" />
+          <TelerikDropDownList Id="Sites" 
+                               TextField="@nameof(SiteDTO.Name)" 
+                               ValueField="@nameof(SiteDTO.SiteId)" 
+                               Data="@SiteList" @bind-Value="NewCase.SiteId"
+                               OnChange="(value) => ValidateValue(true, value, SiteGuid)" />
+          <label id="error-message-@SiteGuid" class="required @GetClass($"error-message-{SiteGuid}")">Site: required fields must be filled in</label>
+        </div>
+      }
+      @if (LoadingFormElements)
+      {
+        <div class="loaders">
+          <div class="loader-container">
+            <TelerikLoader Class="loader-indicator loader-color" Type="@LoaderType.Pulsing" Size="@(ThemeConstants.Loader.Size.Large)"></TelerikLoader>
+          </div>
+        </div>
+      }
+      else
+      {
+        <TelerikTooltip TargetSelector=".tooltip-target" />
+        @foreach (var formElement in ServiceCatalogueItemDTO.CatalogueItemDTO.FormElements)
+        {
+          if (formElement.ElementType == ecsm_form_element_type.ContentBlock)
+          {
+            <div style="margin-bottom:25px">
+              <span class="case-heading">@formElement.Label</span>
+            </div>
+          }
+          else if (!formElement.MapToDataverse)
+          {
+            switch (formElement.DataType)
+            {
+              case ecsm_variable_data_type.SingleText:
+              case ecsm_variable_data_type.MultiText:
+                <div class="question-section">
+                  <label class="Custom-form-label">
+                    @formElement.Label
+                    @if (formElement.Required)
+                    {
+                      <span class="required">*</span>
+                    }
+                  </label>
+                  @if (!string.IsNullOrEmpty(formElement.Tooltip))
+                  {
+                    <TelerikButton Icon="@SvgIcon.InfoCircle" Title=@formElement.Tooltip Class="tooltip-target" />
+                  }
+                  <TelerikTextBox @bind-Value="NewCase.CaseAnswers.FirstOrDefault(c => c.FormElementId == formElement.FormElementId)!.Answer"
+                                  OnChange="(value) => ValidateValue(formElement.Required, value, formElement.FormElementId)" />
+                  <label id="error-message-@formElement.FormElementId" class="required @GetClass($"error-message-{formElement.FormElementId}")">@formElement.Label: required fields must be filled in</label>
+                </div>
+                break;
+              case ecsm_variable_data_type.Number:
+                <div class="question-section">
+                  <label class="Custom-form-label">
+                    @formElement.Label
+                    @if (formElement.Required)
+                    {
+                      <span class="required">*</span>
+                    }
+                  </label>
+                  @if (!string.IsNullOrEmpty(formElement.Tooltip))
+                  {
+                    <TelerikButton Icon="@SvgIcon.InfoCircle" Title=@formElement.Tooltip Class="tooltip-target" />
+                  }
+                  <TelerikNumericTextBox @bind-Value="NewCase.CaseAnswers.FirstOrDefault(c => c.FormElementId == formElement.FormElementId)!.NumberAnswer"
+                                         OnChange="(value) => ValidateValue(formElement.Required, value, formElement.FormElementId)"></TelerikNumericTextBox>
+                  <label id="error-message-@formElement.FormElementId" class="required @GetClass($"error-message-{formElement.FormElementId}")">@formElement.Label: required fields must be filled in</label>
+                </div>
+                break;
+              case ecsm_variable_data_type.Date:
+                <div class="question-section">
+                  <label class="Custom-form-label">
+                    @formElement.Label
+                    @if (formElement.Required)
+                    {
+                      <span class="required">*</span>
+                    }
+                  </label>
+                  @if (!string.IsNullOrEmpty(formElement.Tooltip))
+                  {
+                    <TelerikButton Icon="@SvgIcon.InfoCircle" Title=@formElement.Tooltip Class="tooltip-target" />
+                  }
+                  <TelerikDatePicker @bind-Value="NewCase.CaseAnswers.FirstOrDefault(c => c.FormElementId == formElement.FormElementId)!.DateAnswer"
+                                     OnChange="(value) => ValidateValue(formElement.Required, value, formElement.FormElementId)"></TelerikDatePicker>
+                  <label id="error-message-@formElement.FormElementId" class="required @GetClass($"error-message-{formElement.FormElementId}")">@formElement.Label: required fields must be filled in</label>
+                </div>
+                break;
+              case ecsm_variable_data_type.Choice:
+                <div class="question-section">
+                  <label class="Custom-form-label">
+                    @formElement.Label
+                    @if (formElement.Required)
+                    {
+                      <span class="required">*</span>
+                    }
+                  </label>
+                  @if (!string.IsNullOrEmpty(formElement.Tooltip))
+                  {
+                    <TelerikButton Icon="@SvgIcon.InfoCircle" Title=@formElement.Tooltip Class="tooltip-target" />
+                  }
+                  <TelerikDropDownList Data="formElement.Choices" @bind-Value="NewCase.CaseAnswers.FirstOrDefault(c => c.FormElementId == formElement.FormElementId)!.Answer"
+                                       OnChange="(value) => ValidateValue(formElement.Required, value, formElement.FormElementId)" />
+                  <label id="error-message-@formElement.FormElementId" class="required @GetClass($"error-message-{formElement.FormElementId}")">@formElement.Label: required fields must be filled in</label>
+                </div>
+                break;
+              case ecsm_variable_data_type.Boolean:
+                bool test = false;
+                <div class="question-section">
+                  <label class="Custom-form-label">
+                    @formElement.Label
+                    @if (formElement.Required)
+                    {
+                      <span class="required">*</span>
+                    }
+                  </label>
+                  @if (!string.IsNullOrEmpty(formElement.Tooltip))
+                  {
+                    <TelerikButton Icon="@SvgIcon.InfoCircle" Title=@formElement.Tooltip Class="tooltip-target" />
+                  }
+                  <TelerikSwitch @bind-Value="@NewCase.CaseAnswers.FirstOrDefault(c => c.FormElementId == formElement.FormElementId)!.BoolAnswer"
+                                 Width="70px"
+                                 OnLabel=""
+                                 OffLabel=""
+                                 OnChange="(value) => ValidateValue(formElement.Required, value, formElement.FormElementId)">
+                  </TelerikSwitch>
+                  <label id="error-message-@formElement.FormElementId" class="required @GetClass($"error-message-{formElement.FormElementId}")">@formElement.Label: required fields must be filled in</label>
+                </div>
+                break;
+              case ecsm_variable_data_type.File:
+                <div class="question-section">
+                  <label class="Custom-form-label">
+                    @formElement.Label
+                    @if (formElement.Required)
+                    {
+                      <span class="required">*</span>
+                    }
+                  </label>
+                  @if (!string.IsNullOrEmpty(formElement.Tooltip))
+                  {
+                    <TelerikButton Icon="@SvgIcon.InfoCircle" Title=@formElement.Tooltip Class="tooltip-target" />
+                  }
+                  <div class="input-file-container">
+                    <InputFile OnChange="(args) => OnFileSelect(args,formElement.FormElementId) " />
+                  </div>
+                </div>
+                break;
+            }
+          }
+          else
+          {
+            if (formElement.DataverseAttrubute != null)
+            {
+              switch (formElement.DataverseAttrubute.AttributeType)
+              {
+
+                case "String":
+                  <div class="question-section">
+                    <label class="Custom-form-label">
+                      @formElement.Label
+                      @if (formElement.Required)
+                      {
+                        <span class="required">*</span>
+                      }
+                    </label><br />
+                    <TelerikTextBox @bind-Value="NewCase.CaseAnswers.FirstOrDefault(c => c.FormElementId == formElement.FormElementId)!.Answer"
+                                    OnChange="(value) => ValidateValue(formElement.Required, value, formElement.FormElementId)" />
+                    <label id="error-message-@formElement.FormElementId" class="required @GetClass($"error-message-{formElement.FormElementId}")">@formElement.Label: required fields must be filled in</label>
+                  </div>
+                  break;
+
+                case "Memo":
+
+                  if (formElement.DataverseAttrubute.FormatName.Value == "Text")
+                  {
+                    <div class="question-section">
+                      <label class="Custom-form-label">
+                        @formElement.Label
+                        @if (formElement.Required)
+                        {
+                          <span class="required">*</span>
+                        }
+                      </label><br />
+                      <TelerikTextArea @bind-Value="NewCase.CaseAnswers.FirstOrDefault(c => c.FormElementId == formElement.FormElementId)!.Answer"
+                                       OnChange="(value) => ValidateValue(formElement.Required, value, formElement.FormElementId)" />
+                      <label id="error-message-@formElement.FormElementId" class="required @GetClass($"error-message-{formElement.FormElementId}")">@formElement.Label: required fields must be filled in</label>
+                    </div>
+                  }
+                  if (formElement.DataverseAttrubute.FormatName.Value == "RichText")
+                  {
+                    <div class="question-section">
+                      <label class="Custom-form-label">
+                        @formElement.Label
+                        @if (formElement.Required)
+                        {
+                          <span class="required">*</span>
+                        }
+                      </label><br />
+                      <TelerikEditor @bind-Value="@NewCase.CaseAnswers.FirstOrDefault(c => c.FormElementId == formElement.FormElementId)!.Answer"
+                                     Height="200px">
+                      </TelerikEditor>
+                      <label id="error-message-@formElement.FormElementId" class="required @GetClass($"error-message-{formElement.FormElementId}")">@formElement.Label: required fields must be filled in</label>
+                    </div>
+                  }
+                  break;
+
+                case "Integer":
+                  <div class="question-section">
+                    <label class="Custom-form-label">
+                      @formElement.Label
+                      @if (formElement.Required)
+                      {
+                        <span class="required">*</span>
+                      }
+                    </label><br />
+                    <TelerikNumericTextBox Decimals="0" @bind-Value="NewCase.CaseAnswers.FirstOrDefault(c => c.FormElementId == formElement.FormElementId)!.NumberAnswer"
+                                           OnChange="(value) => ValidateValue(formElement.Required, value, formElement.FormElementId)"></TelerikNumericTextBox>
+                    <label id="error-message-@formElement.FormElementId" class="required @GetClass($"error-message-{formElement.FormElementId}")">@formElement.Label: required fields must be filled in</label>
+                  </div>
+                  break;
+
+                case "Decimal":
+                  <div class="question-section">
+                    <label class="Custom-form-label">
+                      @formElement.Label
+                      @if (formElement.Required)
+                      {
+                        <span class="required">*</span>
+                      }
+                    </label><br />
+                    <TelerikNumericTextBox Decimals="@formElement.DataverseAttrubute.Precision" @bind-Value="NewCase.CaseAnswers.FirstOrDefault(c => c.FormElementId == formElement.FormElementId)!.DecimalAnswer"
+                                           OnChange="(value) => ValidateValue(formElement.Required, value, formElement.FormElementId)"></TelerikNumericTextBox>
+                    <label id="error-message-@formElement.FormElementId" class="required @GetClass($"error-message-{formElement.FormElementId}")">@formElement.Label: required fields must be filled in</label>
+                  </div>
+                  break;
+
+                case "DateTime":
+                  <div class="question-section">
+                    <label class="Custom-form-label">@formElement.Label</label><br />
+                    <TelerikDatePicker @bind-Value="NewCase.CaseAnswers.FirstOrDefault(c => c.FormElementId == formElement.FormElementId)!.DateAnswer"
+                                       OnChange="(value) => ValidateValue(formElement.Required, value, formElement.FormElementId)"></TelerikDatePicker>
+                    <label id="error-message-@formElement.FormElementId" class="required @GetClass($"error-message-{formElement.FormElementId}")">@formElement.Label: required fields must be filled in</label>
+                  </div>
+                  break;
+
+                case "Boolean":
+                  <div class="question-section">
+                    <label class="Custom-form-label">
+                      @formElement.Label
+                      @if (formElement.Required)
+                      {
+                        <span class="required">*</span>
+                      }
+                    </label><br />
+                    <TelerikSwitch @bind-Value="@NewCase.CaseAnswers.FirstOrDefault(c => c.FormElementId == formElement.FormElementId)!.BoolAnswer"
+                                   Width="70px"
+                                   OnLabel=""
+                                   OffLabel=""
+                                   OnChange="(value) => ValidateValue(formElement.Required, value, formElement.FormElementId)">
+                    </TelerikSwitch>
+                    <label id="error-message-@formElement.FormElementId" class="required @GetClass($"error-message-{formElement.FormElementId}")">@formElement.Label: required fields must be filled in</label>
+                  </div>
+                  break;
+
+                case "Picklist":
+                  <div class="question-section">
+                    <label class="Custom-form-label">
+                      @formElement.Label
+                      @if (formElement.Required)
+                      {
+                        <span class="required">*</span>
+                      }
+                    </label>
+                    <TelerikDropDownList Data="formElement.DataverseAttrubute.OptionSetMetadata.Options"
+                                         TextField="@nameof(OptionDTO.Label)" ValueField="@nameof(OptionDTO.Value)"
+                                         @bind-Value="NewCase.CaseAnswers.FirstOrDefault(c => c.FormElementId == formElement.FormElementId)!.NumberAnswer"
+                                         OnChange="(value) => ValidateValue(formElement.Required, value, formElement.FormElementId)" />
+                    <label id="error-message-@formElement.FormElementId" class="required @GetClass($"error-message-{formElement.FormElementId}")">@formElement.Label: required fields must be filled in</label>
+                  </div>
+
+                  break;
+                case "Lookup":
+                  <div class="question-section">
+                    <label class="Custom-form-label">
+                      @formElement.Label
+                      @if (formElement.Required)
+                      {
+                        <span class="required">*</span>
+                      }
+                    </label>
+                    <TelerikDropDownList @bind-Value="@NewCase.CaseAnswers.FirstOrDefault(c => c.FormElementId == formElement.FormElementId)!.Answer"
+                                         Data="@formElement.LookupItems.Select(c => c.DisplayName)"
+                                         TItem="string"
+                                         TValue="string"
+                                         Filterable="true"
+                                         FilterOperator="@StringFilterOperator.Contains"
+                                         FilterDebounceDelay="200"
+                                         OnChange="(value) => ValidateValue(formElement.Required, value, formElement.FormElementId)">
+                      <NoDataTemplate>
+                        <div>
+                          <TelerikSvgIcon Icon="@SvgIcon.InfoCircle" Size="@ThemeConstants.SvgIcon.Size.Large" />
+                          <br />
+                          <br />
+                          No items to display...
+                        </div>
+                      </NoDataTemplate>
+                    </TelerikDropDownList>
+                    <label id="error-message-@formElement.FormElementId" class="required @GetClass($"error-message-{formElement.FormElementId}")">@formElement.Label: required fields must be filled in</label>
+                  </div>
+                  break;
+              }
+
+            }
+          }
+        }
+      }
+
+      <div class="submit-Section">
+        @if (Submitting)
+        {
+          <button type="button" class="primary-button submit-button">
+            Submitting
+          </button>
+        }
+        else
+        {
+
+          <button type="button" class="primary-button submit-button" @onclick="async () => await SubmitForm()">
+            Submit
+          </button>
+        }
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+<style>
+  .k-switch-on .k-switch-track {
+    border-color: #CEDAFF;
+    color: #CEDAFF;
+    background-color: #CEDAFF;
+  }
+
+  .k-switch-on .k-switch-thumb {
+    background-color: var(--primary-color);
+  }
+
+  .k-switch-off .k-switch-track {
+    border-color: #DFDFDF;
+    color: #DFDFDF;
+    background-color: #DFDFDF;
+  }
+
+  .k-switch-off .k-switch-thumb {
+    background-color: var(--primary-color);
+  }
+
+  .tooltip-target {
+    border: none;
+    padding: 0;
+    background: none;
+    color: var(--primary-color);
+  }
+
+  .k-svg-icon {
+    margin-bottom: 4px;
+  }
+
+  .k-loader-primary {
+    color: var(--primary-color);
+  }
+
+  .k-switch-md {
+    height: 30px;
+    font-size: 10px;
+    float: right;
+  }
+</style>

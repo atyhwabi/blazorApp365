@@ -1,0 +1,65 @@
+﻿@using ECSM.Models.DTO
+@using ECSM.Services
+@inject IKnowledgeService ArticleQueries
+@inject SearchResults SearchResults;
+<div class="col-md-8 col-lg-12">
+  <div class="contain">
+    @* 1-5 of over 100 results for "update" *@
+    @if (searchText == string.Empty || searchText == null)
+    {
+      <div class="left-div">@pageIndex - @totalPages of @number_of_articles results</div>
+    }
+    else
+    {
+      <div class="left-div">@pageIndex - @totalPages of @number_of_articles results for "@searchText"</div>
+    }
+    <div class="right-div">
+      Sort by Most relevant
+      @if (IsAscending)
+      {
+        <span @onclick="HandleAscendingClick" class="handleClick">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+            <path d="M7.64683 9.43736L8 9.78976L8.35317 9.43736L11.0596 6.73681L11.2929 6.97009L8 10.263L4.70711 6.97009L4.94039 6.73681L7.64683 9.43736Z" fill="var(--primary-color)" stroke="var(--primary-color)" />
+          </svg>
+        </span>
+      }
+      else
+      {
+        <span @onclick="HandleDescendingClick" class="handleClick">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+            <path d="M7.64683 7.56264L8 7.21024L8.35317 7.56264L11.0596 10.2632L11.2929 10.0299L8 6.737L4.70711 10.0299L4.94039 10.2632L7.64683 7.56264Z" fill="var(--primary-color)" stroke="var(--primary-color)" />
+          </svg>
+        </span>
+      }
+    </div>
+  </div>
+</div>
+@if (articles.Count() != 0)
+{
+  @foreach (var article in knowledgeItems)
+  {
+    <div class="knowledgebase-container">
+      <a @onclick="@(() => SetSearch(article.PublicNumber))">
+        <div class="container-catalogue-heading">
+        </div>
+        <div>
+          <label class="articleContent">@GetHighlightedText(article.Title)</label>
+        </div>
+        <div>
+          <label class="category-artictle">@GetHighlightedText(article.Description)</label>
+        </div>
+        <hr class="underline">
+      </a>
+    </div>
+  }
+  <div class="navigation-row">
+    <ECSM.Portal.Components.Pagination.Pagination TotalPages="@(totalPages != 0 ? totalPages : 1)"
+                                                  PageIndex="@pageIndex"
+                                                  Radius="3"
+                                                  OnSelectedPage="@SelectedPage">
+    </ECSM.Portal.Components.Pagination.Pagination>
+  </div>
+
+}
+
+

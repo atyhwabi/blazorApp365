@@ -1,0 +1,1 @@
+dotnet tool install --global EC.DynamicsClient.Generator --version 4.0.2

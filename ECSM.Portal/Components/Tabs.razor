@@ -1,0 +1,112 @@
+﻿@inject IJSRuntime JSRuntime
+@using ECSM.Models.DTO
+
+<div class="col-md-8 col-lg-12">
+    <div class="nav nav-tabs">
+        <ul class="nav nav-tabs flex-column flex-sm-row">
+            <li>
+                <a @onclick="(() => SetActiveTab(1))" class="@((activeTab == 1) ? "nav-link active" : "nav-link")">All</a>
+            </li>
+            <li>
+                <a @onclick="(() => SetActiveTab(2))" class="@((activeTab == 2) ? "nav-link active" : "nav-link")">FAQ</a>
+            </li>
+            <li>
+                <a @onclick="(() => SetActiveTab(3))" class="@((activeTab == 3) ? "nav-link active" : "nav-link")">Knowledge Articles</a>
+            </li>
+            <li>
+                <a @onclick="(() => SetActiveTab(4))" class="@((activeTab == 4) ? "nav-link active" : "nav-link")">Services</a>
+            </li>
+            @if(authManager.IsAuthenticated().Result)
+            {
+                <li>
+                    <a @onclick="(() => SetActiveTab(5))" class="@((activeTab == 5) ? "nav-link active" : "nav-link")">My Case</a>
+                </li>
+            }        
+        </ul>
+    </div>
+    <div class="tab-content">
+        @if (activeTab == 1)
+        {
+            <div class="tab-pane active">
+                <FAQComponent searchText="@SearchText" HeadingText="People also ask..." />
+                <KnowledgeArticleComponent searchText="@SearchText" HeadingText="Knowledge Articles" />
+                @if (serviceCatalogueItems.Count() != 0)
+                {
+                    <div class="heading-gap-log-container">
+                        <ECSM.Portal.Components.UI.MainHeading HeadingText="Log a Case" />
+                    </div>
+                }
+                <div class="category-section">
+                    @foreach (var item in serviceCatalogueItems)
+                    {
+                        <div class="custom-card">
+                            <a class="no-underline" href="#" @onclick="(() => navigateToServiceCatalogue(item.ServiceCatalogueItemId))">
+                                <ECSM.Portal.Components.UI.SubHeading>
+                                    <i class="card-icon material-symbols-outlined">@item.IconCode</i>
+                                    <div class="card-title"> @item.Name</div>
+                                </ECSM.Portal.Components.UI.SubHeading>
+                                <div class="card-description">
+                                    @item.Description
+                                </div>
+                            </a>
+                        </div>
+                    }
+                </div>
+                @if (authManager.IsAuthenticated().Result && serviceCatalogueItems.Count() != 0)
+                {
+                    <hr class="catagories-line" />
+                    <CasesComponent searchText="@SearchText" HeadingText="My Cases" />
+                }
+            
+            </div>
+        }
+        else if (activeTab == 2)
+        {
+            <div class="tab-pane active">
+                <FAQComponent searchText="@SearchText" HeadingText="People also ask..." />
+            </div>
+        }
+        else if (activeTab == 3)
+        {
+            <div class="tab-pane active">
+                <KnowledgeArticleDisplayAllComponent searchText="@SearchText" />
+            </div>
+        }
+        else if (activeTab == 4)
+        {
+            <div class="tab-pane active">
+                @if (serviceCatalogueItems.Count() != 0)
+                {
+                    <div class="heading-gap-LogCase-contain">
+                        <ECSM.Portal.Components.UI.MainHeading HeadingText="Log a Case" />
+                    </div>
+                }
+                <div>
+                    <div class="category-section">
+                        @foreach (var item in serviceCatalogueItems)
+                        {
+                            <div class="custom-card">
+                                <a class="no-underline" href="#" @onclick="(() => navigateToServiceCatalogue(item.ServiceCatalogueItemId))">
+                                    <ECSM.Portal.Components.UI.SubHeading>
+                                        <i class="card-icon material-symbols-outlined">@item.IconCode</i>
+                                        <div class="card-title"> @item.Name</div>
+                                    </ECSM.Portal.Components.UI.SubHeading>
+                                    <div class="card-description">
+                                        @item.Description
+                                    </div>
+                                </a>
+                            </div>
+                        }
+                    </div>
+                </div>
+                <hr class="catagories-line" />
+            </div>
+        }
+        else if (activeTab == 5)
+        {
+            <div class="tab-pane active">
+                <CasesComponent searchText="@SearchText" HeadingText="My Cases" />
+            </div>
+        }
+    </div>
+</div>

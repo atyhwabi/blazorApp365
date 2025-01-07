@@ -1,0 +1,153 @@
+﻿@using ECSM.Models.DTO.ServiceCatalogue
+@using ECSM.Portal.Components.UI
+@using ECSM.Portal.Components.CardLayouts
+
+<div class="section-card-body container">
+
+  @if (DeflectorManagerDTO.SelectedCategoryId != null)
+  {
+    @foreach (var item in DeflectorManagerDTO.ServiceCatalogue.Categories.FirstOrDefault(c => c.CategoryID == DeflectorManagerDTO.SelectedCategoryId)!.Announcements)
+    {
+      <AnnouncementComponent announcementDTO="item" />
+    }
+  }
+
+  <ECSM.Portal.Components.UI.MainHeading HeadingText="@HeadingText" />
+  <div class="row catalogue-section list-section">
+    @foreach (var item in FilterItems)
+    {
+      int SelectLayout = 0;
+      if (item?.TileLayout == 0 && DeflectorManagerDTO.ServiceCatalogue.TileLayout == 0)
+      {
+        SelectLayout = 1;
+      }
+      else if (item?.TileLayout == 0 && DeflectorManagerDTO.ServiceCatalogue.TileLayout > 0 )
+      {
+        SelectLayout = DeflectorManagerDTO.ServiceCatalogue.TileLayout;
+
+      }
+      else
+      {
+        SelectLayout = item.TileLayout;
+      }
+      switch (SelectLayout)
+      {
+        case 1:
+          <CardLayout1 style="max-width:220px;min-width:220px;" OnCardClick="() => HandleDeflectorItemClick(item)" catalogueCardDTO="new CatalogueCardDTO {
+              ServiceCatalogueId = item.ServiceCatalogueId,
+              Name = item.Name,
+              Description = item.Description,
+              IconCode = item.IconCode,
+              IsCatalogue = false
+            }" />
+          break;
+        case 2:
+          <CardLayout2 style="max-width:220px;min-width:220px;" OnCardClick="() => HandleDeflectorItemClick(item)" catalogueCardDTO="new CatalogueCardDTO {
+              ServiceCatalogueId = item.ServiceCatalogueId,
+              Name = item.Name,
+              Description = item.Description,
+              IconCode = item.IconCode,
+              IsCatalogue = false
+            }" />
+          break;
+        case 3:
+          <CardLayout3 style="max-width:220px;min-width:220px;" OnCardClick="() => HandleDeflectorItemClick(item)" catalogueCardDTO="new CatalogueCardDTO {
+              ServiceCatalogueId = item.ServiceCatalogueId,
+              Name = item.Name,
+              Description = item.Description,
+              IconCode = item.IconCode,
+              IsCatalogue = false
+            }" />
+          break;
+        case 4:
+          <CardLayout4 style="max-width:220px;min-width:220px;" OnCardClick="() => HandleDeflectorItemClick(item)" catalogueCardDTO="new CatalogueCardDTO {
+              ServiceCatalogueId = item.ServiceCatalogueId,
+              Name = item.Name,
+              Description = item.Description,
+              IconCode = item.IconCode,
+              IsCatalogue = false
+            }" />
+          break;
+        case 5:
+          <CardLayout5 style="max-width:220px;min-width:220px;" OnCardClick="() => HandleDeflectorItemClick(item)" catalogueCardDTO="new CatalogueCardDTO {
+              ServiceCatalogueId = item.ServiceCatalogueId,
+              Name = item.Name,
+              Description = item.Description,
+              IconCode = item.IconCode,
+              IsCatalogue = false
+            }" />
+          break;
+        case 6:
+          <CardLayout6 style="max-width:220px;min-width:220px;" OnCardClick="() => HandleDeflectorItemClick(item)" catalogueCardDTO="new CatalogueCardDTO {
+              ServiceCatalogueId = item.ServiceCatalogueId,
+              Name = item.Name,
+              CategoryID = item.CategoryId,
+              Description = item.Description,
+              IconCode = item.IconCode,
+              IsCatalogue = false
+            }" />
+          break;
+        case 7:
+          <CardLayout7 style="max-width:220px;min-width:220px;" OnCardClick="() => HandleDeflectorItemClick(item)" catalogueCardDTO="new CatalogueCardDTO {
+              ServiceCatalogueId = item.ServiceCatalogueId,
+              Name = item.Name,
+              CategoryID = item.CategoryId,
+              Description = item.Description,
+              IconCode = item.IconCode,
+              IsCatalogue = false
+            }" />
+          break;
+        case 8:
+          <CardLayout8 style="max-width:220px;min-width:220px;" OnCardClick="() => HandleDeflectorItemClick(item)" catalogueCardDTO="new CatalogueCardDTO {
+              ServiceCatalogueId = item.ServiceCatalogueId,
+              Name = item.Name,
+              CategoryID = item.CategoryId,
+              Description = item.Description,
+              IconCode = item.IconCode,
+              IsCatalogue = false
+            }" />
+          break;
+        case 9:
+          <CardLayout9 style="max-width:220px;min-width:220px;" OnCardClick="() => HandleDeflectorItemClick(item)" catalogueCardDTO="new CatalogueCardDTO {
+              ServiceCatalogueId = item.ServiceCatalogueId,
+              Name = item.Name,
+              CategoryID = item.CategoryId,
+              Description = item.Description,
+              IconCode = item.IconCode,
+              IsCatalogue = false
+            }" />
+          break;
+        case 10:
+          <CardLayout10 style="max-width:220px;min-width:220px;" OnCardClick="() => HandleDeflectorItemClick(item)" catalogueCardDTO="new CatalogueCardDTO {
+              ServiceCatalogueId = item.ServiceCatalogueId,
+              CategoryID = item.CategoryId,
+              Name = item.Name,
+              Description = item.Description,
+              IconCode = item.IconCode,
+              IsCatalogue = false
+            }" />
+          break;
+        case 11:
+          <CardLayout11 style="max-width:220px;min-width:220px;" OnCardClick="() => HandleDeflectorItemClick(item)" catalogueCardDTO="new CatalogueCardDTO {
+              ServiceCatalogueId = item.ServiceCatalogueId,
+              Name = item.Name,
+              CategoryID = item.CategoryId,
+              Description = item.Description,
+              IconCode = item.IconCode,
+              IsCatalogue = false
+            }" />
+          break;
+        default:
+          <CardLayout3 style="max-width:220px;min-width:220px;" OnCardClick="() => HandleDeflectorItemClick(item)" catalogueCardDTO="new CatalogueCardDTO {
+              ServiceCatalogueId = item.ServiceCatalogueId,
+              Name = item.Name,
+              CategoryID = item.CategoryId,
+              Description = item.Description,
+              IconCode = item.IconCode,
+              IsCatalogue = false
+            }" />
+          break;
+      }
+    }
+  </div>
+</div>

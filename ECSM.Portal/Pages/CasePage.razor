@@ -1,0 +1,218 @@
+﻿@page "/case/{CaseId}"
+
+<style>
+    .Message-button {
+        margin-bottom: 2%;
+        background-color: var(--primary-color);
+        color: var(--white);;
+        font-weight: var(--primary-font-weight);
+        font-size: var(--tertiary-font-size);
+        line-height: 16px;
+        border-radius: 5px;
+        padding: 5px 10px;
+        float: right;
+        height: 54px;
+        width: 189px;
+        border-radius: 0px;
+    }
+
+        .Message-button:hover {
+            background-color: var(--primary-color);
+            color: var(--white);;
+        }
+
+    .Message-file {
+        margin-bottom: 2%;
+    }
+
+    .Message-file-upload .k-dropzone, .k-upload, .k-upload-empty, .k-upload-async, .Message-file, .Message-file-upload {
+        background-color: var(--white); !important;
+        border-bottom: 1px solid #E0E0E0 !important;
+        border-top: none !important;
+        border-right: none !important;
+        border-left: none !important;
+    }
+
+    .Message-file-button .k-upload-button {
+        background-color: #D4D4D1 !important;
+    }
+
+    .Message-editor {
+        margin-bottom: 2%;
+    }
+
+    .Message-editor-button .k-icon-button {
+        background-color: #E0E0E0 !important;
+    }   
+
+    .Message-editor-line .k-editor-toolbar, .k-toolbar-md {
+        box-shadow: 0px 2px #D4D4D1;
+    }
+</style>
+<div class="white-body" >
+<div class="welcome-row">
+  <div class="container">
+    <p class="welcome-message"><span class="breadCrum" @onclick="Back">My Tickets</span> &nbsp; &gt; &nbsp; Ticket @this.caseItem?.CaseNumber</p>
+    <p class="welcome-heading">Case Details</p>
+    <p class="welcome-message">@this.caseItem?.CaseNumber</p>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="row headerRow">
+    <div class="col-lg-1 mobile-hide">
+    </div>
+    <div class="col-lg-2">
+      <div class="row">
+        <span class="headerText">Type</span>
+      </div>
+      <div class="row">
+        <span class="HeaderSubText">@this.caseItem?.CaseTitle</span>
+      </div>
+    </div>
+    <div class="col-lg-2">
+      <div class="row">
+        <span class="headerText">Status</span>
+      </div>
+      <div class="row">
+        <span class="HeaderSubText">@this.caseItem?.StatusReason</span>
+      </div>
+    </div>
+    <div class="col-lg-2">
+      <div class="row">
+        <span class="headerText">Requester</span>
+      </div>
+      <div class="row">
+        <span class="HeaderSubText">@this.caseItem?.CreatedBy</span>
+      </div>
+    </div>
+    <div class="col-lg-2">
+      <div class="row">
+        <span class="headerText">Assigned To</span>
+      </div>
+      <div class="row">
+        <span class="HeaderSubText">@this.caseItem?.Owner</span>
+      </div>
+    </div>
+    <div class="col-lg-2">
+      <div class="row">
+        <span class="headerText">Date &amp; Time</span>
+      </div>
+      <div class="row">
+        <span class="HeaderSubText">Created</span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="Description-row ">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <p class="Description-text">@this.caseItem?.Description</p>
+      </div>
+    </div>
+  </div>
+</div>
+@if (this.caseItem?.Resolution.FirstOrDefault()?.Date != null)
+{
+  <div class="container">
+      <div class="container">
+        <div class="row Reseloution-row pt-3">
+          <div class="col-lg-12">
+            <p class="Reseloution-header">Resolution Date : @this.caseItem?.Resolution.FirstOrDefault()?.Date</p>
+            <p class="Reseloution-text">Resolution Message : @this.caseItem?.Resolution.FirstOrDefault()?.Text</p>
+          </div>
+        </div>
+      </div>
+  </div>
+}
+else
+{
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <p class="Message-header-Discussion ">Discussion</p>
+        <p class="Message-text">Send a message</p>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <TelerikEditor @ref="editorRef"
+                       Class="Message-editor Message-editor-button Message-editor-line"
+                       @bind-Value="@this.message"
+                       Tools="@Tools"
+                       Height="160px">
+        </TelerikEditor>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <TelerikFileSelect @ref="fileSelectRef"
+                           Class="Message-file Message-file-upload Message-file-button"
+                           OnSelect="@OnSelectHandler"
+                           AllowedExtensions="@AllowedExtensions"
+                           MinFileSize="1024"
+                           MaxFileSize="4 * 1024 * 1024">
+        </TelerikFileSelect>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <TelerikButton Class="Message-button" OnClick="CreateMessage">Send Message</TelerikButton>
+      </div>
+    </div>
+  </div>
+}
+<div class="container">
+    <p class="message-description-text">Messages sent and received on this case can be seen below, they are displayed in date order, with new newest message appearing on top.</p>
+    <div class="container">
+        @if (this.caseItem?.Messages != null)
+        {
+        @foreach (var message in  this.caseItem?.Messages)
+        {
+            <div class="row @(message.Name.Contains(this.authModel?.Contact?.FirstName) ? "Message-Student " : "Message-Agent")">
+                <div class="col-lg-12">
+                <p class="Message-header">@message.Name</p>
+                <p class="Message-text">@((MarkupString)(message.Message))</p>
+                </div>
+                <div class="row">
+                    @foreach (var attachment in this.messageAttachments.Where(x => x.MessageId == message.MessageID))
+                    {
+                    <div class="attachementWidth">
+                        <p @onclick="(() => this.DownloadFile(attachment.AttachmentId, attachment.AttachmentName))" class="attachment-text"><img src="/Images/attachment.svg" /> &nbsp; @attachment.AttachmentName</p>
+                    </div>
+                    }
+                </div>
+            </div>
+        }
+        }
+        </div>
+</div>
+</div>
+<TelerikNotification @ref="@Notification"
+                     VerticalPosition="@NotificationVerticalPosition.Top"
+                     HorizontalPosition="@NotificationHorizontalPosition.Right">
+</TelerikNotification>
+
+<style>
+  .Message-button {
+    margin-top: 16px;
+    margin-bottom: 30px;
+    background-color: var(--primary-color);
+    color: var(--white);;
+    font-weight: var(--primary-font-weight);
+    font-size: var(--tertiary-font-size);
+    line-height: 16px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    float: right;
+    height: 54px;
+    width: 189px;
+    border-radius: 0px;
+  }
+</style>

@@ -1,0 +1,27 @@
+namespace ECSM.Models.Dynamics;
+
+public static partial class ecsm_catalogue_item_form_elementOneToMany
+{
+	/// <summary>ReferencedAttribute: ecsm_catalogue_item_form_elementid, ReferencedEntity: ecsm_catalogue_item_form_element, ReferencedEntityNavigationPropertyName: ecsm_catalogue_item_form_element_AsyncOperations, ReferencingAttribute: regardingobjectid, ReferencingEntity: asyncoperation, ReferencingEntityNavigationPropertyName: regardingobjectid_ecsm_catalogue_item_form_element, RelationshipBehavior: 0, SchemaName: ecsm_catalogue_item_form_element_AsyncOperations, SecurityTypes: None, IntroducedVersion: 1.0. </summary>
+	public const string ecsm_catalogue_item_form_element_AsyncOperations = "ecsm_catalogue_item_form_element_AsyncOperations";
+
+	/// <summary>ReferencedAttribute: ecsm_catalogue_item_form_elementid, ReferencedEntity: ecsm_catalogue_item_form_element, ReferencedEntityNavigationPropertyName: ecsm_catalogue_item_form_element_BulkDeleteFailures, ReferencingAttribute: regardingobjectid, ReferencingEntity: bulkdeletefailure, ReferencingEntityNavigationPropertyName: regardingobjectid_ecsm_catalogue_item_form_element, RelationshipBehavior: 0, SchemaName: ecsm_catalogue_item_form_element_BulkDeleteFailures, SecurityTypes: None, IntroducedVersion: 1.0. </summary>
+	public const string ecsm_catalogue_item_form_element_BulkDeleteFailures = "ecsm_catalogue_item_form_element_BulkDeleteFailures";
+
+	/// <summary>ReferencedAttribute: ecsm_catalogue_item_form_elementid, ReferencedEntity: ecsm_catalogue_item_form_element, ReferencedEntityNavigationPropertyName: ecsm_catalogue_item_form_element_MailboxTrackingFolders, ReferencingAttribute: regardingobjectid, ReferencingEntity: mailboxtrackingfolder, ReferencingEntityNavigationPropertyName: regardingobjectid_ecsm_catalogue_item_form_element, RelationshipBehavior: 0, SchemaName: ecsm_catalogue_item_form_element_MailboxTrackingFolders, SecurityTypes: None, IntroducedVersion: 1.0. </summary>
+	public const string ecsm_catalogue_item_form_element_MailboxTrackingFolders = "ecsm_catalogue_item_form_element_MailboxTrackingFolders";
+
+	/// <summary>ReferencedAttribute: ecsm_catalogue_item_form_elementid, ReferencedEntity: ecsm_catalogue_item_form_element, ReferencedEntityNavigationPropertyName: ecsm_catalogue_item_form_element_PrincipalObjectAttributeAccesses, ReferencingAttribute: objectid, ReferencingEntity: principalobjectattributeaccess, ReferencingEntityNavigationPropertyName: objectid_ecsm_catalogue_item_form_element, RelationshipBehavior: 0, SchemaName: ecsm_catalogue_item_form_element_PrincipalObjectAttributeAccesses, SecurityTypes: None, IntroducedVersion: 1.0. </summary>
+	public const string ecsm_catalogue_item_form_element_PrincipalObjectAttributeAccesses = "ecsm_catalogue_item_form_element_PrincipalObjectAttributeAccesses";
+
+	/// <summary>ReferencedAttribute: ecsm_catalogue_item_form_elementid, ReferencedEntity: ecsm_catalogue_item_form_element, ReferencedEntityNavigationPropertyName: ecsm_catalogue_item_form_element_ProcessSession, ReferencingAttribute: regardingobjectid, ReferencingEntity: processsession, ReferencingEntityNavigationPropertyName: regardingobjectid_ecsm_catalogue_item_form_element, RelationshipBehavior: 0, SchemaName: ecsm_catalogue_item_form_element_ProcessSession, SecurityTypes: None, IntroducedVersion: 1.0. </summary>
+	public const string ecsm_catalogue_item_form_element_ProcessSession = "ecsm_catalogue_item_form_element_ProcessSession";
+
+	/// <summary>ReferencedAttribute: ecsm_catalogue_item_form_elementid, ReferencedEntity: ecsm_catalogue_item_form_element, ReferencedEntityNavigationPropertyName: ecsm_catalogue_item_form_element_SyncErrors, ReferencingAttribute: regardingobjectid, ReferencingEntity: syncerror, ReferencingEntityNavigationPropertyName: regardingobjectid_ecsm_catalogue_item_form_element, RelationshipBehavior: 0, SchemaName: ecsm_catalogue_item_form_element_SyncErrors, SecurityTypes: None, IntroducedVersion: 1.0. </summary>
+	public const string ecsm_catalogue_item_form_element_SyncErrors = "ecsm_catalogue_item_form_element_SyncErrors";
+
+	/// <summary>ReferencedAttribute: ecsm_catalogue_item_form_elementid, ReferencedEntity: ecsm_catalogue_item_form_element, ReferencedEntityNavigationPropertyName: ecsm_catalogue_item_form_element_UserEntityInstanceDatas, ReferencingAttribute: objectid, ReferencingEntity: userentityinstancedata, ReferencingEntityNavigationPropertyName: objectid_ecsm_catalogue_item_form_element, RelationshipBehavior: 0, SchemaName: ecsm_catalogue_item_form_element_UserEntityInstanceDatas, SecurityTypes: None, IntroducedVersion: 1.0. </summary>
+	public const string ecsm_catalogue_item_form_element_UserEntityInstanceDatas = "ecsm_catalogue_item_form_element_UserEntityInstanceDatas";
+
+}
+

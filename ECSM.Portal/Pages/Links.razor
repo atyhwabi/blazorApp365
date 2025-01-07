@@ -1,0 +1,68 @@
+﻿@page "/links"
+@inherits BaseComponent
+<div class="container">
+    @if (portalLinkDTOs.Any())
+    {
+        <div style="margin-bottom:30px;margin-top:30px">
+            <TelerikListView Data=@portalLinkDTOs
+                             Pageable="true"
+                             PageSize="5">
+                <HeaderTemplate>
+                    <h3 class="heading" style="text-align:center">Available Portal Links </h3>
+                </HeaderTemplate>
+                <Template>
+                    <div class="card">
+                        <h2 class="site-name">@context.Name</h2>
+                        <a href="@context.URL" target="_blank" class="site-link">Visit @context.Name</a>
+                    </div>
+                </Template>
+            </TelerikListView>
+        </div>
+    }
+
+</div>
+
+<style>
+
+    .card {
+        background-color: var(--white);;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+        margin-bottom: 8px;
+        margin-top: 8px;
+    }
+
+
+
+    .site-name {
+        font-size: 1.5em;
+        margin-bottom: 15px;
+        color: #333;
+    }
+
+    .site-link {
+        display: inline-block;
+        padding: 10px 15px;
+        background-color: #007BFF;
+        color: white !important;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+
+        .site-link:hover {
+            background-color: #0056b3;
+            color: white;
+        }
+
+    .heading {
+        color: var(--primary-color);
+        font-size: var(--primary-font-size);
+        font-style: normal;
+        font-weight: var(--primary-font-weight);
+        line-height: normal;
+    }
+</style>

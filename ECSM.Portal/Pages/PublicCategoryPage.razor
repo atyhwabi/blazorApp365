@@ -1,0 +1,36 @@
+﻿@page "/{publicParameter}/CategoryDetails/{CategoryID}"
+@using ECSM.Portal.Components.DeflectorComponents
+
+@if (loading)
+{
+    <div class="container pt-3">
+        <div class="deflector-container">
+            <ECSM.Portal.Components.UI.MainHeading HeadingText="Loading Details" />
+        </div>
+    </div>
+}
+else
+{
+    <div class="container pt-3">
+        <div class="deflector-container">
+            <div class="tree-container">
+                <ECSM.Portal.Components.TreeView.TreeViewComponent CategoryRoot="true" OnItemClick="HandleItemClick" treeViewDTO="new Models.DTO.TreeView.TreeViewDTO{
+                     ServiceCatalogues = ServiceCatalogue,
+                     SelectedServiceCatalogue = ServiceCatalogue.FirstOrDefault().ServiceCatalogueID,
+                     SelectedCategory = new Guid(CategoryID) }" />
+            </div>
+            @if (SelectedCategoryId != null)
+            {
+                <div class="managment-container">
+                    <DeflectorManager DeflectorManagerDTO="deflectorManagerDTO" OnDeflectorItemClick="OnDeflectorItemClick" />
+                </div>
+            }
+            else if (SelectedServiceCatalogueItemId != null)
+            {
+                <div class="child-Container">
+                    <ECSM.Portal.Pages.CaseDetails ServiceCatalogueItemId="@SelectedServiceCatalogueItemId.ToString()" />
+                </div>
+            }
+        </div>
+    </div>
+}

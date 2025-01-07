@@ -1,0 +1,49 @@
+﻿
+.articleHead {
+    color: var(--primary-color);
+    font-size: var(--secondary-font-size);
+    font-family: var(--secondary-font-family);
+    font-size: var(--secondary-font-size);
+    font-style: normal;
+    font-weight: var(--primary-font-weight);
+    line-height: normal;
+    letter-spacing: 0.2px;
+    margin-left: 20px;
+}
+
+.customAccordion {
+  color: var(--primary-color) !important;
+  background-color: white !important;
+  border: none !important;
+}
+
+.customAccordionBorder {
+  border: none;
+  border-bottom: 1px solid #B2B7CE;
+}
+
+.accordion-header {
+    color: var(--Dark-Grey, #2E2C2C);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: "Segoe UI";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 112.5% */
+}
+
+.accordion-body {
+    color: #989FBD;
+    font-family: var(--secondary-font-family);
+    font-size: var(--secondary-font-size);
+    font-style: normal;
+    font-weight: var(--secondary-font-weight);
+    line-height: normal;
+    letter-spacing: 0.2px;
+}
+
+.heading-gap-container {
+    padding-top: 20px;
+    padding-bottom: 4px;
+}
+

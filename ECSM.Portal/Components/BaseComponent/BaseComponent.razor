@@ -1,0 +1,15 @@
+﻿// BaseComponent.razor
+@code {
+  protected override async Task OnInitializedAsync()
+  {
+    var authModel = await authManager.GetAuthState();
+
+    if (!authModel.IsAuthenticated)
+    {
+      if (!navigationManager.GetUri().Contains("public"))
+      {
+        navigationManager.NavigateTo("/Authentication/SignIn?scheme=B2C");
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+﻿.tree-heading {
+  padding-left: 12px;
+  color: var(--primary-color);
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: var(--primary-font-family);
+  font-size: var(--primary-font-size);
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.Catalogues-List {
+  padding: 24px 16px;
+}

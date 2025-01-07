@@ -1,0 +1,25 @@
+﻿<style>
+    #Search.k-input-inner {
+        background-color: var(--white);;
+        border: none;
+    }
+</style>
+<div class="container-fluid">
+    <div class="welcome-row">
+        <div class="container">
+            <h2><strong>Knowledge Base</strong></h2>
+        </div>
+    </div>
+    <div class="container-fluid search-row">
+        <div class="container">
+            <div class="search-field">
+                <div class="container-fluid">
+                    <TelerikSvgIcon Icon="@SvgIcon.Search" Class="search-icon" />
+                    <span @onkeypress="HandleKeyPress">
+                        <TelerikTextBox @bind-Value="@searchValue" Name="Search" Placeholder="Search Knowledge articles case or service" TabIndex="1" Class="search-textbox" Id="Search" Width=95%></TelerikTextBox>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

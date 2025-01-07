@@ -1,0 +1,13 @@
+﻿.page-navigator {
+    align-content: center;
+}
+.page-number{
+    word-spacing: 10px;
+}
+svg {
+    cursor: pointer;
+}
+span {
+    cursor: pointer;
+    padding: 0.5em;
+}

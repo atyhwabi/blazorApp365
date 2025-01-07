@@ -1,0 +1,41 @@
+﻿@inject NavigationManager NavigationManager
+<div class="col-md-8 col-lg-12">
+    <div class="search-container">
+        <div class="container">
+            <div class="search-section">
+                <div class="icon-container" @onclick="GoToHomePage">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M12.3345 5.81848L12 5.51744L11.6655 5.81848L6.66552 10.3185L6.5 10.4674V10.6901V18.5001V19.0001H7H9H9.5V18.5001V13.0001H14.5V18.5001V19.0001H15H17H17.5V18.5001V10.6901V10.4674L17.3345 10.3185L12.3345 5.81848ZM5.5 12.5001V12.0001H5H3.30298L12 4.1728L20.697 12.0001H19H18.5V12.5001V20.0001H13.5V14.5001V14.0001H13H11H10.5V14.5001V20.0001H5.5V12.5001Z" fill="#1D3688" stroke="#1D3688" />
+                    </svg>
+                </div>
+                <div class="search-textbox-container">
+                    <NavMenu />
+                    <TelerikSvgIcon Icon="@SvgIcon.Search" Class="search-icon" />
+                    <span @onkeypress="HandleKeyPress">
+                        <TelerikTextBox @bind-Value="@searchValue" Name="Search" Placeholder="Search Knowledge articles cases, or services" TabIndex="1" Class="search-textbox" Id="Search" Width="80%"></TelerikTextBox>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .search-textbox {
+        background-color: #F5F5F5;
+        width: 1072px;
+        color: var(--primary-color);
+    }
+
+    span.k-input ::placeholder,
+    span.k-picker ::placeholder {
+        color: var(--primary-color);
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: var(--secondary-font-family);
+        font-size: var(--secondary-font-size);
+        font-style: normal;
+        font-weight: var(--secondary-font-weight);
+        line-height: 18px; 
+    }
+</style>
+
+

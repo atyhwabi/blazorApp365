@@ -1,0 +1,34 @@
+﻿@using ECSM.Models.DTO
+@using ECSM.Services.Cases
+@inject ICaseService caseService
+
+<BaseList>
+    <div class="col-12 col-md-6 col-sm-12">
+        <MainHeading HeadingText="My Cases" />
+        <div class="border">
+            <div class="case-row">
+                @foreach (var caseItem in Cases)
+                {
+                    <div>
+                        
+                        <p class="cases-information">
+                            <a @onclick="@(() => navCasePage(caseItem.CaseId.ToString()))">
+                            <i class="material-symbols-outlined">
+                                Bookmark</i> <a style="font-weight:700"> @caseItem.CasesTicketNumber</a> @caseItem.CaseTitle
+                            </a>
+                        </p>
+                        
+                        </div>
+                    
+                }
+            </div>
+        </div>
+        <div class="border-info">
+            <ViewAllHeading>
+                <p class="view-all-heading"><a @onclick="@(() => navMyCasesPage())">View all tickets<i class="material-symbols-outlined">Bookmark</i></a></p>
+            </ViewAllHeading>
+        </div>
+    </div>
+</BaseList>
+
+

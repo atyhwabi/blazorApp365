@@ -1,0 +1,1395 @@
+DisplayName , LogicalName , PrimaryIdAttribute , PrimaryNameAttribute
+Microsoft Entra ID , aaduser , aaduserid , displayname
+Account , account , accountid , name
+AccountLeads , accountleads , accountleadid , name
+ACIViewMapper , aciviewmapper , aciviewmapperid , 
+Action Card , actioncard , actioncardid , title
+Action Card User Settings , actioncardusersettings , actioncardusersettingsid , 
+ActionCardUserState , actioncarduserstate , actioncarduserstateid , 
+Activity File Attachment , activityfileattachment , activityfileattachmentid , filename
+Attachment , activitymimeattachment , activitymimeattachmentid , filename
+Activity monitor , activitymonitor , activitymonitorid , name
+Activity Party , activityparty , activitypartyid , partyidname
+Activity , activitypointer , activityid , subject
+admin_settings_entity , adminsettingsentity , adminsettingsentityid , new_name
+Advanced Similarity Rule , advancedsimilarityrule , advancedsimilarityruleid , name
+External Identity , adx_externalidentity , adx_externalidentityid , adx_username
+Invitation , adx_invitation , adx_invitationid , adx_name
+adx_invitation_invitecontacts , adx_invitation_invitecontacts , adx_invitation_invitecontactsid , 
+adx_invitation_mspp_webrole_powerpagecomponent , adx_invitation_mspp_webrole_powerpagecomponent , adx_invitation_mspp_webrole_powerpagecomponentid , 
+adx_invitation_redeemedcontacts , adx_invitation_redeemedcontacts , adx_invitation_redeemedcontactsid , 
+Invite Redemption , adx_inviteredemption , activityid , subject
+adx_kbarticle_kbarticle , adx_kbarticle_kbarticle , adx_kbarticle_kbarticleid , 
+Portal Comment , adx_portalcomment , activityid , subject
+Setting , adx_setting , adx_settingid , adx_name
+Multistep Form Session , adx_webformsession , adx_webformsessionid , adx_name
+AICopilot , aicopilot , aicopilotid , name
+AICopilot_AIPlugin , aicopilot_aiplugin , aicopilot_aipluginid , 
+AIPlugin , aiplugin , aipluginid , name
+AIPluginAuth , aipluginauth , aipluginauthid , name
+AI Plugin Conversation Starter , aipluginconversationstarter , aipluginconversationstarterid , title
+AI Plugin Conversation Starter Mapping , aipluginconversationstartermapping , aipluginconversationstartermappingid , name
+AIPluginExternalSchema , aipluginexternalschema , aipluginexternalschemaid , name
+AIPluginExternalSchemaProperty , aipluginexternalschemaproperty , aipluginexternalschemapropertyid , name
+AI Plugin Governance , aiplugingovernance , aiplugingovernanceid , name
+AI Plugin Governance Extended , aiplugingovernanceext , aiplugingovernanceextid , name
+AIPluginInstance , aiplugininstance , aiplugininstanceid , name
+AIPluginOperation , aipluginoperation , aipluginoperationid , name
+AIPluginOperationParameter , aipluginoperationparameter , aipluginoperationparameterid , name
+AIPluginOperationResponseTemplate , aipluginoperationresponsetemplate , aipluginoperationresponsetemplateid , name
+AIPluginTitle , aiplugintitle , aiplugintitleid , name
+AIPluginUserSetting , aipluginusersetting , aipluginusersettingid , name
+Note , annotation , annotationid , subject
+Annual Fiscal Calendar , annualfiscalcalendar , userfiscalcalendarid , 
+App Action , appaction , appactionid , name
+appaction_appactionrule_classicrules , appaction_appactionrule_classicrules , appaction_appactionrule_classicrulesid , 
+App Action Migration , appactionmigration , appactionmigrationid , name
+App Action Rule , appactionrule , appactionruleid , name
+appactionrule_webresource_scripts , appactionrule_webresource_scripts , appactionrule_webresource_scriptsid , 
+App Configuration , appconfig , appconfigid , 
+App Configuration Instance , appconfiginstance , appconfiginstanceid , 
+App Config Master , appconfigmaster , appconfigmasterid , name
+Model-Driven App Element , appelement , appelementid , name
+Application , application , applicationid , name
+Application File , applicationfile , fileid , 
+ApplicationRoles , applicationroles , applicationrolesid , 
+ApplicationUser , applicationuser , applicationuserid , applicationname
+applicationuserprofile , applicationuserprofile , applicationuserprofileid , 
+applicationuserrole , applicationuserrole , applicationuserroleid , 
+Model-driven App , appmodule , appmoduleid , name
+App Module Component , appmodulecomponent , appmodulecomponentid , 
+Model-Driven App Component Node's Edge , appmodulecomponentedge , appmodulecomponentedgeid , name
+Model-Driven App Component Node , appmodulecomponentnode , appmodulecomponentnodeid , name
+AppModule Metadata , appmodulemetadata , appmodulemetadataid , 
+AppModule Metadata Dependency , appmodulemetadatadependency , appmodulemetadatadependencyid , 
+AppModule Metadata Async Operation , appmodulemetadataoperationlog , appmodulemetadataoperationlogid , 
+App Module Roles , appmoduleroles , appmoduleroleid , 
+Notification , appnotification , appnotificationid , title
+Appointment , appointment , activityid , subject
+Model-Driven App Setting , appsetting , appsettingid , displayname
+Model-Driven App User Setting , appusersetting , appusersettingid , displayname
+ArchiveCleanupInfo , archivecleanupinfo , archivecleanupinfoid , name
+ArchiveCleanupOperation , archivecleanupoperation , archivecleanupoperationid , name
+System Job , asyncoperation , asyncoperationid , name
+Attachment , attachment , attachmentid , filename
+Attribute , attribute , attributeid , name
+Image Attribute Configuration , attributeimageconfig , attributeimageconfigid , attributelogicalname
+Attribute Map , attributemap , attributemapid , 
+Attribute Masking Rule , attributemaskingrule , attributemaskingruleid , uniquename
+Auditing , audit , auditid , 
+Authorization Server , authorizationserver , authorizationserverid , name
+Available Times , availabletimes , availabletimesid , name
+Available Times Data Source , availabletimesdatasource , availabletimesdatasourceid , name
+Azure Service Connection , azureserviceconnection , azureserviceconnectionid , name
+Background Operation , backgroundoperation , backgroundoperationid , name
+Bookable Resource , bookableresource , bookableresourceid , name
+Bookable Resource Booking , bookableresourcebooking , bookableresourcebookingid , name
+Bookable Resource Booking to Exchange Id Mapping , bookableresourcebookingexchangesyncidmapping , bookableresourcebookingexchangesyncidmappingid , name
+Bookable Resource Booking Header , bookableresourcebookingheader , bookableresourcebookingheaderid , name
+Bookable Resource Category , bookableresourcecategory , bookableresourcecategoryid , name
+Bookable Resource Category Assn , bookableresourcecategoryassn , bookableresourcecategoryassnid , name
+Bookable Resource Characteristic , bookableresourcecharacteristic , bookableresourcecharacteristicid , name
+Bookable Resource Group , bookableresourcegroup , bookableresourcegroupid , name
+Booking Status , bookingstatus , bookingstatusid , name
+Chatbot , bot , botid , name
+bot_botcomponent , bot_botcomponent , bot_botcomponentid , 
+bot_botcomponentcollection , bot_botcomponentcollection , bot_botcomponentcollectionid , 
+bot_environmentvariabledefinition , bot_environmentvariabledefinition , bot_environmentvariabledefinitionid , 
+Chatbot subcomponent , botcomponent , botcomponentid , name
+botcomponent_aipluginoperation , botcomponent_aipluginoperation , botcomponent_aipluginoperationid , 
+botcomponent_botcomponent , botcomponent_botcomponent , botcomponent_botcomponentid , 
+botcomponent_connectionreference , botcomponent_connectionreference , botcomponent_connectionreferenceid , 
+botcomponent_dvtablesearch , botcomponent_dvtablesearch , botcomponent_dvtablesearchid , 
+botcomponent_environmentvariabledefinition , botcomponent_environmentvariabledefinition , botcomponent_environmentvariabledefinitionid , 
+botcomponent_msdyn_aimodel , botcomponent_msdyn_aimodel , botcomponent_msdyn_aimodelid , 
+botcomponent_workflow , botcomponent_workflow , botcomponent_workflowid , 
+Chatbot component collection , botcomponentcollection , botcomponentcollectionid , name
+BulkArchiveConfig , bulkarchiveconfig , bulkarchiveconfigid , name
+BulkArchiveFailureDetail , bulkarchivefailuredetail , bulkarchivefailuredetailid , name
+BulkArchiveOperation , bulkarchiveoperation , bulkarchiveoperationid , name
+BulkArchiveOperationDetail , bulkarchiveoperationdetail , bulkarchiveoperationdetailid , name
+Bulk Delete Failure , bulkdeletefailure , bulkdeletefailureid , 
+Bulk Delete Operation , bulkdeleteoperation , bulkdeleteoperationid , name
+Quick Campaign , bulkoperation , activityid , subject
+Bulk Operation Log , bulkoperationlog , bulkoperationlogid , name
+Business Data Localized Label , businessdatalocalizedlabel , businessdatalocalizedlabelid , 
+Business Process Flow Instance , businessprocessflowinstance , businessprocessflowinstanceid , 
+Business Unit , businessunit , businessunitid , name
+Business Unit Map , businessunitmap , businessunitmapid , 
+Announcement , businessunitnewsarticle , businessunitnewsarticleid , articletitle
+Calendar , calendar , calendarid , name
+Calendar Rule , calendarrule , calendarruleid , name
+Callback Registration , callbackregistration , callbackregistrationid , name
+Campaign , campaign , campaignid , name
+Campaign Activity , campaignactivity , activityid , subject
+Campaign Activity Item , campaignactivityitem , campaignactivityitemid , name
+Campaign Item , campaignitem , campaignitemid , name
+Campaign Response , campaignresponse , activityid , subject
+Canvas App , canvasapp , canvasappid , name
+CanvasApp Extended Metadata , canvasappextendedmetadata , canvasappextendedmetadataid , name
+Card , card , cardid , name
+cardentityconnections , cardentityconnections , cardentityconnectionsid , 
+Card State Item , cardstateitem , cardstateitemid , name
+Action Card Type , cardtype , cardtypeid , cardname
+CascadeGrantRevokeAccessRecordsTracker , cascadegrantrevokeaccessrecordstracker , cascadegrantrevokeaccessrecordstrackerid , name
+CascadeGrantRevokeAccessVersionTracker , cascadegrantrevokeaccessversiontracker , cascadegrantrevokeaccessversiontrackerid , name
+Catalog , catalog , catalogid , name
+Catalog Assignment , catalogassignment , catalogassignmentid , name
+Category , category , categoryid , title
+Channel Access Profile , channelaccessprofile , channelaccessprofileid , name
+ChannelAccessProfileEntityAccessLevel , channelaccessprofileentityaccesslevel , channelaccessprofileentityaccesslevelid , 
+Channel Access Profile Rule , channelaccessprofilerule , channelaccessprofileruleid , name
+Channel Access Profile Rule Item , channelaccessprofileruleitem , channelaccessprofileruleitemid , name
+Channel Property , channelproperty , channelpropertyid , name
+Channel Property Group , channelpropertygroup , channelpropertygroupid , name
+Characteristic , characteristic , characteristicid , name
+Teams chat , chat , activityid , subject
+Child Incident Count , childincidentcount , childincidentcountid , name
+Client update , clientupdate , clientupdateid , 
+Column Mapping , columnmapping , columnmappingid , sourceattributename
+Comment , comment , commentid , name
+Commitment , commitment , commitmentid , name
+Competitor , competitor , competitorid , name
+Competitor Address , competitoraddress , competitoraddressid , name
+Competitor Product , competitorproduct , competitorproductid , name
+CompetitorSalesLiterature , competitorsalesliterature , competitorsalesliteratureid , name
+Process Configuration , complexcontrol , complexcontrolid , name
+Component Version , componentversion , componentversionid , componentversionname
+Component Version Data Source , componentversiondatasource , componentversiondatasourceid , name
+Component Version (Internal) , componentversionnrddatasource , componentversionnrddatasourceid , componentversionname
+Connection , connection , connectionid , name
+Connection Instance , connectioninstance , connectioninstanceid , connectioninternalid
+Connection Reference , connectionreference , connectionreferenceid , connectionreferencedisplayname
+Connection Role , connectionrole , connectionroleid , name
+ConnectionRoleAssociation , connectionroleassociation , connectionroleassociationid , 
+Connection Role Object Type Code , connectionroleobjecttypecode , connectionroleobjecttypecodeid , 
+Connector , connector , connectorid , name
+Resource Group , constraintbasedgroup , constraintbasedgroupid , name
+Contact , contact , contactid , fullname
+ContactInvoices , contactinvoices , contactinvoiceid , name
+ContactLeads , contactleads , contactleadid , name
+ContactOrders , contactorders , contactorderid , name
+ContactQuotes , contactquotes , contactquoteid , name
+Contract , contract , contractid , title
+Contract Line , contractdetail , contractdetailid , title
+Contract Template , contracttemplate , contracttemplateid , name
+ConversationTranscript , conversationtranscript , conversationtranscriptid , name
+Record Creation and Update Rule , convertrule , convertruleid , name
+Record Creation and Update Rule Item , convertruleitem , convertruleitemid , name
+CopilotExampleQuestion , copilotexamplequestion , copilotexamplequestionid , question
+CopilotGlossaryTerm , copilotglossaryterm , copilotglossarytermid , name
+CopilotSynonyms , copilotsynonyms , copilotsynonymsid , name
+Credential , credential , credentialid , name
+Custom API , customapi , customapiid , name
+Custom API Request Parameter , customapirequestparameter , customapirequestparameterid , name
+Custom API Response Property , customapiresponseproperty , customapiresponsepropertyid , name
+Custom Control , customcontrol , customcontrolid , name
+Custom Control Default Config , customcontroldefaultconfig , customcontroldefaultconfigid , 
+Custom Control Resource , customcontrolresource , customcontrolresourceid , name
+Address , customeraddress , customeraddressid , name
+Opportunity Relationship , customeropportunityrole , customeropportunityroleid , opportunityroleidname
+Customer Relationship , customerrelationship , customerrelationshipid , customerroleidname
+Data Lake Folder , datalakefolder , datalakefolderid , name
+Data Lake Folder Permission , datalakefolderpermission , datalakefolderpermissionid , name
+Data Lake Workspace , datalakeworkspace , datalakeworkspaceid , name
+Data Lake Workspace Permission , datalakeworkspacepermission , datalakeworkspacepermissionid , name
+Data Performance Dashboard , dataperformance , dataperformanceid , 
+Data Processing configuration , dataprocessingconfiguration , dataprocessingconfigurationid , name
+DelegatedAuthorization , delegatedauthorization , delegatedauthorizationid , name
+Deleted Record Reference , deleteditemreference , deleteditemreferenceid , name
+DelveActionHub , delveactionhub , delveactionhubid , subject
+Dependency , dependency , dependencyid , 
+Dependency Feature , dependencyfeature , dependencyfeatureid , 
+Dependency Node , dependencynode , dependencynodeid , 
+Desktop Flow Binary , desktopflowbinary , desktopflowbinaryid , name
+Desktop Flow Module , desktopflowmodule , desktopflowmoduleid , name
+Discount , discount , discountid , name
+Discount List , discounttype , discounttypeid , name
+Display String , displaystring , displaystringid , 
+Display String Map , displaystringmap , displaystringmapid , 
+Indexed Article , documentindex , documentindexid , title
+Document Template , documenttemplate , documenttemplateid , name
+Duplicate Record , duplicaterecord , duplicateid , 
+Duplicate Detection Rule , duplicaterule , duplicateruleid , name
+Duplicate Rule Condition , duplicaterulecondition , duplicateruleconditionid , 
+DVFileSearch , dvfilesearch , dvfilesearchid , name
+DVFileSearchAttribute , dvfilesearchattribute , dvfilesearchattributeid , name
+DVFileSearchEntity , dvfilesearchentity , dvfilesearchentityid , name
+DVTableSearch , dvtablesearch , dvtablesearchid , name
+DVTableSearchAttribute , dvtablesearchattribute , dvtablesearchattributeid , name
+DVTableSearchEntity , dvtablesearchentity , dvtablesearchentityid , name
+Property , dynamicproperty , dynamicpropertyid , name
+Property Association , dynamicpropertyassociation , dynamicpropertyassociationid , name
+Property Instance , dynamicpropertyinstance , dynamicpropertyinstanceid , name
+Property Option Set Item , dynamicpropertyoptionsetitem , dynamicpropertyoptionsetvalueid , dynamicpropertyoptionname
+Announcement , ecsm_announcement , ecsm_announcementid , ecsm_name
+Catalogue , ecsm_catalogue , ecsm_catalogueid , ecsm_name
+Catalogue Item , ecsm_catalogue_item , ecsm_catalogue_itemid , ecsm_name
+Approval Rule , ecsm_catalogue_item_approval_rule , ecsm_catalogue_item_approval_ruleid , ecsm_name
+Assignment Rule , ecsm_catalogue_item_assignment_rule , ecsm_catalogue_item_assignment_ruleid , ecsm_name
+Escalation Rule , ecsm_catalogue_item_escalation_rule , ecsm_catalogue_item_escalation_ruleid , ecsm_name
+Variable , ecsm_catalogue_item_variable , ecsm_catalogue_item_variableid , ecsm_name
+Category  , ecsm_category , ecsm_categoryid , ecsm_name
+Content Block , ecsm_content_block , ecsm_content_blockid , ecsm_name
+Incident , ecsm_incident , ecsm_incidentid , ecsm_name
+Item Approval Response , ecsm_item_approval_response , ecsm_item_approval_responseid , ecsm_name
+Item Escalation , ecsm_item_ecalation , ecsm_item_ecalationid , ecsm_name
+Message  , ecsm_message , ecsm_messageid , ecsm_name
+Persona , ecsm_persona , ecsm_personaid , ecsm_name
+ecsm_Persona_ecsm_service_catalogue , ecsm_persona_ecsm_service_catalogue , ecsm_persona_ecsm_service_catalogueid , 
+Service Catalogue , ecsm_service_catalogue , ecsm_service_catalogueid , ecsm_name
+Service Catalogue Item , ecsm_service_catalogue_item , ecsm_service_catalogue_itemid , ecsm_name
+Setting , ecsm_setting , ecsm_settingid , ecsm_name
+ElasticFileAttachment , elasticfileattachment , elasticfileattachmentid , filename
+Email , email , activityid , subject
+Email Hash , emailhash , emailhashid , 
+Email Search , emailsearch , emailsearchid , 
+Email Server Profile , emailserverprofile , emailserverprofileid , name
+Email Signature , emailsignature , emailsignatureid , title
+EnableArchivalRequest , enablearchivalrequest , enablearchivalrequestid , name
+Entitlement , entitlement , entitlementid , name
+Entitlement Channel , entitlementchannel , entitlementchannelid , name
+Entitlement Contact , entitlementcontacts , entitlementcontactid , name
+Entitlement Entity Allocation Type Mapping , entitlemententityallocationtypemapping , entitlemententityallocationtypemappingid , name
+Entitlement Product , entitlementproducts , entitlementproductid , name
+Entitlement Template , entitlementtemplate , entitlementtemplateid , name
+Entitlement Template Channel , entitlementtemplatechannel , entitlementtemplatechannelid , name
+Entitlement Template Product , entitlementtemplateproducts , entitlementtemplateproductid , name
+Entity , entity , entityid , name
+Entity Analytics Config , entityanalyticsconfig , entityanalyticsconfigid , parententitylogicalname
+Virtual Entity Data Provider , entitydataprovider , entitydataproviderid , name
+Virtual Entity Data Source , entitydatasource , entitydatasourceid , name
+Entity Image Configuration , entityimageconfig , entityimageconfigid , parententitylogicalname
+Entity Index , entityindex , indexid , name
+Entity Key , entitykey , entitykeyid , logicalname
+Entity Map , entitymap , entitymapid , 
+EntityRecordFilter , entityrecordfilter , entityrecordfilterid , name
+Entity Relationship , entityrelationship , entityrelationshipid , schemaname
+Environment Variable Definition , environmentvariabledefinition , environmentvariabledefinitionid , schemaname
+Environment Variable Value , environmentvariablevalue , environmentvariablevalueid , schemaname
+Facility/Equipment , equipment , equipmentid , name
+Event Expander Breadcrumb , eventexpanderbreadcrumb , eventexpanderbreadcrumbid , name
+Exchange Sync Id Mapping , exchangesyncidmapping , exchangesyncidmappingid , 
+Expander Event , expanderevent , expandereventid , name
+Expired Process , expiredprocess , businessprocessflowinstanceid , name
+Exported Excel , exportedexcel , exportedexcelid , name
+ExportSolutionUpload , exportsolutionupload , exportsolutionuploadid , name
+External Party , externalparty , externalpartyid , fullname
+External Party Item , externalpartyitem , externalpartyitemid , name
+Fabric AISkill , fabricaiskill , fabricaiskillid , name
+Fax , fax , activityid , subject
+FeatureControlSetting , featurecontrolsetting , featurecontrolsettingid , name
+Feedback , feedback , feedbackid , title
+Field Permission , fieldpermission , fieldpermissionid , 
+Field Security Profile , fieldsecurityprofile , fieldsecurityprofileid , name
+FileAttachment , fileattachment , fileattachmentid , filename
+Filter Template , filtertemplate , filtertemplateid , 
+Fixed Monthly Fiscal Calendar , fixedmonthlyfiscalcalendar , userfiscalcalendarid , 
+Flow Capacity Assignment , flowcapacityassignment , flowcapacityassignmentid , name
+Flow Credential Application , flowcredentialapplication , flowcredentialapplicationid , name
+Flow Event , flowevent , floweventid , name
+Flow Log , flowlog , flowlogid , name
+Flow Machine , flowmachine , flowmachineid , name
+Flow Machine Group , flowmachinegroup , flowmachinegroupid , name
+Flow Machine Image , flowmachineimage , flowmachineimageid , name
+Flow Machine Image Version , flowmachineimageversion , flowmachineimageversionid , name
+Flow Machine Network , flowmachinenetwork , flowmachinenetworkid , name
+Flow Run , flowrun , flowrunid , name
+Flow Session , flowsession , flowsessionid , name
+FxExpression , fxexpression , fxexpressionid , name
+Global Search Configuration , globalsearchconfiguration , globalsearchconfigurationid , 
+Goal , goal , goalid , title
+Rollup Query , goalrollupquery , goalrollupqueryid , name
+Hierarchy Rule , hierarchyrule , hierarchyruleid , name
+Hierarchy Security Configuration , hierarchysecurityconfiguration , hierarchysecuritymodelingsettingid , 
+HolidayWrapper , holidaywrapper , holidaywrapperid , name
+Image Descriptor , imagedescriptor , imagedescriptorid , 
+Data Import , import , importid , name
+Import Data , importdata , importdataid , data
+Import Entity Mapping , importentitymapping , importentitymappingid , 
+Import Source File , importfile , importfileid , name
+Import Job , importjob , importjobid , 
+Import Log , importlog , importlogid , 
+Data Map , importmap , importmapid , name
+Case , incident , incidentid , title
+Incident KnowledgeBaseRecord , incidentknowledgebaserecord , incidentknowledgebaserecordid , name
+Case Resolution , incidentresolution , activityid , subject
+Index Attribute , indexattributes , indexattributeid , 
+Integration Status , integrationstatus , integrationentryid , 
+Interaction for Email , interactionforemail , interactionforemailid , name
+Internal Address , internaladdress , internaladdressid , 
+Internal Catalog Assignment , internalcatalogassignment , internalcatalogassignmentid , name
+Inter Process Lock , interprocesslock , interprocesslockid , 
+Invalid Dependency , invaliddependency , invaliddependencyid , 
+Invoice , invoice , invoiceid , name
+Invoice Product , invoicedetail , invoicedetailid , invoicedetailname
+ISV Config , isvconfig , isvconfigid , 
+Article , kbarticle , kbarticleid , title
+Article Comment , kbarticlecomment , kbarticlecommentid , title
+Article Template , kbarticletemplate , kbarticletemplateid , title
+Key Vault Reference , keyvaultreference , keyvaultreferenceid , keyvaulturi
+Knowledge Article , knowledgearticle , knowledgearticleid , title
+Knowledge Article Incident , knowledgearticleincident , knowledgearticleincidentid , knowledgearticleidname
+Knowledge Article Category , knowledgearticlescategories , knowledgearticlecategoryid , 
+Knowledge Article Views , knowledgearticleviews , knowledgearticleviewsid , knowledgearticleidname
+Knowledge Base Record , knowledgebaserecord , knowledgebaserecordid , title
+Knowledge Search Model , knowledgesearchmodel , knowledgesearchmodelid , name
+Language , languagelocale , languagelocaleid , name
+Language Provisioning State , languageprovisioningstate , languageprovisioningstateid , 
+Lead , lead , leadid , fullname
+Lead Address , leadaddress , leadaddressid , name
+LeadCompetitors , leadcompetitors , leadcompetitorid , name
+LeadProduct , leadproduct , leadproductid , name
+Lead To Opportunity Sales Process , leadtoopportunitysalesprocess , businessprocessflowinstanceid , name
+Letter , letter , activityid , subject
+License , license , licenseid , 
+Marketing List , list , listid , listname
+Marketing List Member , listmember , listmemberid , name
+List Operation , listoperation , listoperationid , listoperationprimaryname
+LocalConfigStore , localconfigstore , id , 
+Lookup Mapping , lookupmapping , lookupmappingid , 
+Mailbox , mailbox , mailboxid , name
+Mailbox Statistics , mailboxstatistics , mailboxstatisticsid , 
+Mailbox Tracking Category , mailboxtrackingcategory , mailboxtrackingcategoryid , 
+Mailbox Auto Tracking Folder , mailboxtrackingfolder , mailboxtrackingfolderid , 
+Mail Merge Template , mailmergetemplate , mailmergetemplateid , name
+MainFewShot , mainfewshot , mainfewshotid , query
+MakerFewShot , makerfewshot , makerfewshotid , query
+Managed Identity , managedidentity , managedidentityid , name
+Managed Property , managedproperty , managedpropertyid , logicalname
+Marketing Form Display Attributes , marketingformdisplayattributes , marketingformdisplayattributesid , name
+Secured Masking Rule , maskingrule , maskingruleid , name
+Metadata Difference , metadatadifference , metadatadifferenceid , 
+MetadataForArchival , metadataforarchival , metadataforarchivalid , name
+Goal Metric , metric , metricid , name
+Mobile Offline Profile , mobileofflineprofile , mobileofflineprofileid , name
+MobileOfflineProfileExtension , mobileofflineprofileextension , mobileofflineprofileextensionid , name
+Mobile Offline Profile Item , mobileofflineprofileitem , mobileofflineprofileitemid , name
+Mobile Offline Profile Item Association , mobileofflineprofileitemassociation , mobileofflineprofileitemassociationid , name
+MobileOfflineProfileItemFilter , mobileofflineprofileitemfilter , mobileofflineprofileitemfilterid , name
+Monthly Fiscal Calendar , monthlyfiscalcalendar , userfiscalcalendarid , 
+Account KPI Item , msdyn_accountkpiitem , msdyn_accountkpiitemid , msdyn_name
+Action Card Usage , msdyn_actioncardactionstat , msdyn_actioncardactionstatid , msdyn_name
+Action Card Regarding , msdyn_actioncardregarding , msdyn_actioncardregardingid , msdyn_name
+Action Card Role Setting , msdyn_actioncardrolesetting , msdyn_actioncardrolesettingid , msdyn_name
+Action Card Usage Aggregation , msdyn_actioncardstataggregation , msdyn_actioncardstataggregationid , msdyn_name
+Active ICD Extension , msdyn_activeicdextension , msdyn_activeicdextensionid , msdyn_name
+Activity Analysis CleanUp State , msdyn_activityanalysiscleanupstate , msdyn_activityanalysiscleanupstateid , msdyn_name
+Relationship Analytics Config , msdyn_activityanalysisconfig , msdyn_activityanalysisconfigid , msdyn_name
+Actual , msdyn_actual , msdyn_actualid , msdyn_description
+Adaptive Card Configuration , msdyn_adaptivecardconfiguration , msdyn_adaptivecardconfigurationid , msdyn_name
+Forecast Manual Adjustment History , msdyn_adjustmenthistory , msdyn_adjustmenthistoryid , msdyn_forecastconfigurationcolumnid
+AdminAppState , msdyn_adminappstate , msdyn_adminappstateid , msdyn_name
+Agent Capacity Profile Unit , msdyn_agentcapacityprofileunit , msdyn_agentcapacityprofileunitid , msdyn_name
+Agent capacity update history , msdyn_agentcapacityupdatehistory , msdyn_agentcapacityupdatehistoryid , msdyn_name
+Agent Channel State , msdyn_agentchannelstate , msdyn_agentchannelstateid , msdyn_name
+Agent Copilot Setting , msdyn_agentcopilotsetting , msdyn_agentcopilotsettingid , msdyn_name
+Agent Resource Forecasting , msdyn_agentresourceforecasting , msdyn_agentresourceforecastingid , msdyn_name
+Agent Status , msdyn_agentstatus , msdyn_agentstatusid , msdyn_name
+Agent Status history , msdyn_agentstatushistory , msdyn_agentstatushistoryid , msdyn_name
+AI Builder Dataset , msdyn_aibdataset , msdyn_aibdatasetid , msdyn_name
+AI Builder Dataset File , msdyn_aibdatasetfile , msdyn_aibdatasetfileid , msdyn_name
+AI Builder Dataset Record , msdyn_aibdatasetrecord , msdyn_aibdatasetrecordid , msdyn_name
+AI Builder Datasets Container , msdyn_aibdatasetscontainer , msdyn_aibdatasetscontainerid , msdyn_name
+AI Builder Feedback Loop , msdyn_aibfeedbackloop , msdyn_aibfeedbackloopid , msdyn_name
+AI Builder File , msdyn_aibfile , msdyn_aibfileid , msdyn_name
+AI Builder File Attached Data , msdyn_aibfileattacheddata , msdyn_aibfileattacheddataid , msdyn_key
+AI Configuration , msdyn_aiconfiguration , msdyn_aiconfigurationid , msdyn_name
+Teams Contact Suggestion by AI , msdyn_aicontactsuggestion , msdyn_aicontactsuggestionid , msdyn_name
+AI Event , msdyn_aievent , msdyn_aieventid , msdyn_name
+AI Form Processing Document , msdyn_aifptrainingdocument , msdyn_aifptrainingdocumentid , msdyn_name
+AI Model , msdyn_aimodel , msdyn_aimodelid , msdyn_name
+AI Object Detection Image , msdyn_aiodimage , msdyn_aiodimageid , msdyn_name
+AI Object Detection Label , msdyn_aiodlabel , msdyn_aiodlabelid , msdyn_name
+msdyn_aiodlabel_msdyn_aiconfiguration , msdyn_aiodlabel_msdyn_aiconfiguration , msdyn_aiodlabel_msdyn_aiconfigurationid , 
+AI Object Detection Bounding Box , msdyn_aiodtrainingboundingbox , msdyn_aiodtrainingboundingboxid , msdyn_name
+AI Object Detection Image Mapping , msdyn_aiodtrainingimage , msdyn_aiodtrainingimageid , msdyn_name
+AI Template , msdyn_aitemplate , msdyn_aitemplateid , msdyn_uniquename
+Analysis Component , msdyn_analysiscomponent , msdyn_analysiscomponentid , msdyn_name
+Analysis Job , msdyn_analysisjob , msdyn_analysisjobid , msdyn_name
+Analysis Override , msdyn_analysisoverride , msdyn_analysisoverrideid , msdyn_rule
+Analysis Result , msdyn_analysisresult , msdyn_analysisresultid , msdyn_name
+Analysis Result Detail , msdyn_analysisresultdetail , msdyn_analysisresultdetailid , msdyn_name
+Power BI Configuration , msdyn_analytics , msdyn_analyticsid , msdyn_title
+Data Analytics Admin Settings (Deprecated) , msdyn_analyticsadminsettings , msdyn_analyticsadminsettingsid , msdyn_name
+[Deprecated] Dynamics Customer Service Analytics , msdyn_analyticsforcs , msdyn_analyticsforcsid , msdyn_name
+msdyn_appconfig_msdyn_channelprovider , msdyn_appconfig_msdyn_channelprovider , msdyn_appconfig_msdyn_channelproviderid , 
+App profile , msdyn_appconfiguration , msdyn_appconfigurationid , msdyn_name
+msdyn_appconfiguration_applicationextension , msdyn_appconfiguration_applicationextension , msdyn_appconfiguration_applicationextensionid , 
+msdyn_appconfiguration_sessiontemplate , msdyn_appconfiguration_sessiontemplate , msdyn_appconfiguration_sessiontemplateid , 
+msdyn_appconfiguration_systemuser , msdyn_appconfiguration_systemuser , msdyn_appconfiguration_systemuserid , 
+App Profile Copilot Configuration , msdyn_appcopilotconfiguration , msdyn_appcopilotconfigurationid , msdyn_name
+App Insights Metadata , msdyn_appinsightsmetadata , msdyn_appinsightsmetadataid , name
+Application Extension , msdyn_applicationextension , msdyn_applicationextensionid , msdyn_name
+Application Tab Template , msdyn_applicationtabtemplate , msdyn_applicationtabtemplateid , msdyn_name
+App profile role mapping , msdyn_appprofilerolemapping , msdyn_appprofilerolemappingid , msdyn_name
+App state , msdyn_appstate , msdyn_appstateid , msdyn_name
+Asset Category Template Association , msdyn_assetcategorytemplateassociation , msdyn_assetcategorytemplateassociationid , msdyn_name
+Asset Template Association , msdyn_assettemplateassociation , msdyn_assettemplateassociationid , msdyn_name
+Assignment Configuration , msdyn_assignmentconfiguration , msdyn_assignmentconfigurationid , msdyn_name
+Assignment Configuration Step , msdyn_assignmentconfigurationstep , msdyn_assignmentconfigurationstepid , msdyn_name
+Assignment Map , msdyn_assignmentmap , msdyn_assignmentmapid , msdyn_name
+Assignment Rule , msdyn_assignmentrule , msdyn_assignmentruleid , msdyn_name
+Seller attribute , msdyn_attribute , msdyn_attributeid , msdyn_name
+Attribute Influence Statistics , msdyn_attributeinfluencestatistics , msdyn_attributeinfluencestatisticsid , msdyn_name
+Seller attribute value , msdyn_attributevalue , msdyn_attributevalueid , msdyn_name
+Authentication Settings , msdyn_authenticationsettings , msdyn_authenticationsettingsid , msdyn_name
+Auth Settings Entry , msdyn_authsettingsentry , msdyn_authsettingsentryid , msdyn_name
+Auto Capture Rule , msdyn_autocapturerule , msdyn_autocaptureruleid , msdyn_name
+Auto Capture Settings , msdyn_autocapturesettings , msdyn_autocapturesettingsid , msdyn_name
+BgJobLedger , msdyn_bgjobledger , msdyn_bgjobledgerid , msdyn_name
+Bookable Resource Association , msdyn_bookableresourceassociation , msdyn_bookableresourceassociationid , msdyn_name
+Bookable Resource Capacity Profile , msdyn_bookableresourcecapacityprofile , msdyn_bookableresourcecapacityprofileid , msdyn_name
+Booking Alert , msdyn_bookingalert , activityid , subject
+Booking Alert Status , msdyn_bookingalertstatus , msdyn_bookingalertstatusid , msdyn_name
+Booking Change , msdyn_bookingchange , msdyn_bookingchangeid , msdyn_name
+Booking Rule , msdyn_bookingrule , msdyn_bookingruleid , msdyn_name
+Booking Setup Metadata , msdyn_bookingsetupmetadata , msdyn_bookingsetupmetadataid , msdyn_entitylogicalname
+Bot Session , msdyn_botsession , msdyn_botsessionid , msdyn_name
+Business Closure , msdyn_businessclosure , msdyn_businessclosureid , msdyn_name
+Playbook Callable Context , msdyn_callablecontext , msdyn_callablecontextid , msdyn_EntityLogicalName
+msdyn_callablecontext_msdyn_playbooktemplate , msdyn_callablecontext_msdyn_playbooktemplate , msdyn_callablecontext_msdyn_playbooktemplateid , 
+Quick reply , msdyn_cannedmessage , msdyn_cannedmessageid , msdyn_title
+Capacity Profile , msdyn_capacityprofile , msdyn_capacityprofileid , msdyn_name
+Case Enrichment , msdyn_caseenrichment , msdyn_caseenrichmentid , msdyn_name
+Case Suggestion , msdyn_casesuggestion , msdyn_casesuggestionid , msdyn_name
+Case Suggestion Request Payload , msdyn_casesuggestionrequestpayload , msdyn_casesuggestionrequestpayloadid , msdyn_name
+Case Suggestions Data Souce , msdyn_casesuggestionsdatasource , msdyn_casesuggestionsdatasourceid , msdyn_name
+Case Topic , msdyn_casetopic , msdyn_casetopicid , msdyn_name
+Case topic Incident mapping , msdyn_casetopic_incident , msdyn_casetopic_incidentid , msdyn_name
+Case Topic Setting , msdyn_casetopicsetting , msdyn_casetopicsettingid , msdyn_name
+Case Topic Summary , msdyn_casetopicsummary , msdyn_casetopicsummaryid , msdyn_name
+Entity Routing Context , msdyn_cdsentityengagementctx , msdyn_cdsentityengagementctxid , msdyn_name
+Channel Capability , msdyn_channelcapability , msdyn_channelcapabilityid , msdyn_name
+Channel Definition , msdyn_channeldefinition , msdyn_channeldefinitionid , msdyn_name
+Channel Definition Consent , msdyn_channeldefinitionconsent , msdyn_channeldefinitionconsentid , msdyn_name
+Channel Definition Locale , msdyn_channeldefinitionlocale , msdyn_channeldefinitionlocaleid , msdyn_name
+Channel Instance , msdyn_channelinstance , msdyn_channelinstanceid , msdyn_name
+Channel Instance Account , msdyn_channelinstanceaccount , msdyn_channelinstanceaccountid , msdyn_name
+Channel Message Attachment , msdyn_channelmessageattachment , msdyn_channelmessageattachmentid , msdyn_name
+Channel Message Context Part , msdyn_channelmessagecontextpart , msdyn_channelmessagecontextpartid , msdyn_name
+Channel Message Part , msdyn_channelmessagepart , msdyn_channelmessagepartid , msdyn_name
+Channel Integration Framework v2.0 Provider , msdyn_channelprovider , msdyn_channelproviderid , msdyn_name
+Channel Integration Framework v1.0 Provider , msdyn_ciprovider , msdyn_ciproviderid , msdyn_name
+msdyn_ciprovider_systemuser , msdyn_ciprovider_systemuser , msdyn_ciprovider_systemuserid , 
+Client Extension , msdyn_clientextension , msdyn_clientextensionid , msdyn_name
+Microsoft Teams Graph resource Entity , msdyn_collabgraphresource , msdyn_collabgraphresourceid , msdyn_graphresourcename
+Collab Space Team Association , msdyn_collabspaceteamassociation , msdyn_collabspaceteamassociationid , msdyn_name
+Component Layer , msdyn_componentlayer , msdyn_componentlayerid , msdyn_name
+Component Layer Data Source , msdyn_componentlayerdatasource , msdyn_componentlayerdatasourceid , msdyn_name
+Configuration , msdyn_configuration , msdyn_configurationid , msdyn_name
+Virtual Connector Data Source , msdyn_connectordatasource , msdyn_connectordatasourceid , msdyn_name
+msdyn_connectordatasource_environmentva , msdyn_connectordatasource_environmentva , msdyn_connectordatasource_environmentvaid , 
+Notification Field (Deprecated) , msdyn_consoleapplicationnotificationfield , msdyn_consoleapplicationnotificationfieldid , msdyn_name
+Notification Template (Deprecated) , msdyn_consoleapplicationnotificationtemplate , msdyn_consoleapplicationnotificationtemplateid , msdyn_name
+Session Templates (Deprecated) , msdyn_consoleapplicationsessiontemplate , msdyn_consoleapplicationsessiontemplateid , msdyn_name
+Application Tab Template (Deprecated) , msdyn_consoleapplicationtemplate , msdyn_consoleapplicationtemplateid , msdyn_name
+Parameter (Deprecated) , msdyn_consoleapplicationtemplateparameter , msdyn_consoleapplicationtemplateparameterid , msdyn_name
+Application Type (Deprecated) , msdyn_consoleapplicationtype , msdyn_consoleapplicationtypeid , msdyn_name
+App Parameter Definition (Deprecated) , msdyn_consoleappparameterdefinition , msdyn_consoleappparameterdefinitionid , msdyn_name
+Consuming Application , msdyn_consumingapplication , msdyn_consumingapplicationid , msdyn_name
+Contact KPI Item , msdyn_contactkpiitem , msdyn_contactkpiitemid , msdyn_name
+Contact suggestion rule , msdyn_contactsuggestionrule , msdyn_contactsuggestionruleid , msdyn_name
+Contact suggestion ruleset , msdyn_contactsuggestionruleset , msdyn_contactsuggestionrulesetid , msdyn_name
+Conversation Action , msdyn_conversationaction , msdyn_conversationactionid , msdyn_name
+Conversation Action Item , msdyn_conversationactionitem , msdyn_conversationactionitemid , msdyn_name
+Conversation Action Locale , msdyn_conversationactionlocale , msdyn_conversationactionlocaleid , msdyn_name
+Conversation Aggregated Insights , msdyn_conversationaggregatedinsights , msdyn_conversationaggregatedinsightsid , msdyn_name
+Comment , msdyn_conversationcomment , msdyn_conversationcommentid , msdyn_name
+Conversation Data (Deprecated) , msdyn_conversationdata , msdyn_conversationdataid , msdyn_name
+ConversationInsight , msdyn_conversationinsight , msdyn_conversationinsightid , msdyn_name
+Conversation Message Block , msdyn_conversationmessageblock , msdyn_conversationmessageblockid , msdyn_name
+Conversation Participant Insights , msdyn_conversationparticipantinsights , msdyn_conversationparticipantinsightsid , msdyn_name
+Conversation Participant Sentiment , msdyn_conversationparticipantsentiment , msdyn_conversationparticipantsentimentid , msdyn_name
+Conversation Question , msdyn_conversationquestion , msdyn_conversationquestionid , msdyn_name
+Conversation Segment Sentiment , msdyn_conversationsegmentsentiment , msdyn_conversationsegmentsentimentid , msdyn_name
+Conversation Sentiment , msdyn_conversationsentiment , msdyn_conversationsentimentid , msdyn_name
+Conversation Signal , msdyn_conversationsignal , msdyn_conversationsignalid , msdyn_name
+Conversation Subject , msdyn_conversationsubject , msdyn_conversationsubjectid , msdyn_name
+conversationsuggestionrequestpayload , msdyn_conversationsuggestionrequestpayload , msdyn_conversationsuggestionrequestpayloadid , msdyn_name
+Conversation Summary Interaction , msdyn_conversationsummaryinteraction , msdyn_conversationsummaryinteractionid , msdyn_name
+Conversation Summary Setting , msdyn_conversationsummarysetting , msdyn_conversationsummarysettingid , msdyn_name
+Conversation Summary Suggestion , msdyn_conversationsummarysuggestion , msdyn_conversationsummarysuggestionid , msdyn_name
+Conversation System Tag , msdyn_conversationsystemtag , msdyn_conversationsystemtagid , msdyn_name
+Conversation Tag , msdyn_conversationtag , msdyn_conversationtagid , msdyn_name
+Conversation Topic , msdyn_conversationtopic , msdyn_conversationtopicid , msdyn_name
+Conversation topic Conversation mapping , msdyn_conversationtopic_conversation , msdyn_conversationtopic_conversationid , msdyn_name
+Conversation Topic Setting , msdyn_conversationtopicsetting , msdyn_conversationtopicsettingid , msdyn_name
+Conversation Topic Summary , msdyn_conversationtopicsummary , msdyn_conversationtopicsummaryid , msdyn_name
+Agent Preference For Copilot , msdyn_copilotagentpreference , msdyn_copilotagentpreferenceid , msdyn_name
+Copilot Interaction , msdyn_copilotinteraction , msdyn_copilotinteractionid , msdyn_name
+Copilot Interaction Data , msdyn_copilotinteractiondata , msdyn_copilotinteractiondataid , msdyn_name
+Copilot Summarization Setting , msdyn_copilotsummarizationsetting , msdyn_copilotsummarizationsettingid , msdyn_name
+Copilot Transcript , msdyn_copilottranscript , activityid , subject
+Copilot Transcript Data , msdyn_copilottranscriptdata , msdyn_copilottranscriptdataid , msdyn_name
+CRM Connection , msdyn_crmconnection , msdyn_crmconnectionid , msdyn_name
+CSAdminConfig , msdyn_csadminconfig , msdyn_csadminconfigid , msdyn_name
+Customer Service Key Value Configuration , msdyn_cskeyvalueconfig , msdyn_cskeyvalueconfigid , msdyn_name
+Custom API Ruleset Configuration , msdyn_customapirulesetconfiguration , msdyn_customapirulesetconfigurationid , msdyn_name
+Custom Control Extended Setting , msdyn_customcontrolextendedsettings , msdyn_customcontrolextendedsettingsid , msdyn_name
+Customer Asset , msdyn_customerasset , msdyn_customerassetid , msdyn_name
+Customer Asset Attachment , msdyn_customerassetattachment , msdyn_customerassetattachmentid , msdyn_name
+Customer Asset Category , msdyn_customerassetcategory , msdyn_customerassetcategoryid , msdyn_name
+Customer email communication , msdyn_customeremailcommunication , msdyn_customeremailcommunicationid , msdyn_name
+Daily Kpis for account , msdyn_dailyaccountkpiitem , msdyn_dailyaccountkpiitemid , msdyn_name
+Daily kpis for contact , msdyn_dailycontactkpiitem , msdyn_dailycontactkpiitemid , msdyn_name
+Daily kpis for lead , msdyn_dailyleadkpiitem , msdyn_dailyleadkpiitemid , msdyn_name
+Daily kpis for Opportunity , msdyn_dailyopportunitykpiitem , msdyn_dailyopportunitykpiitemid , msdyn_name
+Data Analytics User Customized Report , msdyn_dataanalyticscustomizedreport , msdyn_dataanalyticscustomizedreportid , msdyn_name
+Data Analytics Dataset , msdyn_dataanalyticsdataset , msdyn_dataanalyticsdatasetid , msdyn_name
+Data Analytics Report , msdyn_dataanalyticsreport , msdyn_dataanalyticsreportid , msdyn_name
+Customer Service historical analytics , msdyn_dataanalyticsreport_csrmanager , msdyn_dataanalyticsreport_csrmanagerid , msdyn_name
+Forecast , msdyn_dataanalyticsreport_forecast , msdyn_dataanalyticsreport_forecastid , msdyn_name
+Knowledge analytics , msdyn_dataanalyticsreport_ksinsights , msdyn_dataanalyticsreport_ksinsightsid , msdyn_name
+Omnichannel historical analytics , msdyn_dataanalyticsreport_oc , msdyn_dataanalyticsreport_ocid , msdyn_name
+Omnichannel Realtime analytics , msdyn_dataanalyticsreport_oc_rt , msdyn_dataanalyticsreport_oc_rtid , msdyn_name
+Omnichannel voice historical analytics (preview) (Deprecated) , msdyn_dataanalyticsreport_ocvoice , msdyn_dataanalyticsreport_ocvoiceid , msdyn_name
+Sales acceleration reports , msdyn_dataanalyticsreport_sareporting , msdyn_dataanalyticsreport_sareportingid , msdyn_name
+Sales usage telemetry reports , msdyn_dataanalyticsreport_sutreporting , msdyn_dataanalyticsreport_sutreportingid , msdyn_name
+Data Analytics Workspace , msdyn_dataanalyticsworkspace , msdyn_dataanalyticsworkspaceid , msdyn_name
+Database Version , msdyn_databaseversion , msdyn_databaseversionid , msdyn_solutionname
+Dataflow , msdyn_dataflow , msdyn_dataflowid , msdyn_name
+Dataflow DatalakeFolder , msdyn_dataflow_datalakefolder , msdyn_dataflow_datalakefolderid , msdyn_dataflow_datalakefolder
+Dataflow Connection Reference , msdyn_dataflowconnectionreference , msdyn_dataflowconnectionreferenceid , msdyn_name
+DataflowRefreshHistory , msdyn_dataflowrefreshhistory , msdyn_dataflowrefreshhistoryid , msdyn_name
+Dataflow Template , msdyn_dataflowtemplate , msdyn_dataflowtemplateid , msdyn_uniquename
+Data Hygiene Setting Info , msdyn_datahygienesettinginfo , msdyn_datahygienesettinginfoid , msdyn_name
+Insights , msdyn_datainsightsandanalyticsfeature , msdyn_datainsightsandanalyticsfeatureid , msdyn_name
+Insights Store Data Source , msdyn_datalakeds , msdyn_datalakedsid , msdyn_name
+dealmanageraccess , msdyn_dealmanageraccess , msdyn_dealmanageraccessid , msdyn_name
+Deal manager settings , msdyn_dealmanagersettings , msdyn_dealmanagersettingsid , msdyn_name
+Decision contract , msdyn_decisioncontract , msdyn_decisioncontractid , msdyn_name
+Decision rule set , msdyn_decisionruleset , msdyn_decisionrulesetid , msdyn_name
+msdyn_DefExtendedChannelInstance , msdyn_defextendedchannelinstance , msdyn_defextendedchannelinstanceid , msdyn_name
+msdyn_DefExtendedChannelInstanceAccount , msdyn_defextendedchannelinstanceaccount , msdyn_defextendedchannelinstanceaccountid , msdyn_name
+DeletedConversation , msdyn_deletedconversation , msdyn_deletedconversationid , msdyn_ocliveworkitemid
+DigitalSellingActiveTask , msdyn_digitalsellingactivetask , msdyn_digitalsellingactivetaskid , msdyn_name
+DigitalSellingCompletedTask , msdyn_digitalsellingcompletedtask , msdyn_digitalsellingcompletedtaskid , msdyn_name
+Distributed Lock , msdyn_distributedlock , msdyn_distributedlockid , msdyn_resourceid
+Data Movement Service Request , msdyn_dmsrequest , msdyn_dmsrequestid , msdyn_requestuniquename
+Data Movement Service Request Status , msdyn_dmsrequeststatus , msdyn_dmsrequeststatusid , msdyn_jobuniquename
+DMS Sync Request , msdyn_dmssyncrequest , msdyn_dmssyncrequestid , msdyn_requestuniquename
+DMS Sync Status , msdyn_dmssyncstatus , msdyn_dmssyncstatusid , msdyn_statusuniquename
+Duplicate Detection Plugin Run , msdyn_duplicatedetectionpluginrun , msdyn_duplicatedetectionpluginrunid , msdyn_name
+Duplicate Lead Mapping , msdyn_duplicateleadmapping , msdyn_duplicateleadmappingid , msdyn_name
+Effort estimate , msdyn_effortpredictionresult , msdyn_effortpredictionresultid , msdyn_name
+Entity Attachment , msdyn_entityattachment , msdyn_entityattachmentid , msdyn_name
+Deprecated Workstream Entity Configuration , msdyn_entityconfig , msdyn_entityconfigid , msdyn_entity
+Entity Delta Change , msdyn_entitydeltachange , msdyn_entitydeltachangeid , msdyn_entitytypename
+Entity link chat configuration , msdyn_entitylinkchatconfiguration , msdyn_entitylinkchatconfigurationid , msdyn_name
+EntityRankingRule , msdyn_entityrankingrule , msdyn_entityrankingruleid , msdyn_name
+EntityRefreshHistory , msdyn_entityrefreshhistory , msdyn_entityrefreshhistoryid , msdyn_name
+Entity , msdyn_entityroutingconfiguration , msdyn_entityroutingconfigurationid , msdyn_name
+Entity-Workstream Map , msdyn_entityworkstreammap , msdyn_entityworkstreammapid , msdyn_name
+Extended User Setting , msdyn_extendedusersetting , msdyn_extendedusersettingid , msdyn_name
+Favorite knowledge article , msdyn_favoriteknowledgearticle , msdyn_favoriteknowledgearticleid , msdyn_name
+Knowledge Federated Article , msdyn_federatedarticle , msdyn_federatedarticleid , msdyn_title
+Knowledge Federated Article Incident , msdyn_federatedarticleincident , msdyn_federatedarticleincidentid , msdyn_name
+File Upload , msdyn_fileupload , msdyn_fileuploadid , msdyn_filename
+File Upload Status Tracker , msdyn_fileuploadstatustracker , msdyn_fileuploadstatustrackerid , msdyn_uploadfilename
+flowcardtype , msdyn_flowcardtype , msdyn_flowcardtypeid , msdyn_name
+Forecast , msdyn_forecast , msdyn_forecastid , msdyn_name
+Forecast Configuration , msdyn_forecastconfiguration , msdyn_forecastconfigurationid , msdyn_name
+Forecast definition , msdyn_forecastdefinition , msdyn_forecastdefinitionid , msdyn_forecastdefinitionname
+Forecasting Cache , msdyn_forecastingcache , msdyn_forecastingcacheid , msdyn_cachekey
+Forecast Insights , msdyn_forecastinsight , msdyn_forecastinsightid , msdyn_hierarchyrecordid
+Forecast , msdyn_forecastinstance , msdyn_forecastinstanceid , msdyn_forecastname
+Forecast Prediction Data , msdyn_forecastpredictiondata , msdyn_forecastpredictiondataid , msdyn_hierarchyrecordid
+Forecast Prediction Status , msdyn_forecastpredictionstatus , msdyn_forecastpredictionstatusid , msdyn_predictionstatus
+Forecast recurrence , msdyn_forecastrecurrence , msdyn_forecastrecurrenceid , msdyn_name
+Forecast Summary and Setting , msdyn_forecastsettingsandsummary , msdyn_forecastsettingsandsummaryid , msdyn_name
+Functional Location , msdyn_functionallocation , msdyn_functionallocationid , msdyn_name
+Functional Location Type , msdyn_functionallocationtype , msdyn_functionallocationtypeid , msdyn_name
+GDPRData , msdyn_gdprdata , msdyn_gdprdataid , msdyn_name
+Help Page , msdyn_helppage , msdyn_helppageid , msdyn_displayname
+ICD Extension , msdyn_icdextension , msdyn_icdextensionid , msdyn_name
+icebreakersconfig , msdyn_icebreakersconfig , msdyn_icebreakersconfigid , msdyn_name
+Effort estimation model , msdyn_iermlmodel , msdyn_iermlmodelid , msdyn_name
+Effort model training details , msdyn_iermltraining , msdyn_iermltrainingid , msdyn_name
+Inbox card configuration , msdyn_inboxcardconfiguration , msdyn_inboxcardconfigurationid , msdyn_name
+Inbox Configuration , msdyn_inboxconfiguration , msdyn_inboxconfigurationid , msdyn_name
+Inbox Entity Configuration , msdyn_inboxentityconfig , msdyn_inboxentityconfigid , msdyn_name
+msdyn_incident_msdyn_customerasset , msdyn_incident_msdyn_customerasset , msdyn_incident_msdyn_customerassetid , 
+Insights Store Virtual Entity , msdyn_insightsstorevirtualentity , msdyn_insightsstorevirtualentityid , name
+Integrated search provider , msdyn_integratedsearchprovider , msdyn_integratedsearchproviderid , msdyn_name
+Intent , msdyn_intent , msdyn_intentid , msdyn_name
+IoT Alert , msdyn_iotalert , msdyn_iotalertid , msdyn_description
+IoT Device , msdyn_iotdevice , msdyn_iotdeviceid , msdyn_name
+IoT Device Category , msdyn_iotdevicecategory , msdyn_iotdevicecategoryid , msdyn_name
+msdyn_iotdevicecategorycommands , msdyn_iotdevicecategorycommands , msdyn_iotdevicecategorycommandsid , 
+IoT Device Command , msdyn_iotdevicecommand , msdyn_iotdevicecommandid , msdyn_name
+IoT Device Command Definition , msdyn_iotdevicecommanddefinition , msdyn_iotdevicecommanddefinitionid , msdyn_name
+msdyn_iotdevicecommandparameters , msdyn_iotdevicecommandparameters , msdyn_iotdevicecommandparametersid , 
+IoT Device Data History , msdyn_iotdevicedatahistory , msdyn_iotdevicedatahistoryid , msdyn_name
+IoT Device Property , msdyn_iotdeviceproperty , msdyn_iotdevicepropertyid , msdyn_name
+IoT Device Registration History , msdyn_iotdeviceregistrationhistory , msdyn_iotdeviceregistrationhistoryid , msdyn_name
+IoT Device Visualization Configuration , msdyn_iotdevicevisualizationconfiguration , msdyn_iotdevicevisualizationconfigurationid , msdyn_name
+IoT Field Mapping , msdyn_iotfieldmapping , msdyn_iotfieldmappingid , msdyn_modelinputfieldname
+IoT Property Definition , msdyn_iotpropertydefinition , msdyn_iotpropertydefinitionid , msdyn_name
+IoT Provider , msdyn_iotprovider , msdyn_iotproviderid , msdyn_name
+IoT Provider Instance , msdyn_iotproviderinstance , msdyn_iotproviderinstanceid , msdyn_name
+IoT Settings , msdyn_iotsettings , msdyn_iotsettingsid , msdyn_name
+IoT Alert to Case Process , msdyn_iottocaseprocess , businessprocessflowinstanceid , bpf_name
+JobsState , msdyn_jobsstate , msdyn_jobsstateid , msdyn_name
+Knowledge article language setting , msdyn_kalanguagesetting , msdyn_kalanguagesettingid , msdyn_name
+Knowledge Article Attachment , msdyn_kbattachment , msdyn_kbattachmentid , msdyn_filename
+KB Enrichment , msdyn_kbenrichment , msdyn_kbenrichmentid , msdyn_name
+Keywords Description Suggestion Setting , msdyn_kbkeywordsdescsuggestionsetting , msdyn_kbkeywordsdescsuggestionsettingid , msdyn_name
+Search provider , msdyn_kmfederatedsearchconfig , msdyn_kmfederatedsearchconfigid , msdyn_name
+Knowledge personalization , msdyn_kmpersonalizationsetting , msdyn_kmpersonalizationsettingid , msdyn_name
+Knowledge Article Image , msdyn_knowledgearticleimage , msdyn_knowledgearticleimageid , msdyn_filename
+Knowledge Article Suggestion , msdyn_knowledgearticlesuggestion , msdyn_knowledgearticlesuggestionid , msdyn_name
+Knowledge Article Suggestion Data Source , msdyn_knowledgearticlesuggestiondatasource , msdyn_knowledgearticlesuggestiondatasourceid , msdyn_name
+Knowledge Article Template , msdyn_knowledgearticletemplate , msdyn_knowledgearticletemplateid , msdyn_name
+Knowledge Asset Configuration , msdyn_knowledgeassetconfiguration , msdyn_knowledgeassetconfigurationid , name
+Knowledge Configuration , msdyn_knowledgeconfiguration , msdyn_knowledgeconfigurationid , msdyn_settingname
+Knowledge Interaction Insight , msdyn_knowledgeinteractioninsight , msdyn_knowledgeinteractioninsightid , msdyn_interactiontype
+Knowledge Management Setting , msdyn_knowledgemanagementsetting , msdyn_knowledgemanagementsettingid , msdyn_entityname
+Knowledge search personal filter config , msdyn_knowledgepersonalfilter , msdyn_knowledgepersonalfilterid , msdyn_name
+Knowledge search filter , msdyn_knowledgesearchfilter , msdyn_knowledgesearchfilterid , msdyn_name
+Knowledge Search Insight , msdyn_knowledgesearchinsight , msdyn_knowledgesearchinsightid , msdyn_searchterm
+KPI Event Data , msdyn_kpieventdata , msdyn_kpieventdataid , msdyn_name
+KPI Event Definition , msdyn_kpieventdefinition , msdyn_kpieventdefinitionid , msdyn_name
+Lead Hygiene Setting , msdyn_leadhygienesetting , msdyn_leadhygienesettingid , msdyn_name
+Lead KPI Item , msdyn_leadkpiitem , msdyn_leadkpiitemid , msdyn_name
+LeadModelConfig , msdyn_leadmodelconfig , msdyn_leadmodelconfigid , msdyn_name
+Linked Entity Attribute Validity , msdyn_linkedentityattributevalidity , msdyn_linkedentityattributevalidityid , msdyn_attributename
+Ongoing conversation (Deprecated) , msdyn_liveconversation , msdyn_liveconversationid , msdyn_subject
+Live work item event , msdyn_liveworkitemevent , msdyn_liveworkitemeventid , msdyn_name
+Work Stream , msdyn_liveworkstream , msdyn_liveworkstreamid , msdyn_name
+Work stream capacity profile , msdyn_liveworkstreamcapacityprofile , msdyn_liveworkstreamcapacityprofileid , msdyn_name
+Location Template Association , msdyn_locationtemplateassociation , msdyn_locationtemplateassociationid , msdyn_name
+Functional Location Type Template Association , msdyn_locationtypetemplateassociation , msdyn_locationtypetemplateassociationid , msdyn_name
+Macro Run History , msdyn_macrosession , msdyn_macrosessionid , msdyn_name
+Masking Rule , msdyn_maskingrule , msdyn_maskingruleid , msdyn_name
+Master Entity Routing Configuration , msdyn_masterentityroutingconfiguration , msdyn_masterentityroutingconfigurationid , msdyn_name
+Migration tracker , msdyn_migrationtracker , msdyn_migrationtrackerid , msdyn_name
+Mobile App , msdyn_mobileapp , msdyn_mobileappid , name
+ModelPreviewStatus , msdyn_modelpreviewstatus , msdyn_modelpreviewstatusid , msdyn_name
+Module Run Detail , msdyn_modulerundetail , msdyn_modulerundetailid , msdyn_modelrunid
+Most Contacted , msdyn_mostcontacted , msdyn_mostcontactedid , msdyn_primaryname
+Most Contacted By , msdyn_mostcontactedby , msdyn_mostcontactedbyid , msdyn_primaryname
+msdyn_msdyn_attributevalue_systemuser , msdyn_msdyn_attributevalue_systemuser , msdyn_msdyn_attributevalue_systemuserid , 
+msdyn_msdyn_cannedmessage_liveworkstream , msdyn_msdyn_cannedmessage_liveworkstream , msdyn_msdyn_cannedmessage_liveworkstreamid , 
+msdyn_msdyn_cannedmessage_msdyn_octag , msdyn_msdyn_cannedmessage_msdyn_octag , msdyn_msdyn_cannedmessage_msdyn_octagid , 
+msdyn_msdyn_consoleapplicationnotificationtag , msdyn_msdyn_consoleapplicationnotificationtag , msdyn_msdyn_consoleapplicationnotificationtagid , 
+msdyn_msdyn_consoleapplicationnotificationtem , msdyn_msdyn_consoleapplicationnotificationtem , msdyn_msdyn_consoleapplicationnotificationtemid , 
+msdyn_msdyn_consoleapplicationsessiontemp_tag , msdyn_msdyn_consoleapplicationsessiontemp_tag , msdyn_msdyn_consoleapplicationsessiontemp_tagid , 
+msdyn_msdyn_consoleapplicationsessiontemplate , msdyn_msdyn_consoleapplicationsessiontemplate , msdyn_msdyn_consoleapplicationsessiontemplateid , 
+msdyn_msdyn_consoleapplicationtemplate_msdyn_ , msdyn_msdyn_consoleapplicationtemplate_msdyn_ , msdyn_msdyn_consoleapplicationtemplate_msdyn_id , 
+msdyn_msdyn_consoleapplicationtemplate_tags , msdyn_msdyn_consoleapplicationtemplate_tags , msdyn_msdyn_consoleapplicationtemplate_tagsid , 
+msdyn_msdyn_consoleapplicationtype_msdyn_cons , msdyn_msdyn_consoleapplicationtype_msdyn_cons , msdyn_msdyn_consoleapplicationtype_msdyn_consid , 
+msdyn_msdyn_customerasset_knowledgearticl , msdyn_msdyn_customerasset_knowledgearticl , msdyn_msdyn_customerasset_knowledgearticlid , 
+msdyn_msdyn_customerasset_knowledgebasere , msdyn_msdyn_customerasset_knowledgebasere , msdyn_msdyn_customerasset_knowledgebasereid , 
+msdyn_msdyn_functionallocation_account , msdyn_msdyn_functionallocation_account , msdyn_msdyn_functionallocation_accountid , 
+msdyn_msdyn_kbattachment_knowledgearticle , msdyn_msdyn_kbattachment_knowledgearticle , msdyn_msdyn_kbattachment_knowledgearticleid , 
+msdyn_msdyn_liveworkstream_systemuser , msdyn_msdyn_liveworkstream_systemuser , msdyn_msdyn_liveworkstream_systemuserid , 
+msdyn_msdyn_ocliveworkitem_knowledgeartic , msdyn_msdyn_ocliveworkitem_knowledgeartic , msdyn_msdyn_ocliveworkitem_knowledgearticid , 
+msdyn_msdyn_ocliveworkitem_knowledgebaser , msdyn_msdyn_ocliveworkitem_knowledgebaser , msdyn_msdyn_ocliveworkitem_knowledgebaserid , 
+msdyn_msdyn_ocrichobject_liveworkstream , msdyn_msdyn_ocrichobject_liveworkstream , msdyn_msdyn_ocrichobject_liveworkstreamid , 
+msdyn_msdyn_ocrichobject_msdyn_octag , msdyn_msdyn_ocrichobject_msdyn_octag , msdyn_msdyn_ocrichobject_msdyn_octagid , 
+msdyn_msdyn_paneconfig_msdyn_appconfig , msdyn_msdyn_paneconfig_msdyn_appconfig , msdyn_msdyn_paneconfig_msdyn_appconfigid , 
+msdyn_msdyn_personalmessage_msdyn_octag , msdyn_msdyn_personalmessage_msdyn_octag , msdyn_msdyn_personalmessage_msdyn_octagid , 
+msdyn_msdyn_prod_actioninputparameter_msdyn_par , msdyn_msdyn_prod_actioninputparameter_msdyn_par , msdyn_msdyn_prod_actioninputparameter_msdyn_parid , 
+msdyn_msdyn_prod_actionoutputparameter_msdyn_pa , msdyn_msdyn_prod_actionoutputparameter_msdyn_pa , msdyn_msdyn_prod_actionoutputparameter_msdyn_paid , 
+msdyn_msdyn_prod_agentscript_msdyn_sessiontempl , msdyn_msdyn_prod_agentscript_msdyn_sessiontempl , msdyn_msdyn_prod_agentscript_msdyn_sessiontemplid , 
+msdyn_msdyn_warranty_account , msdyn_msdyn_warranty_account , msdyn_msdyn_warranty_accountid , 
+msdyn_msdyn_warranty_msdyn_customerasset , msdyn_msdyn_warranty_msdyn_customerasset , msdyn_msdyn_warranty_msdyn_customerassetid , 
+msdyn_msdyn_warranty_msdyn_functionallocation , msdyn_msdyn_warranty_msdyn_functionallocation , msdyn_msdyn_warranty_msdyn_functionallocationid , 
+msdyn_msteamssetting , msdyn_msteamssetting , msdyn_msteamssettingid , msdyn_msteamssettingsname
+msdyn_msteamssettingsv2 , msdyn_msteamssettingsv2 , msdyn_msteamssettingsv2id , msdyn_msteamssettingsname
+NonRelational Data Source , msdyn_nonrelationalds , msdyn_nonrelationaldsid , msdyn_name
+Notes analysis Config , msdyn_notesanalysisconfig , msdyn_notesanalysisconfigid , msdyn_name
+Notification Field , msdyn_notificationfield , msdyn_notificationfieldid , msdyn_name
+Notification Template , msdyn_notificationtemplate , msdyn_notificationtemplateid , msdyn_name
+msdyn_notificationtemplate_notificationfield , msdyn_notificationtemplate_notificationfield , msdyn_notificationtemplate_notificationfieldid , 
+Geo Location Provider , msdyn_oc_geolocationprovider , msdyn_oc_geolocationproviderid , msdyn_name
+Omnichannel agent assignment custom api privilege  , msdyn_ocagentassignedcustomapiprivilege , msdyn_ocagentassignedcustomapiprivilegeid , msdyn_name
+Auto block rule , msdyn_ocautoblockrule , msdyn_ocautoblockruleid , msdyn_name
+Bot Channel Registration , msdyn_ocbotchannelregistration , msdyn_ocbotchannelregistrationid , msdyn_name
+Bot Channel Registration Secret , msdyn_ocbotchannelregistrationsecret , msdyn_ocbotchannelregistrationsecretid , msdyn_name
+Omnichannel channel api conversation privilege , msdyn_occhannelapiconversationprivilege , msdyn_occhannelapiconversationprivilegeid , msdyn_name
+Omnichannel channel api message privilege , msdyn_occhannelapimessageprivilege , msdyn_occhannelapimessageprivilegeid , msdyn_name
+Channel api method mapping , msdyn_occhannelapimethodmapping , msdyn_occhannelapimethodmappingid , msdyn_name
+Channel Configuration , msdyn_occhannelconfiguration , msdyn_occhannelconfigurationid , msdyn_name
+Channel State Configuration , msdyn_occhannelstateconfiguration , msdyn_occhannelstateconfigurationid , msdyn_name
+External context , msdyn_ocexternalcontext , msdyn_ocexternalcontextid , msdyn_name
+Flagged spam , msdyn_ocflaggedspam , msdyn_ocflaggedspamid , msdyn_name
+Language , msdyn_oclanguage , msdyn_oclanguageid , msdyn_languagename
+Conversation , msdyn_ocliveworkitem , activityid , subject
+Conversation Capacity profile , msdyn_ocliveworkitemcapacityprofile , msdyn_ocliveworkitemcapacityprofileid , msdyn_name
+Conversation Characteristic , msdyn_ocliveworkitemcharacteristic , msdyn_ocliveworkitemcharacteristicid , msdyn_name
+Context item value , msdyn_ocliveworkitemcontextitem , msdyn_ocliveworkitemcontextitemid , msdyn_name
+Live Work Item Participant (Deprecated) , msdyn_ocliveworkitemparticipant , msdyn_ocliveworkitemparticipantid , msdyn_name
+Conversation Sentiment , msdyn_ocliveworkitemsentiment , msdyn_ocliveworkitemsentimentid , msdyn_name
+Context variable , msdyn_ocliveworkstreamcontextvariable , msdyn_ocliveworkstreamcontextvariableid , msdyn_name
+Localization , msdyn_oclocalizationdata , msdyn_oclocalizationdataid , msdyn_localizedtext
+OC Payment Profile , msdyn_ocpaymentprofile , msdyn_ocpaymentprofileid , msdyn_name
+Provisioning State , msdyn_ocprovisioningstate , msdyn_ocprovisioningstateid , msdyn_name
+Recording , msdyn_ocrecording , msdyn_ocrecordingid , msdyn_name
+Omnichannel Request , msdyn_ocrequest , msdyn_ocrequestid , msdyn_requestname
+Rich message , msdyn_ocrichobject , msdyn_ocrichobjectid , msdyn_name
+Rich message map , msdyn_ocrichobjectmap , msdyn_ocrichobjectmapid , msdyn_name
+Rule Item , msdyn_ocruleitem , msdyn_ocruleitemid , msdyn_name
+Sentiment daily topic , msdyn_ocsentimentdailytopic , msdyn_ocsentimentdailytopicid , msdyn_name
+Sentiment daily topic keyword , msdyn_ocsentimentdailytopickeyword , msdyn_ocsentimentdailytopickeywordid , msdyn_name
+Sentiment daily topic trending , msdyn_ocsentimentdailytopictrending , msdyn_ocsentimentdailytopictrendingid , msdyn_name
+Session , msdyn_ocsession , activityid , subject
+Session Characteristic , msdyn_ocsessioncharacteristic , msdyn_ocsessioncharacteristicid , msdyn_name
+Session Participant Event , msdyn_ocsessionparticipantevent , msdyn_ocsessionparticipanteventid , msdyn_name
+Session Sentiment , msdyn_ocsessionsentiment , msdyn_ocsessionsentimentid , msdyn_name
+Model training details , msdyn_ocsimltraining , msdyn_ocsimltrainingid , msdyn_name
+Training data import configuration , msdyn_ocsitdimportconfig , msdyn_ocsitdimportconfigid , msdyn_name
+Characteristic mapping , msdyn_ocsitdskill , msdyn_ocsitdskillid , msdyn_name
+Training record , msdyn_ocsitrainingdata , msdyn_ocsitrainingdataid , msdyn_name
+Skill finder model , msdyn_ocskillidentmlmodel , msdyn_ocskillidentmlmodelid , msdyn_name
+Message , msdyn_ocsystemmessage , msdyn_ocsystemmessageid , msdyn_name
+Tag , msdyn_octag , msdyn_octagid , msdyn_name
+OData v4 Data Source , msdyn_odatav4ds , msdyn_odatav4dsid , msdyn_name
+ODOSFeatureMetadata , msdyn_odosfeaturemetadata , msdyn_odosfeaturemetadataid , msdyn_featurename
+ODOSMetadata , msdyn_odosmetadata , msdyn_odosmetadataid , msdyn_odosendpoint
+Omnichannel Configuration , msdyn_omnichannelconfiguration , msdyn_omnichannelconfigurationid , msdyn_name
+Omnichannel Personalization , msdyn_omnichannelpersonalization , msdyn_omnichannelpersonalizationid , msdyn_name
+Omnichannel Queue (Deprecated) , msdyn_omnichannelqueue , msdyn_omnichannelqueueid , msdyn_name
+Omnichannel Sync Config , msdyn_omnichannelsyncconfig , msdyn_omnichannelsyncconfigid , msdyn_name
+Operating Hour , msdyn_operatinghour , msdyn_operatinghourid , msdyn_name
+Opportunity KPI Item , msdyn_opportunitykpiitem , msdyn_opportunitykpiitemid , msdyn_name
+OpportunityModelConfig , msdyn_opportunitymodelconfig , msdyn_opportunitymodelconfigid , msdyn_name
+Organizational Unit , msdyn_organizationalunit , msdyn_organizationalunitid , msdyn_name
+Microsoft Orgchart node entity , msdyn_orgchartnode , msdyn_orgchartnodeid , new_name
+Originating Queue Mapping , msdyn_originatingqueue , msdyn_originatingqueueid , msdyn_name
+Overflow Action Config , msdyn_overflowactionconfig , msdyn_overflowactionconfigid , msdyn_name
+Productivity pane configuration , msdyn_paneconfiguration , msdyn_paneconfigurationid , msdyn_name
+Pane tab configuration , msdyn_panetabconfiguration , msdyn_panetabconfigurationid , msdyn_name
+Pane tool configuration , msdyn_panetoolconfiguration , msdyn_panetoolconfigurationid , msdyn_name
+Personal quick reply , msdyn_personalmessage , msdyn_personalmessageid , msdyn_title
+Personal sound setting , msdyn_personalsoundsetting , msdyn_personalsoundsettingid , msdyn_name
+Persona Security Role Mapping , msdyn_personasecurityrolemapping , msdyn_personasecurityrolemappingid , msdyn_name
+Playbook activity , msdyn_playbookactivity , msdyn_playbookactivityid , msdyn_subject
+Playbook activity attribute , msdyn_playbookactivityattribute , msdyn_playbookactivityattributeid , msdyn_attributeLogicalName
+[DEPRECATED] Playbook category , msdyn_playbookcategory , msdyn_playbookcategoryid , msdyn_name
+Playbook , msdyn_playbookinstance , msdyn_playbookinstanceid , msdyn_name
+[DEPRECATED] Playbook template , msdyn_playbooktemplate , msdyn_playbooktemplateid , msdyn_name
+PM Analysis History , msdyn_pmanalysishistory , msdyn_pmanalysishistoryid , msdyn_name
+PM Business Rule Automation Config , msdyn_pmbusinessruleautomationconfig , msdyn_pmbusinessruleautomationconfigid , msdyn_name
+PM Calendar , msdyn_pmcalendar , msdyn_pmcalendarid , msdyn_name
+PM Calendar Version , msdyn_pmcalendarversion , msdyn_pmcalendarversionid , msdyn_name
+PM Inferred Task , msdyn_pminferredtask , msdyn_pminferredtaskid , msdyn_name
+PM Process Extended Metadata Version , msdyn_pmprocessextendedmetadataversion , msdyn_pmprocessextendedmetadataversionid , msdyn_name
+PM Process Template , msdyn_pmprocesstemplate , msdyn_pmprocesstemplateid , msdyn_name
+PM Process User Settings , msdyn_pmprocessusersettings , msdyn_pmprocessusersettingsid , msdyn_name
+PM Process Version , msdyn_pmprocessversion , msdyn_pmprocessversionid , msdyn_name
+PM Recording , msdyn_pmrecording , msdyn_pmrecordingid , msdyn_name
+PM Simulation , msdyn_pmsimulation , msdyn_pmsimulationid , msdyn_name
+PM Template , msdyn_pmtemplate , msdyn_pmtemplateid , msdyn_name
+PM View , msdyn_pmview , msdyn_pmviewid , msdyn_name
+Profile Album , msdyn_postalbum , msdyn_postalbumid , msdyn_name
+Post Configuration , msdyn_postconfig , msdyn_postconfigid , msdyn_entitydisplayname
+Post Rule Configuration , msdyn_postruleconfig , msdyn_postruleconfigid , msdyn_name
+Prediction Computation Operation , msdyn_predictioncomputationoperation , msdyn_predictioncomputationoperationid , msdyn_name
+Prediction Model Status , msdyn_predictionmodelstatus , msdyn_predictionmodelstatusid , msdyn_name
+Prediction Scheduled Operation , msdyn_predictionscheduledoperation , msdyn_predictionscheduledoperationid , msdyn_name
+Predictive Model Score , msdyn_predictivemodelscore , msdyn_predictivemodelscoreid , msdyn_name
+Predictive Score , msdyn_predictivescore , msdyn_predictivescoreid , msdyn_name
+Predictive Scoring Sync Status , msdyn_predictivescoringsyncstatus , msdyn_predictivescoringsyncstatusid , msdyn_name
+Preferred Agent , msdyn_preferredagent , msdyn_preferredagentid , msdyn_name
+Preferred Agent Customer Identity , msdyn_preferredagentcustomeridentity , msdyn_preferredagentcustomeridentityid , msdyn_name
+Preferred Agent Routed Entity , msdyn_preferredagentroutedentity , msdyn_preferredagentroutedentityid , msdyn_name
+Presence , msdyn_presence , msdyn_presenceid , msdyn_name
+Priority , msdyn_priority , msdyn_priorityid , msdyn_name
+msdyn_product_knowledgearticle , msdyn_product_knowledgearticle , msdyn_product_knowledgearticleid , 
+msdyn_product_knowledgebaserecord , msdyn_product_knowledgebaserecord , msdyn_product_knowledgebaserecordid , 
+Action Input Parameter , msdyn_productivityactioninputparameter , msdyn_productivityactioninputparameterid , msdyn_name
+Action Output Parameter , msdyn_productivityactionoutputparameter , msdyn_productivityactionoutputparameterid , msdyn_name
+Agent script , msdyn_productivityagentscript , msdyn_productivityagentscriptid , msdyn_name
+Agent script step , msdyn_productivityagentscriptstep , msdyn_productivityagentscriptstepid , msdyn_name
+Macro Action Template , msdyn_productivitymacroactiontemplate , msdyn_productivitymacroactiontemplateid , msdyn_name
+Macro Connector , msdyn_productivitymacroconnector , msdyn_productivitymacroconnectorid , msdyn_name
+Macro Solution Configuration , msdyn_productivitymacrosolutionconfiguration , msdyn_productivitymacrosolutionconfigurationid , msdyn_name
+Parameter definition , msdyn_productivityparameterdefinition , msdyn_productivityparameterdefinitionid , msdyn_name
+Property Definition , msdyn_property , msdyn_propertyid , msdyn_name
+Property Asset Association , msdyn_propertyassetassociation , msdyn_propertyassetassociationid , msdyn_name
+Property Location Association , msdyn_propertylocationassociation , msdyn_propertylocationassociationid , msdyn_name
+Property Log , msdyn_propertylog , msdyn_propertylogid , msdyn_name
+Property Template Association , msdyn_propertytemplateassociation , msdyn_propertytemplateassociationid , msdyn_name
+Provider , msdyn_provider , msdyn_providerid , msdyn_name
+Read Tracker , msdyn_readtracker , msdyn_readtrackerid , msdyn_name
+Read tracking enabled information , msdyn_readtrackingenabledinfo , msdyn_readtrackingenabledinfoid , msdyn_name
+Real Time Scoring , msdyn_realtimescoring , msdyn_realtimescoringid , msdyn_name
+Real Time Scoring Operation , msdyn_realtimescoringoperation , msdyn_realtimescoringoperationid , msdyn_name
+Recompute Tracker , msdyn_recomputetracker , msdyn_recomputetrackerid , msdyn_name
+Recording , msdyn_recording , msdyn_recordingid , msdyn_name
+Forecast Recurrence , msdyn_recurrence , msdyn_recurrenceid , msdyn_forecastrecurrencename
+Recurring Sales Action , msdyn_recurringsalesaction , msdyn_recurringsalesactionid , msdyn_triggername
+Recurring Sales Action V2 , msdyn_recurringsalesactionv2 , msdyn_recurringsalesactionv2id , msdyn_triggername
+Relationship Analytics Metadata , msdyn_relationshipanalyticsmetadata , msdyn_relationshipanalyticsmetadataid , msdyn_name
+msdyn_relationshipinsightsunifiedconfig , msdyn_relationshipinsightsunifiedconfig , msdyn_relationshipinsightsunifiedconfigid , new_name
+Report Bookmark , msdyn_reportbookmark , msdyn_reportbookmarkid , msdyn_name
+Requirement Change , msdyn_requirementchange , msdyn_requirementchangeid , msdyn_name
+Requirement Characteristic , msdyn_requirementcharacteristic , msdyn_requirementcharacteristicid , msdyn_name
+Requirement Dependency , msdyn_requirementdependency , msdyn_requirementdependencyid , msdyn_name
+Requirement Group , msdyn_requirementgroup , msdyn_requirementgroupid , msdyn_name
+Requirement Organization Unit , msdyn_requirementorganizationunit , msdyn_requirementorganizationunitid , msdyn_name
+Requirement Relationship , msdyn_requirementrelationship , msdyn_requirementrelationshipid , msdyn_name
+Requirement Resource Category , msdyn_requirementresourcecategory , msdyn_requirementresourcecategoryid , msdyn_name
+Requirement Resource Preference , msdyn_requirementresourcepreference , msdyn_requirementresourcepreferenceid , msdyn_name
+Requirement Status , msdyn_requirementstatus , msdyn_requirementstatusid , msdyn_name
+Resource Requirement , msdyn_resourcerequirement , msdyn_resourcerequirementid , msdyn_name
+Resource Requirement Detail , msdyn_resourcerequirementdetail , msdyn_resourcerequirementdetailid , msdyn_name
+Resource Territory , msdyn_resourceterritory , msdyn_resourceterritoryid , msdyn_name
+Rich Text Attachment , msdyn_richtextfile , msdyn_richtextfileid , msdyn_name
+Routing configuration , msdyn_routingconfiguration , msdyn_routingconfigurationid , msdyn_name
+Routing configuration step , msdyn_routingconfigurationstep , msdyn_routingconfigurationstepid , msdyn_name
+RoutingRequest , msdyn_routingrequest , msdyn_routingrequestid , msdyn_entitylogicalname
+Routing Rule Set Setting , msdyn_routingrulesetsetting , msdyn_routingrulesetsettingid , msdyn_name
+Rulesetentitymapping , msdyn_rulesetdependencymapping , msdyn_rulesetdependencymappingid , msdyn_name
+sabackupdiagnostic , msdyn_sabackupdiagnostic , msdyn_sabackupdiagnosticid , msdyn_name
+SABatchRunInstance , msdyn_sabatchruninstance , msdyn_sabatchruninstanceid , msdyn_name
+Sales acceleration insights , msdyn_salesaccelerationinsight , msdyn_salesaccelerationinsightid , msdyn_name
+Sales Acceleration settings , msdyn_salesaccelerationsettings , msdyn_salesaccelerationsettingsid , msdyn_name
+Sales Assignment Setting , msdyn_salesassignmentsetting , msdyn_salesassignmentsettingid , msdyn_name
+Sales Copilot Insight , msdyn_salescopilotinsight , msdyn_salescopilotinsightid , msdyn_name
+Org level settings for Sales Copilot apps , msdyn_salescopilotorgsettings , msdyn_salescopilotorgsettingsid , msdyn_name
+Sales Copilot User Setting , msdyn_salescopilotusersetting , msdyn_salescopilotusersettingid , msdyn_userid
+Salesforce Structured Object , msdyn_salesforcestructuredobject , msdyn_salesforcestructuredobjectid , name
+Salesforce Structured QnA Config , msdyn_salesforcestructuredqnaconfig , msdyn_salesforcestructuredqnaconfigid , name
+salesinsightssettings , msdyn_salesinsightssettings , msdyn_salesinsightssettingsid , msdyn_name
+SalesOmnichannel Message , msdyn_salesocmessage , msdyn_salesocmessageid , msdyn_name
+Text message template , msdyn_salesocsmstemplate , msdyn_salesocsmstemplateid , msdyn_title
+salesroutingdiagnostic , msdyn_salesroutingdiagnostic , msdyn_salesroutingdiagnosticid , msdyn_name
+Sales routing run , msdyn_salesroutingrun , msdyn_salesroutingrunid , msdyn_name
+Insight , msdyn_salessuggestion , msdyn_salessuggestionid , msdyn_name
+Sales Tag , msdyn_salestag , msdyn_salestagid , msdyn_tagname
+msdyn_salestag_msdyn_sequence , msdyn_salestag_msdyn_sequence , msdyn_salestag_msdyn_sequenceid , 
+SARunInstance , msdyn_saruninstance , msdyn_saruninstanceid , msdyn_name
+Schedule , msdyn_schedule , msdyn_scheduleid , msdyn_schedule
+Schedule Board Setting , msdyn_scheduleboardsetting , msdyn_scheduleboardsettingid , msdyn_tabname
+Scheduling Feature Flag , msdyn_schedulingfeatureflag , msdyn_schedulingfeatureflagid , msdyn_name
+Scheduling Parameter , msdyn_schedulingparameter , msdyn_schedulingparameterid , msdyn_name
+SCI Conversation , msdyn_sciconversation , msdyn_sciconversationid , msdyn_name
+Custom Email Highlight , msdyn_scicustomemailhighlight , msdyn_scicustomemailhighlightid , msdyn_name
+Custom Highlight , msdyn_scicustomhighlight , msdyn_scicustomhighlightid , msdyn_name
+Custom Publisher , msdyn_scicustompublisher , msdyn_scicustompublisherid , msdyn_name
+EnvironmentSettings , msdyn_scienvironmentsettings , msdyn_scienvironmentsettingsid , msdyn_name
+UserSettings , msdyn_sciusersettings , msdyn_sciusersettingsid , msdyn_name
+Search Configuration , msdyn_searchconfiguration , msdyn_searchconfigurationid , msdyn_name
+Segment , msdyn_segment , msdyn_segmentid , msdyn_name
+segmentsetting , msdyn_segmentationsetting , msdyn_segmentationsettingid , msdyn_name
+Segment property , msdyn_segmentattribute , msdyn_segmentattributeid , msdyn_name
+SegmentsUtil , msdyn_segmentcatalogue , msdyn_segmentcatalogueid , msdyn_name
+Sentiment analysis , msdyn_sentimentanalysis , msdyn_sentimentanalysisid , msdyn_name
+Sequence , msdyn_sequence , msdyn_sequenceid , msdyn_name
+Sequence Stat , msdyn_sequencestat , msdyn_sequencestatid , msdyn_name
+Sequence Target , msdyn_sequencetarget , msdyn_sequencetargetid , msdyn_name
+Sequence Target Step , msdyn_sequencetargetstep , msdyn_sequencetargetstepid , msdyn_name
+Sequence Template , msdyn_sequencetemplate , msdyn_sequencetemplateid , msdyn_name
+Service Configuration , msdyn_serviceconfiguration , msdyn_serviceconfigurationid , msdyn_name
+Service Copilot Plugin , msdyn_servicecopilotplugin , msdyn_servicecopilotpluginid , msdyn_name
+Service Copilot Plugin Role , msdyn_servicecopilotpluginrole , msdyn_servicecopilotpluginroleid , msdyn_name
+Sales provisioning request , msdyn_serviceoneprovisioningrequest , msdyn_serviceoneprovisioningrequestid , msdyn_name
+Session Data (Deprecated) , msdyn_sessiondata , msdyn_sessiondataid , msdyn_name
+Session event , msdyn_sessionevent , msdyn_sessioneventid , msdyn_name
+Session participant , msdyn_sessionparticipant , msdyn_sessionparticipantid , msdyn_name
+Session Participant Data (Deprecated) , msdyn_sessionparticipantdata , msdyn_sessionparticipantdataid , msdyn_name
+Session Template , msdyn_sessiontemplate , msdyn_sessiontemplateid , msdyn_name
+msdyn_sessiontemplate_applicationtab , msdyn_sessiontemplate_applicationtab , msdyn_sessiontemplate_applicationtabid , 
+ShareAs Configuration , msdyn_shareasconfiguration , msdyn_shareasconfigurationid , msdyn_shareashashid
+siconfig , msdyn_siconfig , msdyn_siconfigid , msdyn_version
+SI Key Value Config , msdyn_sikeyvalueconfig , msdyn_sikeyvalueconfigid , msdyn_configkey
+Similar entities feature importance , msdyn_similarentitiesfeatureimportance , msdyn_similarentitiesfeatureimportanceid , msdyn_entitytype
+Skill Attachment Rule , msdyn_skillattachmentruleitem , msdyn_skillattachmentruleitemid , msdyn_name
+Attach Skill , msdyn_skillattachmenttarget , msdyn_skillattachmenttargetid , msdyn_name
+SLA KPI , msdyn_slakpi , msdyn_slakpiid , msdyn_name
+Smartassist configuration , msdyn_smartassistconfig , msdyn_smartassistconfigid , msdyn_name
+msdyn_smartassistconfig_msdyn_appconfig , msdyn_smartassistconfig_msdyn_appconfig , msdyn_smartassistconfig_msdyn_appconfigid , 
+Solution Component Count Data Source , msdyn_solutioncomponentcountdatasource , msdyn_solutioncomponentcountdatasourceid , msdyn_name
+Solution Component Count Summary , msdyn_solutioncomponentcountsummary , msdyn_solutioncomponentcountsummaryid , msdyn_name
+Solution Component Data Source , msdyn_solutioncomponentdatasource , msdyn_solutioncomponentdatasourceid , msdyn_name
+Solution Component Summary , msdyn_solutioncomponentsummary , msdyn_solutioncomponentsummaryid , msdyn_name
+Solution Health Rule , msdyn_solutionhealthrule , msdyn_solutionhealthruleid , msdyn_name
+Solution Health Rule Argument , msdyn_solutionhealthruleargument , msdyn_solutionhealthruleargumentid , msdyn_name
+Solution Health Rule Set , msdyn_solutionhealthruleset , msdyn_solutionhealthrulesetid , msdyn_name
+Solution History , msdyn_solutionhistory , msdyn_solutionhistoryid , msdyn_name
+Solution History Data Source , msdyn_solutionhistorydatasource , msdyn_solutionhistorydatasourceid , msdyn_name
+Audio File , msdyn_soundfile , msdyn_soundfileid , msdyn_name
+Sound notification setting , msdyn_soundnotificationsetting , msdyn_soundnotificationsettingid , msdyn_name
+Submodel Definition , msdyn_submodeldefinition , msdyn_submodeldefinitionid , msdyn_name
+Suggested Activity , msdyn_suggestedactivity , msdyn_suggestedactivityid , msdyn_subject
+Suggested Activity Data Source , msdyn_suggestedactivitydatasource , msdyn_suggestedactivitydatasourceid , msdyn_name
+Suggested Contact , msdyn_suggestedcontact , msdyn_suggestedcontactid , msdyn_fullname
+Suggested Contacts Data Source , msdyn_suggestedcontactsdatasource , msdyn_suggestedcontactsdatasourceid , msdyn_name
+Suggestion Assignment Rule , msdyn_suggestionassignmentrule , msdyn_suggestionassignmentruleid , msdyn_name
+Suggestion Interaction , msdyn_suggestioninteraction , msdyn_suggestioninteractionid , msdyn_interactiontype
+Suggestion Principal Object Access , msdyn_suggestionprincipalobjectaccess , msdyn_suggestionprincipalobjectaccessid , msdyn_name
+Suggestion request payload , msdyn_suggestionrequestpayload , msdyn_suggestionrequestpayloadid , msdyn_suggestedentitylogicalname
+Suggestion Seller Priority , msdyn_suggestionsellerpriority , msdyn_suggestionsellerpriorityid , msdyn_name
+Suggestions Model Summary , msdyn_suggestionsmodelsummary , msdyn_suggestionsmodelsummaryid , msdyn_name
+Suggestions Setting , msdyn_suggestionssetting , msdyn_suggestionssettingid , msdyn_name
+Swarm , msdyn_swarm , msdyn_swarmid , msdyn_name
+Swarm participant , msdyn_swarmparticipant , msdyn_swarmparticipantid , msdyn_name
+Swarm participant rule , msdyn_swarmparticipantrule , msdyn_swarmparticipantruleid , msdyn_name
+Swarm role , msdyn_swarmrole , msdyn_swarmroleid , msdyn_name
+Swarm skill , msdyn_swarmskill , msdyn_swarmskillid , msdyn_name
+Swarm template , msdyn_swarmtemplate , msdyn_swarmtemplateid , msdyn_name
+msdyn_systemuser_msdyn_omnichannelqueue , msdyn_systemuser_msdyn_omnichannelqueue , msdyn_systemuser_msdyn_omnichannelqueueid , 
+System User Scheduler Setting , msdyn_systemuserschedulersetting , msdyn_systemuserschedulersettingid , msdyn_name
+Tagged Record , msdyn_taggedrecord , msdyn_taggedrecordid , msdyn_name
+Microsoft Teams chat association entity , msdyn_teamschatassociation , msdyn_teamschatassociationid , msdyn_teamschatassociationname
+Microsoft Teams chat suggestion , msdyn_teamschatsuggestion , msdyn_teamschatsuggestionid , msdyn_teamschatsuggestionname
+Microsoft Teams Collaboration entity , msdyn_teamscollaboration , msdyn_teamscollaborationid , msdyn_teamname
+Teams Dialer Admin settings , msdyn_teamsdialeradminsettings , msdyn_teamsdialeradminsettingsid , msdyn_name
+Template For Properties , msdyn_templateforproperties , msdyn_templateforpropertiesid , msdyn_name
+Template Parameter , msdyn_templateparameter , msdyn_templateparameterid , msdyn_name
+Template Tag (Deprecated) , msdyn_templatetags , msdyn_templatetagsid , msdyn_name
+Fulfillment Preference , msdyn_timegroup , msdyn_timegroupid , msdyn_name
+Time Group Detail , msdyn_timegroupdetail , msdyn_timegroupdetailid , msdyn_name
+Timeline Pin , msdyn_timelinepin , msdyn_timelinepinid , msdyn_name
+Time spent in BPF , msdyn_timespent , msdyn_timespentid , msdyn_timespentname
+Tour , msdyn_tour , msdyn_tourid , msdyn_displayname
+Training Result , msdyn_trainingresult , msdyn_trainingresultid , msdyn_name
+Transaction Origin , msdyn_transactionorigin , msdyn_transactionoriginid , msdyn_name
+Transcript , msdyn_transcript , msdyn_transcriptid , msdyn_name
+Routing diagnostic item , msdyn_unifiedroutingdiagnostic , msdyn_unifiedroutingdiagnosticid , msdyn_name
+Routing diagnostic , msdyn_unifiedroutingrun , msdyn_unifiedroutingrunid , msdyn_name
+Unified Routing Setup Tracker , msdyn_unifiedroutingsetuptracker , msdyn_unifiedroutingsetuptrackerid , msdyn_name
+UntrackedAppointment , msdyn_untrackedappointment , msdyn_untrackedappointmentid , msdyn_name
+Upgrade Run , msdyn_upgraderun , msdyn_upgraderunid , msdyn_summary
+Upgrade Step , msdyn_upgradestep , msdyn_upgradestepid , msdyn_name
+Upgrade Version , msdyn_upgradeversion , msdyn_upgradeversionid , msdyn_summary
+UR notification template , msdyn_urnotificationtemplate , msdyn_urnotificationtemplateid , msdyn_name
+UR Notification Template Mapping , msdyn_urnotificationtemplatemapping , msdyn_urnotificationtemplatemappingid , msdyn_name
+Usage Metric , msdyn_usagemetric , msdyn_usagemetricid , msdyn_featurename
+Sales usage reporting , msdyn_usagereporting , msdyn_usagereportingid , msdyn_userId
+User settings , msdyn_usersetting , msdyn_usersettingid , msdyn_name
+Virtual Table Column Candidate , msdyn_virtualtablecolumncandidate , msdyn_virtualtablecolumncandidateid , msdyn_externalname
+Self service , msdyn_visitorjourney , msdyn_visitorjourneyid , msdyn_displaytitle
+Copilot for Sales customer list , msdyn_vivacustomerlist , msdyn_vivacustomerlistid , msdyn_name
+msdyn_vivaentitysetting , msdyn_vivaentitysetting , msdyn_vivaentitysettingid , msdyn_name
+msdyn_vivaorgextensioncred , msdyn_vivaorgextensioncred , msdyn_vivaorgextensioncredid , msdyn_name
+msdyn_vivaorgsetting , msdyn_vivaorgsetting , msdyn_vivaorgsettingid , msdyn_name
+msdyn_vivausersetting , msdyn_vivausersetting , msdyn_vivausersettingid , msdyn_name
+Wall View , msdyn_wallsavedquery , msdyn_wallsavedqueryid , msdyn_entityname
+Filter , msdyn_wallsavedqueryusersettings , msdyn_wallsavedqueryusersettingsid , msdyn_entityname
+Warranty , msdyn_warranty , msdyn_warrantyid , msdyn_name
+wkwcolleaguesforcompany , msdyn_wkwcolleaguesforcompany , msdyn_wkwcolleaguesforcompanyid , msdyn_introducer_emailaddress
+wkwcolleaguesforcontact , msdyn_wkwcolleaguesforcontact , msdyn_wkwcolleaguesforcontactid , msdyn_introducer_emailaddress
+wkwconfig , msdyn_wkwconfig , msdyn_wkwconfigid , msdyn_name
+Workflow Action Status , msdyn_workflowactionstatus , msdyn_workflowactionstatusid , msdyn_actionname
+Work Template , msdyn_workhourtemplate , msdyn_workhourtemplateid , msdyn_name
+Work List Suggestion , msdyn_worklistsuggestion , msdyn_worklistsuggestionid , msdyn_name
+Work list suggestion source , msdyn_worklistsuggestionsource , msdyn_worklistsuggestionsourceid , msdyn_name
+Work List View Configuration , msdyn_worklistviewconfiguration , msdyn_worklistviewconfigurationid , msdyn_name
+Work Queue Record , msdyn_workqueuerecord , msdyn_workqueuerecordid , msdyn_primaryname
+Work Queue Record State , msdyn_workqueuestate , msdyn_workqueuestateid , msdyn_primaryname
+Work list user setting , msdyn_workqueueusersetting , msdyn_workqueueusersettingid , msdyn_name
+WQDataSource , msdyn_wqdatasource , msdyn_wqdatasourceid , msdyn_name
+BotContent , msdynce_botcontent , msdynce_botcontentid , msdynce_autonumber
+AddToCalendar style , msdyncrm_addtocalendarstyle , msdyncrm_addtocalendarstyleid , msdyncrm_name
+basestyle , msdyncrm_basestyle , msdyncrm_basestyleid , msdyncrm_name
+Button style , msdyncrm_buttonstyle , msdyncrm_buttonstyleid , msdyncrm_name
+Code style , msdyncrm_codestyle , msdyncrm_codestyleid , msdyncrm_name
+Column style , msdyncrm_columnstyle , msdyncrm_columnstyleid , msdyncrm_name
+Content Block , msdyncrm_contentblockstyle , msdyncrm_contentblockstyleid , msdyncrm_name
+Divider style , msdyncrm_dividerstyle , msdyncrm_dividerstyleid , msdyncrm_name
+General styles , msdyncrm_generalstyles , msdyncrm_generalstylesid , msdyncrm_name
+imagestyle , msdyncrm_imagestyle , msdyncrm_imagestyleid , msdyncrm_name
+Layout Style , msdyncrm_layoutstyle , msdyncrm_layoutstyleid , msdyncrm_name
+QR code style , msdyncrm_qrcodestyle , msdyncrm_qrcodestyleid , msdyncrm_name
+Text style , msdyncrm_textstyle , msdyncrm_textstyleid , msdyncrm_name
+Video style , msdyncrm_videostyle , msdyncrm_videostyleid , msdyncrm_name
+ACS channel instance , msdynmkt_byoacschannelinstance , msdynmkt_byoacschannelinstanceid , msdynmkt_name
+ACS channel instance account , msdynmkt_byoacschannelinstanceaccount , msdynmkt_byoacschannelinstanceaccountid , msdynmkt_name
+CatalogEventStatusConfiguration , msdynmkt_catalogeventstatusconfiguration , msdynmkt_catalogeventstatusconfigurationid , msdynmkt_name
+Configuration , msdynmkt_configuration , msdynmkt_configurationid , msdynmkt_name
+Trigger , msdynmkt_eventmetadata , msdynmkt_eventmetadataid , msdynmkt_name
+Triggers To Sdk Message Processing Steps , msdynmkt_eventmetadata_sdkmessageprocessingstep , msdynmkt_eventmetadata_sdkmessageprocessingstepid , msdynmkt_name
+EventParameterMetadata , msdynmkt_eventparametermetadata , msdynmkt_eventparametermetadataid , msdynmkt_name
+msdynmkt_experimentv2 , msdynmkt_experimentv2 , msdynmkt_experimentv2id , msdynmkt_name
+Marketing feature configuration , msdynmkt_featureconfiguration , msdynmkt_featureconfigurationid , msdynmkt_name
+Infobip channel instance , msdynmkt_infobipchannelinstance , msdynmkt_infobipchannelinstanceid , msdynmkt_name
+Infobip channel instance account , msdynmkt_infobipchannelinstanceaccount , msdynmkt_infobipchannelinstanceaccountid , msdynmkt_name
+Link mobility channel instance , msdynmkt_linkmobilitychannelinstance , msdynmkt_linkmobilitychannelinstanceid , msdynmkt_name
+Link mobility channel instance account , msdynmkt_linkmobilitychannelinstanceaccount , msdynmkt_linkmobilitychannelinstanceaccountid , msdynmkt_name
+Metadata Entity Relationship , msdynmkt_metadataentityrelationship , msdynmkt_metadataentityrelationshipid , msdynmkt_name
+Metadata Item , msdynmkt_metadataitem , msdynmkt_metadataitemid , msdynmkt_name
+Metadata Store State , msdynmkt_metadatastorestate , msdynmkt_metadatastorestateid , msdynmkt_name
+MockSmsProvider channel instance , msdynmkt_mocksmsproviderchannelinstance , msdynmkt_mocksmsproviderchannelinstanceid , msdynmkt_name
+MockSmsProvider channel instance account , msdynmkt_mocksmsproviderchannelinstanceaccount , msdynmkt_mocksmsproviderchannelinstanceaccountid , msdynmkt_name
+Predefined Placeholder , msdynmkt_predefinedplaceholder , msdynmkt_predefinedplaceholderid , msdynmkt_description
+TeleSign channel instance , msdynmkt_telesignchannelinstance , msdynmkt_telesignchannelinstanceid , msdynmkt_name
+TeleSign channel instance account , msdynmkt_telesignchannelinstanceaccount , msdynmkt_telesignchannelinstanceaccountid , msdynmkt_name
+TrackingContext , msdynmkt_trackingcontext , msdynmkt_trackingcontextid , msdynmkt_contexttype
+Twilio channel instance , msdynmkt_twiliochannelinstance , msdynmkt_twiliochannelinstanceid , msdynmkt_name
+Twilio channel instance account , msdynmkt_twiliochannelinstanceaccount , msdynmkt_twiliochannelinstanceaccountid , msdynmkt_name
+Vibes channel instance , msdynmkt_vibeschannelinstance , msdynmkt_vibeschannelinstanceid , msdynmkt_name
+Vibes channel instance account , msdynmkt_vibeschannelinstanceaccount , msdynmkt_vibeschannelinstanceaccountid , msdynmkt_name
+Customer Voice alert , msfp_alert , activityid , subject
+Customer Voice alert rule , msfp_alertrule , msfp_alertruleid , msfp_name
+Customer Voice survey email template , msfp_emailtemplate , msfp_emailtemplateid , msfp_name
+Customer Voice file response , msfp_fileresponse , msfp_fileresponseid , msfp_name
+Customer Voice localized survey email template , msfp_localizedemailtemplate , msfp_localizedemailtemplateid , msfp_name
+Customer Voice project , msfp_project , msfp_projectid , msfp_name
+Customer Voice survey question , msfp_question , msfp_questionid , msfp_name
+Customer Voice survey question response , msfp_questionresponse , msfp_questionresponseid , msfp_name
+Customer Voice satisfaction metric , msfp_satisfactionmetric , msfp_satisfactionmetricid , msfp_name
+Customer Voice survey , msfp_survey , msfp_surveyid , msfp_name
+Customer Voice survey invite , msfp_surveyinvite , activityid , subject
+Customer Voice survey reminder , msfp_surveyreminder , msfp_surveyreminderid , msfp_name
+Customer Voice survey response , msfp_surveyresponse , activityid , subject
+Customer Voice unsubscribed recipient , msfp_unsubscribedrecipient , msfp_unsubscribedrecipientid , msfp_name
+Ms Graph Resource To Subscription , msgraphresourcetosubscription , msgraphresourcetosubscriptionid , resourceid
+Catalog Submission Files , mspcat_catalogsubmissionfiles , mspcat_catalogsubmissionfilesid , mspcat_name
+Package Submission Store , mspcat_packagestore , mspcat_packagestoreid , mspcat_name
+mspp_accesscontrolrule_publishingstate , mspp_accesscontrolrule_publishingstate , mspp_accesscontrolrule_publishingstateid , 
+Ad Placement , mspp_adplacement , mspp_adplacementid , mspp_name
+Column Permission , mspp_columnpermission , mspp_columnpermissionid , mspp_columnname
+Column Permission Profile , mspp_columnpermissionprofile , mspp_columnpermissionprofileid , mspp_profilename
+mspp_columnpermissionprofile_webrole , mspp_columnpermissionprofile_webrole , mspp_columnpermissionprofile_webroleid , 
+Content Snippet , mspp_contentsnippet , mspp_contentsnippetid , mspp_name
+Basic Form , mspp_entityform , mspp_entityformid , mspp_name
+Basic Form Metadata , mspp_entityformmetadata , mspp_entityformmetadataid , mspp_name
+List , mspp_entitylist , mspp_entitylistid , mspp_name
+Table Permission , mspp_entitypermission , mspp_entitypermissionid , mspp_entityname
+mspp_entitypermission_webrole , mspp_entitypermission_webrole , mspp_entitypermission_webroleid , 
+Page Template , mspp_pagetemplate , mspp_pagetemplateid , mspp_name
+Poll Placement , mspp_pollplacement , mspp_pollplacementid , mspp_name
+Power Pages Core Entity DS , mspp_powerpagescoreentityds , mspp_powerpagescoreentitydsid , mspp_name
+Publishing State , mspp_publishingstate , mspp_publishingstateid , mspp_name
+Publishing State Transition Rule , mspp_publishingstatetransitionrule , mspp_publishingstatetransitionruleid , mspp_name
+mspp_publishingstatetransitionrule_webrole , mspp_publishingstatetransitionrule_webrole , mspp_publishingstatetransitionrule_webroleid , 
+Redirect , mspp_redirect , mspp_redirectid , mspp_name
+Shortcut , mspp_shortcut , mspp_shortcutid , mspp_name
+Site Marker , mspp_sitemarker , mspp_sitemarkerid , mspp_name
+Site Setting , mspp_sitesetting , mspp_sitesettingid , mspp_name
+Web File , mspp_webfile , mspp_webfileid , mspp_name
+Multistep Form , mspp_webform , mspp_webformid , mspp_name
+Multistep Form Metadata , mspp_webformmetadata , mspp_webformmetadataid , mspp_attributelogicalname
+Form Step , mspp_webformstep , mspp_webformstepid , mspp_name
+Web Link , mspp_weblink , mspp_weblinkid , mspp_name
+Web Link Set , mspp_weblinkset , mspp_weblinksetid , mspp_name
+Web Page , mspp_webpage , mspp_webpageid , mspp_name
+Web Page Access Control Rule , mspp_webpageaccesscontrolrule , mspp_webpageaccesscontrolruleid , mspp_name
+mspp_webpageaccesscontrolrule_webrole , mspp_webpageaccesscontrolrule_webrole , mspp_webpageaccesscontrolrule_webroleid , 
+Web Role , mspp_webrole , mspp_webroleid , mspp_name
+Website , mspp_website , mspp_websiteid , mspp_name
+Website Access , mspp_websiteaccess , mspp_websiteaccessid , mspp_name
+mspp_websiteaccess_webrole , mspp_websiteaccess_webrole , mspp_websiteaccess_webroleid , 
+Website Language , mspp_websitelanguage , mspp_websitelanguageid , mspp_name
+Web Template , mspp_webtemplate , mspp_webtemplateid , mspp_name
+MultiEntitySearch , multientitysearch , multientitysearchid , name
+MultiEntitySearchEntities , multientitysearchentities , multientitysearchentityid , 
+Multi Select Option Value , multiselectattributeoptionvalues , multiselectfulltextidkey , 
+Navigation Setting , navigationsetting , navigationsettingid , name
+New Process , newprocess , businessprocessflowinstanceid , name
+NL2SQ Registration Information , nlsqregistration , nlsqregistrationid , name
+Notification , notification , notificationid , 
+Office Document , officedocument , officedocumentid , name
+Office Graph Document , officegraphdocument , officegraphdocumentid , title
+Offline Command Definition , offlinecommanddefinition , commanddefinitionid , commandname
+Opportunity , opportunity , opportunityid , name
+Opportunity Close , opportunityclose , activityid , subject
+OpportunityCompetitors , opportunitycompetitors , opportunitycompetitorid , name
+Opportunity Product , opportunityproduct , opportunityproductid , opportunityproductname
+Opportunity Sales Process , opportunitysalesprocess , businessprocessflowinstanceid , name
+OptionSet , optionset , optionsetid , name
+Order Close , orderclose , activityid , subject
+Organization , organization , organizationid , name
+OrganizationDataSyncFnoState , organizationdatasyncfnostate , organizationdatasyncfnostateid , name
+OrganizationDataSyncState , organizationdatasyncstate , organizationdatasyncstateid , name
+OrganizationDataSyncSubscription , organizationdatasyncsubscription , organizationdatasyncsubscriptionid , name
+OrganizationDataSyncSubscriptionEntity , organizationdatasyncsubscriptionentity , organizationdatasyncsubscriptionentityid , name
+OrganizationDataSyncSubscriptionFnoTable , organizationdatasyncsubscriptionfnotable , organizationdatasyncsubscriptionfnotableid , name
+Organization Setting , organizationsetting , organizationsettingid , displayname
+Organization Statistic , organizationstatistic , organizationstatisticid , 
+Organization UI , organizationui , formid , 
+Organization Insights Metric , orginsightsmetric , orginsightsmetricid , 
+Organization Insights Notification , orginsightsnotification , orginsightsnotificationid , 
+Owner , owner , ownerid , name
+Owner Mapping , ownermapping , ownermappingid , 
+Package , package , packageid , packageuniquename
+package_solution , package_solution , package_solutionid , 
+Package History , packagehistory , packagehistoryid , executionname
+Partner Application , partnerapplication , partnerapplicationid , name
+PDF Setting , pdfsetting , pdfsettingid , entityname
+Personal Document Template , personaldocumenttemplate , personaldocumenttemplateid , name
+Phone Call , phonecall , activityid , subject
+Phone To Case Process , phonetocaseprocess , businessprocessflowinstanceid , name
+List Value Mapping , picklistmapping , picklistmappingid , 
+Planner Business Scenario , plannerbusinessscenario , plannerbusinessscenarioid , uniquename
+Planner Sync Action , plannersyncaction , plannersyncactionid , title
+Plug-in Assembly , pluginassembly , pluginassemblyid , name
+Plugin Package , pluginpackage , pluginpackageid , name
+Plug-in Trace Log , plugintracelog , plugintracelogid , typename
+Plug-in Type , plugintype , plugintypeid , name
+Plug-in Type Statistic , plugintypestatistic , plugintypestatisticid , 
+Position , position , positionid , name
+Post , post , postid , text
+Comment , postcomment , postcommentid , text
+Follow , postfollow , postfollowid , regardingobjectidname
+Like , postlike , postlikeid , 
+Post Regarding , postregarding , postregardingid , 
+Post Role , postrole , postroleid , 
+Power BI Dataset , powerbidataset , powerbidatasetid , name
+powerbidatasetapdx , powerbidatasetapdx , powerbidatasetapdxid , name
+Power BI Mashup Parameter , powerbimashupparameter , powerbimashupparameterid , name
+Power BI Report , powerbireport , powerbireportid , name
+powerbireportapdx , powerbireportapdx , powerbireportapdxid , name
+PowerfxRule , powerfxrule , powerfxruleid , name
+Site Component , powerpagecomponent , powerpagecomponentid , name
+powerpagecomponent_mspp_webrole_account , powerpagecomponent_mspp_webrole_account , powerpagecomponent_mspp_webrole_accountid , 
+powerpagecomponent_mspp_webrole_contact , powerpagecomponent_mspp_webrole_contact , powerpagecomponent_mspp_webrole_contactid , 
+powerpagecomponent_powerpagecomponent , powerpagecomponent_powerpagecomponent , powerpagecomponent_powerpagecomponentid , 
+powerpagecomponent_webrole_systemuser , powerpagecomponent_webrole_systemuser , powerpagecomponent_webrole_systemuserid , 
+Site , powerpagesite , powerpagesiteid , name
+powerpagesite_dvfilesearch , powerpagesite_dvfilesearch , powerpagesite_dvfilesearchid , 
+Site Language , powerpagesitelanguage , powerpagesitelanguageid , name
+Power Pages Site Published , powerpagesitepublished , powerpagesitepublishedid , name
+Power Pages Log , powerpageslog , powerpageslogid , name
+Power Pages Scan Report , powerpagesscanreport , powerpagesscanreportid , name
+Price List , pricelevel , pricelevelid , name
+PrincipalAttributeAccessMap , principalattributeaccessmap , principalattributeaccessmapid , 
+PrincipalEntityBusinessUnitMap , principalentitybusinessunitmap , principalentitybusinessunitmapid , 
+PrincipalEntityMap , principalentitymap , principalentitymapid , 
+PrincipalObjectAccess , principalobjectaccess , principalobjectaccessid , 
+PrincipalObjectAccessReadSnapshot , principalobjectaccessreadsnapshot , principalobjectaccessreadsnapshotid , 
+Field Sharing , principalobjectattributeaccess , principalobjectattributeaccessid , 
+Principal Sync Attribute Map , principalsyncattributemap , principalsyncattributemapid , 
+Privilege , privilege , privilegeid , name
+Privilege Object Type Code , privilegeobjecttypecodes , privilegeobjecttypecodeid , 
+Privileges Removal Setting , privilegesremovalsetting , privilegesremovalsettingid , name
+Process Session , processsession , processsessionid , name
+Process Stage , processstage , processstageid , stagename
+ProcessStageParameter , processstageparameter , processstageparameterid , name
+Process Trigger , processtrigger , processtriggerid , 
+Product , product , productid , name
+Product Association , productassociation , productassociationid , productidname
+Price List Item , productpricelevel , productpricelevelid , productidname
+ProductSalesLiterature , productsalesliterature , productsalesliteratureid , name
+Product Relationship , productsubstitute , productsubstituteid , name
+ProvisionLanguageForUser , provisionlanguageforuser , provisionlanguageforuserid , name
+Publisher , publisher , publisherid , friendlyname
+Publisher Address , publisheraddress , publisheraddressid , name
+Quarterly Fiscal Calendar , quarterlyfiscalcalendar , userfiscalcalendarid , 
+Queue , queue , queueid , name
+Queue Item , queueitem , queueitemid , title
+QueueItemCount , queueitemcount , queueitemcountid , 
+QueueMemberCount , queuemembercount , queuemembercountid , 
+QueueMembership , queuemembership , queuemembershipid , 
+Quote , quote , quoteid , name
+Quote Close , quoteclose , activityid , subject
+Quote Product , quotedetail , quotedetailid , quotedetailname
+Rating Model , ratingmodel , ratingmodelid , name
+Rating Value , ratingvalue , ratingvalueid , name
+Recently Used , recentlyused , recentlyusedid , name
+Document Suggestions , recommendeddocument , recommendeddocumentid , title
+ReconciliationEntityInfo , reconciliationentityinfo , reconciliationentityinfoid , name
+ReconciliationEntityStepInfo , reconciliationentitystepinfo , reconciliationentitystepinfoid , name
+ReconciliationInfo , reconciliationinfo , reconciliationinfoid , name
+RecordCountSnapshot , recordcountsnapshot , recordcountsnapshotid , 
+Record Filter , recordfilter , recordfilterid , displayname
+Recurrence Rule , recurrencerule , ruleid , 
+Recurring Appointment , recurringappointmentmaster , activityid , subject
+Restore Deleted Records Configuration , recyclebinconfig , recyclebinconfigid , name
+Relationship Entity , relationship , relationshipid , name
+Relationship Attribute , relationshipattribute , relationshipattributeid , name
+Relationship Role , relationshiprole , relationshiproleid , name
+Relationship Role Map , relationshiprolemap , relationshiprolemapid , 
+Replication Backlog , replicationbacklog , replicationbacklogid , 
+Report , report , reportid , name
+Report Related Category , reportcategory , reportcategoryid , 
+Report Related Entity , reportentity , reportentityid , 
+Report Link , reportlink , reportlinkid , 
+Report Visibility , reportvisibility , reportvisibilityid , 
+Resource , resource , resourceid , name
+Scheduling Group , resourcegroup , resourcegroupid , name
+resource group data source , resourcegroupdatasource , resourcegroupdatasourceid , name
+Resource Expansion , resourcegroupexpansion , resourcegroupexpansionid , name
+Resource Specification , resourcespec , resourcespecid , name
+RetainedData Excel , retaineddataexcel , retaineddataexcelid , name
+RetentionCleanupInfo , retentioncleanupinfo , retentioncleanupinfoid , name
+RetentionCleanupOperation , retentioncleanupoperation , retentioncleanupoperationid , name
+RetentionConfig , retentionconfig , retentionconfigid , name
+RetentionFailureDetail , retentionfailuredetail , retentionfailuredetailid , name
+RetentionOperation , retentionoperation , retentionoperationid , name
+RetentionOperationDetail , retentionoperationdetail , retentionoperationdetailid , name
+RevokeInheritedAccessRecordsTracker , revokeinheritedaccessrecordstracker , revokeinheritedaccessrecordstrackerid , revokeinheritedaccessrecordstracker
+Ribbon Client Metadata. , ribbonclientmetadata , ribbonid , 
+Ribbon Command , ribboncommand , ribboncommandid , 
+Ribbon Context Group , ribboncontextgroup , ribboncontextgroupid , 
+Application Ribbons , ribboncustomization , ribboncustomizationid , 
+Ribbon Difference , ribbondiff , ribbondiffid , 
+Ribbon Metadata To Process , ribbonmetadatatoprocess , ribbonmetadatarowid , 
+Ribbon Rule , ribbonrule , ribbonruleid , 
+Ribbon Tab To Command Mapping , ribbontabtocommandmap , ribbontabtocommandmapid , 
+Security Role , role , roleid , name
+RoleEditorLayout , roleeditorlayout , roleeditorlayoutid , name
+RolePrivileges , roleprivileges , roleprivilegeid , 
+Role Template , roletemplate , roletemplateid , name
+RoleTemplatePrivileges , roletemplateprivileges , roletemplateprivilegeid , 
+Rollup Field , rollupfield , rollupfieldid , 
+Rollup Job , rollupjob , rollupjobid , 
+Rollup Properties , rollupproperties , rolluppropertiesid , 
+Routing Rule Set , routingrule , routingruleid , name
+Rule Item , routingruleitem , routingruleitemid , name
+RuntimeDependency , runtimedependency , dependencyid , 
+Sales Literature , salesliterature , salesliteratureid , name
+Sales Attachment , salesliteratureitem , salesliteratureitemid , title
+Order , salesorder , salesorderid , name
+Order Product , salesorderdetail , salesorderdetailid , salesorderdetailname
+Sales Process Instance , salesprocessinstance , salesprocessinstanceid , name
+Saved Organization Insights Configuration , savedorginsightsconfiguration , savedorginsightsconfigurationid , 
+View , savedquery , savedqueryid , name
+System Chart , savedqueryvisualization , savedqueryvisualizationid , name
+Sdk Message , sdkmessage , sdkmessageid , name
+Sdk Message Filter , sdkmessagefilter , sdkmessagefilterid , name
+Sdk Message Pair , sdkmessagepair , sdkmessagepairid , 
+Sdk Message Processing Step , sdkmessageprocessingstep , sdkmessageprocessingstepid , name
+Sdk Message Processing Step Image , sdkmessageprocessingstepimage , sdkmessageprocessingstepimageid , name
+Sdk Message Processing Step Secure Configuration , sdkmessageprocessingstepsecureconfig , sdkmessageprocessingstepsecureconfigid , 
+Sdk Message Request , sdkmessagerequest , sdkmessagerequestid , 
+Sdk Message Request Field , sdkmessagerequestfield , sdkmessagerequestfieldid , 
+Sdk Message Response , sdkmessageresponse , sdkmessageresponseid , 
+Sdk Message Response Field , sdkmessageresponsefield , sdkmessageresponsefieldid , 
+SearchAttributeSettings , searchattributesettings , searchattributesettingsid , name
+SearchCustomAnalyzer , searchcustomanalyzer , searchcustomanalyzerid , name
+SearchRelationshipSettings , searchrelationshipsettings , searchrelationshipsettingsid , relationshipsettingname
+SearchResultsCache , searchresultscache , searchresultscacheid , searchrequesthash
+Search Telemetry , searchtelemetry , searchtelemetryid , userquery
+Semiannual Fiscal Calendar , semiannualfiscalcalendar , userfiscalcalendarid , 
+Service , service , serviceid , name
+Service Activity , serviceappointment , activityid , subject
+Service Contract Contact , servicecontractcontacts , servicecontractcontactid , name
+Service Endpoint , serviceendpoint , serviceendpointid , name
+Service Plan , serviceplan , serviceplanid , name
+ServicePlanAppModules , serviceplanappmodules , serviceplanappmodulesid , 
+Service Plan Custom Control , serviceplancustomcontrol , serviceplancustomcontrolid , name
+Service Plan Mapping , serviceplanmapping , serviceplanmappingid , name
+Setting Definition , settingdefinition , settingdefinitionid , displayname
+Shared Link Setting , sharedlinksetting , sharedlinksettingid , name
+Shared Object , sharedobject , sharedobjectid , objectname
+SharedObjectsForRead , sharedobjectsforread , sharedobjectsforreadid , 
+Shared Workspace , sharedworkspace , sharedworkspaceid , name
+Shared Workspace Access Token , sharedworkspaceaccesstoken , sharedworkspaceaccesstokenid , systemuserid
+Shared Workspace Non-Relational , sharedworkspacenr , sharedworkspacenrid , name
+Shared Workspace Pool , sharedworkspacepool , sharedworkspacepoolid , name
+SharePoint Data , sharepointdata , sharepointdataid , 
+Sharepoint Document , sharepointdocument , sharepointdocumentid , fullname
+Document Location , sharepointdocumentlocation , sharepointdocumentlocationid , name
+SharePoint Site , sharepointsite , sharepointsiteid , name
+SideloadedAIPlugin , sideloadedaiplugin , sideloadedaipluginid , name
+Similarity Rule , similarityrule , similarityruleid , name
+Site , site , siteid , name
+Site Map , sitemap , sitemapid , 
+SLA , sla , slaid , name
+SLA Item , slaitem , slaitemid , name
+SLA KPI Instance , slakpiinstance , slakpiinstanceid , name
+Social Activity , socialactivity , activityid , subject
+SocialInsightsConfiguration , socialinsightsconfiguration , socialinsightsconfigurationid , 
+Social Profile , socialprofile , socialprofileid , profilename
+Solution , solution , solutionid , friendlyname
+Solution Component , solutioncomponent , solutioncomponentid , 
+Solution Component Attribute Configuration , solutioncomponentattributeconfiguration , solutioncomponentattributeconfigurationid , name
+Solution Component Batch Configuration , solutioncomponentbatchconfiguration , solutioncomponentbatchconfigurationid , name
+Solution Component Configuration , solutioncomponentconfiguration , solutioncomponentconfigurationid , name
+Solution Component Definition , solutioncomponentdefinition , solutioncomponentdefinitionid , name
+Solution Component Relationship Configuration , solutioncomponentrelationshipconfiguration , solutioncomponentrelationshipconfigurationid , name
+SolutionHistoryData , solutionhistorydata , solutionhistorydataid , 
+SqlEncryptionAudit , sqlencryptionaudit , createdon , 
+Staged Entity , stagedentity , stagedentityid , name
+Staged Entity Attribute , stagedentityattribute , stagedentityattributeid , name
+Staged Metadata Async Operation , stagedmetadataasyncoperation , stagedmetadataasyncoperationid , name
+StageSolutionUpload , stagesolutionupload , stagesolutionuploadid , name
+Status Map , statusmap , statusmapid , 
+String Map , stringmap , stringmapid , 
+Subject , subject , subjectid , title
+Subscription , subscription , subscriptionid , 
+Subscription Clients , subscriptionclients , subscriptionclientid , 
+Subscription Manually Tracked Object , subscriptionmanuallytrackedobject , subscriptionmanuallytrackedobjectid , 
+Subscription Statistic Offline , subscriptionstatisticsoffline , subscriptionid , 
+Subscription Statistic Outlook , subscriptionstatisticsoutlook , subscriptionid , 
+Subscription Sync Entry Offline , subscriptionsyncentryoffline , subscriptionid , 
+Subscription Sync Entry Outlook , subscriptionsyncentryoutlook , subscriptionid , 
+Subscription Synchronization Information , subscriptionsyncinfo , subscriptionsyncinfoid , 
+Tracking information for deleted entities , subscriptiontrackingdeletedobject , timestamp , 
+SuggestionCardTemplate , suggestioncardtemplate , suggestioncardtemplateid , name
+SupportUserTable , supportusertable , supportusertableid , aaduserobjectid
+Synapse Database , synapsedatabase , synapsedatabaseid , name
+Synapse Link External Table State , synapselinkexternaltablestate , synapselinkexternaltablestateid , name
+Synapse Link Profile , synapselinkprofile , synapselinkprofileid , name
+Synapse Link Profile Entity , synapselinkprofileentity , synapselinkprofileentityid , name
+Synapse Link Profile Entity State , synapselinkprofileentitystate , synapselinkprofileentitystateid , name
+Synapse Link Schedule , synapselinkschedule , synapselinkscheduleid , name
+Sync Attribute Mapping , syncattributemapping , syncattributemappingid , 
+Sync Attribute Mapping Profile , syncattributemappingprofile , syncattributemappingprofileid , name
+Sync Error , syncerror , syncerrorid , name
+System Application Metadata , systemapplicationmetadata , systemapplicationmetadataid , 
+System Form , systemform , formid , name
+User , systemuser , systemuserid , fullname
+SystemUserAuthorizationChangeTracker , systemuserauthorizationchangetracker , systemuserid , 
+SystemUser BusinessUnit Entity Map , systemuserbusinessunitentitymap , systemuserbusinessunitentitymapid , 
+SystemUserLicenses , systemuserlicenses , systemuserlicenseid , 
+System User Manager Map , systemusermanagermap , systemusermanagermapid , 
+System User Principal , systemuserprincipals , systemuserprincipalid , 
+SystemUserProfiles , systemuserprofiles , systemuserprofileid , 
+SystemUserRoles , systemuserroles , systemuserroleid , 
+SystemUserSyncMappingProfiles , systemusersyncmappingprofiles , systemusersyncmappingprofileid , 
+Task , task , activityid , subject
+TdsMetadata , tdsmetadata , tdsmetadataid , tdsmetadataname
+Team , team , teamid , name
+TeamMembership , teammembership , teammembershipid , 
+TeamMobileOfflineProfileMembership , teammobileofflineprofilemembership , teammobileofflineprofilemembershipid , name
+Team Profiles , teamprofiles , teamprofileid , 
+TeamRoles , teamroles , teamroleid , 
+Team Sync-Attribute Mapping Profiles , teamsyncattributemappingprofiles , teamsyncattributemappingprofileid , 
+Team template , teamtemplate , teamtemplateid , teamtemplatename
+Email Template , template , templateid , title
+Territory , territory , territoryid , name
+Text Analytics Entity Mapping , textanalyticsentitymapping , textanalyticsentitymappingid , 
+Theme , theme , themeid , name
+Time Stamp Date Mapping , timestampdatemapping , timestampdatemappingid , 
+Time Zone Definition , timezonedefinition , timezonedefinitionid , userinterfacename
+Time Zone Localized Name , timezonelocalizedname , timezonelocalizednameid , userinterfacename
+Time Zone Rule , timezonerule , timezoneruleid , timezoneruleversionnumber
+Text Analytics Topic , topic , topicid , name
+Topic History , topichistory , topichistoryid , name
+Topic Model , topicmodel , topicmodelid , name
+Topic Model Configuration , topicmodelconfiguration , topicmodelconfigurationid , name
+Topic Model Execution History , topicmodelexecutionhistory , topicmodelexecutionhistoryid , name
+Trace Association , traceassociation , traceassociationid , 
+Trace , tracelog , tracelogid , text
+Trace Regarding , traceregarding , traceregardingid , 
+Currency , transactioncurrency , transactioncurrencyid , currencyname
+Transformation Mapping , transformationmapping , transformationmappingid , 
+Transformation Parameter Mapping , transformationparametermapping , transformationparametermappingid , data
+Translation Process , translationprocess , businessprocessflowinstanceid , name
+Unresolved Address , unresolvedaddress , unresolvedaddressid , 
+UntrackedEmail , untrackedemail , activityid , subject
+Unit , uom , uomid , name
+Unit Group , uomschedule , uomscheduleid , name
+User Application Metadata , userapplicationmetadata , userapplicationmetadataid , 
+User Entity Instance Data , userentityinstancedata , userentityinstancedataid , 
+User Entity UI Settings , userentityuisettings , userentityuisettingsid , 
+User Fiscal Calendar , userfiscalcalendar , userfiscalcalendarid , 
+User Dashboard , userform , userformid , name
+User Mapping , usermapping , usermappingid , 
+UserMobileOfflineProfileMembership , usermobileofflineprofilemembership , usermobileofflineprofilemembershipid , name
+Saved View , userquery , userqueryid , name
+User Chart , userqueryvisualization , userqueryvisualizationid , name
+User Rating , userrating , userratingid , name
+User Search Facet , usersearchfacet , usersearchfacetid , 
+User Settings , usersettings , systemuserid , 
+Virtual Entity  Metadata , virtualentitymetadata , virtualentitymetadataid , name
+Virtual Resource Group Resource , virtualresourcegroupresource , virtualresourcegroupresourceid , name
+Web Resource , webresource , webresourceid , name
+Web Wizard , webwizard , webwizardid , name
+Web Wizard Access Privilege , wizardaccessprivilege , wizardaccessprivilegeid , entityname
+Wizard Page , wizardpage , wizardpageid , 
+Process , workflow , workflowid , name
+Workflow Binary , workflowbinary , workflowbinaryid , name
+workflowcardconnections , workflowcardconnections , workflowcardconnectionsid , 
+Process Dependency , workflowdependency , workflowdependencyid , 
+Process Log , workflowlog , workflowlogid , 
+Workflow Wait Subscription , workflowwaitsubscription , workflowwaitsubscriptionid , 
+Work Queue , workqueue , workqueueid , name
+Work Queue Item , workqueueitem , workqueueitemid , name
+Portal Role , ecsm_portal_role , ecsm_portalrole_id , ecsm_name

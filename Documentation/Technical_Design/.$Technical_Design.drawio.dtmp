@@ -1,0 +1,22 @@
+<mxfile host="Electron" modified="2024-05-24T19:43:16.221Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.7.5 Chrome/114.0.5735.289 Electron/25.8.1 Safari/537.36" etag="2n2v53UyO6mw05zc6TAh" version="21.7.5" type="device">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="HomePage">
+    <mxGraphModel dx="3407" dy="2011" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="9_BlM5FrGaNuKF9svVfk-0" value="Home Page" style="swimlane;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-410" y="-240" width="1680" height="1350" as="geometry" />
+        </mxCell>
+        <mxCell id="9_BlM5FrGaNuKF9svVfk-2" value="Welcome section" style="swimlane;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="9_BlM5FrGaNuKF9svVfk-0">
+          <mxGeometry y="30" width="1680" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="9_BlM5FrGaNuKF9svVfk-3" value="Catalog section" style="swimlane;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="9_BlM5FrGaNuKF9svVfk-0">
+          <mxGeometry y="270" width="1680" height="680" as="geometry" />
+        </mxCell>
+        <mxCell id="9_BlM5FrGaNuKF9svVfk-4" value="Information section" style="swimlane;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="9_BlM5FrGaNuKF9svVfk-0">
+          <mxGeometry y="950" width="1680" height="400" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

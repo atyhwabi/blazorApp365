@@ -1,0 +1,23 @@
+﻿@page "/"
+@page "/{publicParameter}/Home"
+@using ECSM.Portal.Components.UI
+@inherits BaseComponent
+
+@if (this.announcements != null && this.announcements.Any())
+{
+    @foreach (var announcement in this.announcements)
+    {
+        <div class="container announcements">
+            <div class="row">
+                <div class="col-lg-12">
+                    <AnnouncementComponent announcementDTO="announcement" />
+                </div>
+            </div>
+        </div>
+    }
+}
+
+<CatalogueSection HomeHasAnnoucment="announcements.Any()"/>
+<PinnedServicesComponent/>
+
+<InformationComponent/>

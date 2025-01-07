@@ -1,0 +1,68 @@
+﻿@page "/Catalogue"
+@page "/{publicParameter}/Catalogue"
+@page "/Catalogue/{ServiceCatalogueId}"
+@page "/{publicParameter}/Catalogue/{ServiceCatalogueId}"
+@page "/Catalogue/{ServiceCatalogueId}/{CategoryID}"
+@page "/{publicParameter}/Catalogue/{ServiceCatalogueId}/{CategoryID}"
+@using ECSM.Models.DTO.Deflector
+@using ECSM.Portal.Components.UI
+@inherits BaseComponent
+@* <ECSM.Portal.Components.UI.SearchComponent /> *@
+
+<div class="container search-container">
+    <SearchHeading HeadingText="@serviceCatalogues.FirstOrDefault(c => c.ServiceCatalogueID == SelectedServiceCatalogueId)?.Name" />
+    <div class="search-field">
+        <div class="icon-container">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M14.9649 14.755H15.5475L20.0381 19.2547L19.2545 20.0383L14.7549 15.5476V14.965V14.7632L14.6148 14.6179L14.5335 14.5336L14.6178 14.6149L14.7631 14.755H14.9649ZM14.0067 14.0069L13.6589 14.3058C12.606 15.211 11.2406 15.755 9.75488 15.755C6.44103 15.755 3.75488 13.0689 3.75488 9.755C3.75488 6.44115 6.44103 3.755 9.75488 3.755C13.0687 3.755 15.7549 6.44115 15.7549 9.755C15.7549 11.2407 15.2108 12.6062 14.3057 13.6591L14.0067 14.0069ZM4.75488 9.755C4.75488 12.5211 6.98874 14.755 9.75488 14.755C12.521 14.755 14.7549 12.5211 14.7549 9.755C14.7549 6.98886 12.521 4.755 9.75488 4.755C6.98874 4.755 4.75488 6.98886 4.75488 9.755Z" fill="var(--primary-color)" stroke="var(--primary-color)" />
+            </svg>
+        </div>
+
+        <div style="width:100%">
+            <TelerikTextBox Name="Search" @bind-Value="@searchValue" Placeholder="Search for the items within catalogue" TabIndex="1" Class="search-textbox" Id="Search" Width=95%></TelerikTextBox>
+        </div>
+    </div>
+</div>
+
+
+<div class="container" style="padding:0">
+    <div class="deflector-container">
+        <div class="tree-container">
+            <ECSM.Portal.Components.TreeView.TreeViewComponent OnItemClick="HandleItemClick" treeViewDTO="new Models.DTO.TreeView.TreeViewDTO{
+         ServiceCatalogues = filteredServiceCatalogues,
+         SelectedServiceCatalogue = SelectedServiceCatalogueId,
+         SelectedCategory = SelectedCategoryId
+      }" />
+        </div>
+        @if (SelectedServiceCatalogueId != null && SelectedServiceCatalogueItemId == null)
+        {
+            <div class="managment-container">
+                <DeflectorManager DeflectorManagerDTO="deflectorManagerDTO" OnDeflectorItemClick="OnDeflectorItemClick" SearchText="@searchValue" />
+            </div>
+        }
+        else if (SelectedServiceCatalogueItemId != null)
+        {
+            <div class="child-Container">
+                <ECSM.Portal.Pages.CaseDetails ServiceCatalogueItemId="@SelectedServiceCatalogueItemId.ToString()" />
+            </div>
+        }
+    </div>
+</div>
+<style>
+    .search-textbox {
+        background-color: #F5F5F5;
+        width: 1072px;
+        color: var(--primary-color);
+    }
+
+    span.k-input ::placeholder,
+    span.k-picker ::placeholder {
+        color: var(--primary-color);
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: var(--secondary-font-family);
+        font-size: var(--secondary-font-size);
+        font-style: normal;
+        font-weight: var(--secondary-font-weight);
+        line-height: 18px;
+    }
+</style>

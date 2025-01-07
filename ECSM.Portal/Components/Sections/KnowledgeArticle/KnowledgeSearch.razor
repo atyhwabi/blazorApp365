@@ -1,0 +1,21 @@
+﻿@page "/knowledgesearch/{searchText}"
+@page "/knowledgesearch"
+@using ECSM.Models.DTO;
+@using Microsoft.AspNetCore.Components;
+@using ECSM.Models.DTO;
+@using ECSM.Services;
+@using LanguageExt;
+@using ECSM.Portal.Components.Sections.KnowledgeArticle;
+
+<div class="tab-content container">
+<div class="tab-pane active">
+  <KnowledgeArticleDisplayAllComponent searchText="@searchText" />
+</div>
+</div>
+
+@code {
+
+  [Parameter]
+  public string searchText { get; set; }
+
+}

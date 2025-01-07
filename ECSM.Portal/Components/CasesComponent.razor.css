@@ -1,0 +1,43 @@
+﻿.information {
+  color: var(--primary-color);
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: var(--secondary-font-family);
+  font-size: var(--secondary-font-size);
+  font-style: normal;
+  line-height: 22px;
+}
+
+
+.cases-information {
+  font-family: var(--secondary-font-family);
+  padding: 8px 0px;
+  color: var(--primary-color);
+  padding-left: 10px;
+  margin: 0px 0px 8px 0px;
+  cursor: pointer;
+  padding-bottom: 8px;
+  color: #1D3688;
+  padding-left: 14px;
+}
+
+  .cases-information:hover {
+    cursor:pointer;
+    background-color: #E7EBF9;
+  }
+.articleHead{
+    color: var(--primary-color);
+}
+.case-row {
+  height: 240px;
+  overflow: auto;
+}
+
+.articleHead {
+  padding-left: 20px;
+  font-weight: var(--primary-font-weight);
+}
+.heading-gap-myCase-container {
+    padding-top: 30px;
+    padding-bottom: 0px;
+}
+    

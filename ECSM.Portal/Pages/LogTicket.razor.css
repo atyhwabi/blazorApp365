@@ -1,0 +1,111 @@
+﻿.custom-container-card {
+  background-color: var(--white);;
+  padding: 30px 24px;
+  margin: 30px 0px
+}
+
+.case-heading {
+  color: var(--primary-color);
+  font-size: var(--primary-font-size);
+  font-style: normal;
+  font-weight: var(--primary-font-weight);
+  line-height: normal;
+}
+
+.case-description {
+  color: var(--primary-color);
+  font-size: var(--secondary-font-size);
+  font-style: normal;
+  font-weight: var(--secondary-font-weight);
+  line-height: normal;
+  margin-bottom: 0px;
+}
+
+.primary-button {
+  height: 40px;
+}
+
+.dim-heading {
+  color: #B2B7CE;
+  text-align: center;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: var(--primary-font-family);
+  font-size: var(--primary-font-size);
+  font-style: normal;
+  font-weight: var(--primary-font-weight);
+  line-height: normal;
+}
+
+.light-heading {
+  color: #1D3688;
+  text-align: center;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: var(--primary-font-family);
+  font-size: var(--primary-font-size);
+  font-style: normal;
+  font-weight: var(--primary-font-weight);
+  line-height: normal;
+}
+
+.required{
+  color: red;
+}
+
+.required.hide {
+  display: none;
+}
+
+.required.show {
+  display: inline;
+}
+
+.content-form-section {
+  margin-top: 30px;
+}
+
+.submit-Section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.submit-button {
+  margin-top: 16px;
+  margin-bottom: 30px;
+  background-color: var(--primary-color);
+  color: var(--white);;
+  font-weight: var(--primary-font-weight);
+  font-size: var(--tertiary-font-size);
+  line-height: 16px;
+  border-radius: 5px;
+  padding: 5px 10px;
+  float: right;
+  height: 54px;
+  width: 189px;
+  border-radius: 0px;
+  border:none;
+}
+
+.Custom-form-label {
+  color: var(--primary-color);
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: var(--secondary-font-family);
+  font-size: var(--secondary-font-size);
+  font-style: normal;
+  font-weight: var(--secondary-font-weight);
+  line-height: 18px; /* 112.5% */
+  margin-bottom:6px;
+}
+
+.question-section{
+  margin-bottom:20px;
+}
+
+.loader-container {
+  text-align: center;
+  width: 150px;
+  display: inline-table;
+  padding-top: 10px;
+  color:var(--primary-color);
+}

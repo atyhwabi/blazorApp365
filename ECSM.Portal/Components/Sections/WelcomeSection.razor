@@ -1,0 +1,36 @@
+﻿@* Check if the current URL is the root *@
+<div class="welcome-row">
+    <div class="container">
+        <p class="welcome-heading">Hi @(authModel != null && authModel.IsAuthenticated ? authModel?.Contact?.FullName : "")</p>
+    <p class="welcome-message">Welcome to the Help Centre. Our team is ready to provide you with effective support should you need to log a support case, and we encourage you to browse through our knowledgebase to get the answers you need.</p>
+    </div>
+</div>
+<div class="container-fluid search-row">
+  <div class="container">
+    <div class="search-field">
+      <div class="container-fluid col-sm-12">
+        <TelerikSvgIcon Icon="@SvgIcon.Search" Class="search-icon" />
+        <span @onkeypress="HandleKeyPress">
+            <TelerikTextBox @bind-Value="@searchValue" Name="Search" Placeholder="Search Knowledge articles cases, or services" TabIndex="1" Class="search-textbox" Id="Search" Width="80%"></TelerikTextBox>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  #Search.k-input-inner {
+    background-color: var(--white);;
+    border: none;
+  }
+  span.k-input ::placeholder,
+  span.k-picker ::placeholder {
+        color: var(--Blue-Grey, #98A0BD);
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: var(--secondary-font-family);
+        font-size: var(--secondary-font-size);
+        font-style: normal;
+        font-weight: var(--secondary-font-weight);
+        line-height: 18px; 
+  }
+</style>

@@ -1,0 +1,29 @@
+﻿.sub-heading-card-title {
+  color: #1D3688;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: var(--primary-font-family);
+  font-size: var(--secondary-font-size);
+  font-style: normal;
+  line-height: normal;
+  margin-bottom: 5px;
+}
+
+.layoutWithImage .sub-heading-card-title {
+  /*additional font color and family*/
+  color: var(--tertiary-color);
+  font-family: "Roboto Condensed";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.layoutWithImageTop .sub-heading-card-title {
+  /*additional font color and family*/
+  color: var(--tertiary-color);
+  font-family: "Roboto Condensed";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}

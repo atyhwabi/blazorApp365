@@ -1,0 +1,32 @@
+﻿@page "/search/{searchValue}"
+@page "/search"
+@page "/{PublicParemeter}/search"
+@page "/{PublicParemeter}/search/{searchValue}"
+@using ECSM.Models.DTO
+@using ECSM.Portal.Components.Sections
+
+@inherits LayoutComponentBase
+@inject IAnnouncementQueryService AnnouncementsQueries
+<script src="scrollPosition.js"></script>
+
+
+    <div class="container container-margins">
+            <Tabs SearchText="@searchValue" />
+    </div>
+
+@code {
+    [Parameter]
+    public string searchValue { get; set; }
+    [Parameter]
+    public string? PublicParemeter { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        base.OnInitialized();
+    }
+    public int ActiveTabIndex { get; set; } = 0;
+    void SelectThirdTab()
+    {
+        ActiveTabIndex = 2;
+    }
+}

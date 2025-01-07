@@ -1,0 +1,38 @@
+﻿.catalogue-section {
+  display: flex;
+  gap: 30px;
+}
+
+.section-card{
+  margin-top: 0;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+
+.catalogue-card {
+  display: flex;
+  padding: 24px 16px;
+  border-radius: 4px;
+  border: 1px solid #B2B7CE;
+  max-width:200px;
+  min-width:220px;
+}
+
+.icon-container {
+  margin-right: 16px;
+}
+
+.blank-icon {
+  color: var(--white);;
+  visibility: hidden;
+}
+
+.row.catalogue-section {
+  flex-shrink: 0;
+  width: auto;
+  max-width: fit-content;
+  padding-right: 0;
+  padding-left: 0;
+  margin-top: 0;
+}

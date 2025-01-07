@@ -1,0 +1,16 @@
+﻿@using ECSM.Models.DTO
+
+<div @onclick="OnCardClick" class="custom-card mx-auto mx-md-0" style="@style">
+  @ChildContent
+</div>
+
+@code {
+  [Parameter]
+  public RenderFragment ChildContent { get; set; }
+
+  [Parameter]
+  public EventCallback OnCardClick { get; set; }
+
+  [Parameter]
+  public string? style { get; set; }
+}

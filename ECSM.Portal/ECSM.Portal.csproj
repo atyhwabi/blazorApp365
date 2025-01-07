@@ -1,0 +1,68 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Components\CardLayouts\BaseCard.razor.css" />
+    <None Remove="Components\CasesComponent.razor.css" />
+    <None Remove="Components\PinnedServicesComponent.razor.css" />
+    <None Remove="Components\Sections\KnowledgeArticle\KnowledgeArticleCard.razor.css" />
+    <None Remove="Components\Sections\KnowledgeArticle\KnowledgeSingleArticle.razor.css" />
+    <None Remove="Components\UI\BaseCard.razor.css" />
+    <None Remove="Components\UI\DeflectCard.razor.css" />
+    <None Remove="Components\UI\SecondaryHeading.razor.css" />
+    <None Remove="Components\UI\ViewAllHeading.razor.css" />
+    <None Remove="Pages\KnowledgebasePage.razor.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Components\CasesComponent.razor.css" />
+    <Content Include="Components\PinnedServicesComponent.razor.css" />
+    <Content Include="Components\Sections\KnowledgeArticle\KnowledgeArticleCard.razor.css" />
+    <Content Include="Components\Sections\KnowledgeArticle\KnowledgeSingleArticle.razor.css" />
+    <Content Include="Components\UI\BaseCard.razor.css" />
+    <Content Include="Components\UI\DeflectCard.razor.css" />
+    <Content Include="Components\UI\SecondaryHeading.razor.css" />
+    <Content Include="Components\UI\ViewAllHeading.razor.css" />
+    <Content Include="Pages\KnowledgebasePage.razor.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EC.DynamicsClient" Version="5.2.4" />
+    <PackageReference Include="Microsoft.Identity.Web" Version="2.19.0" />
+    <PackageReference Include="Microsoft.Identity.Web.UI" Version="2.19.0" />
+    <PackageReference Include="Telerik.UI.for.Blazor" Version="6.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ECSM.Models\ECSM.Models.csproj" />
+    <ProjectReference Include="..\ECSM.Services\ECSM.Services.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="Layout\MainLayout.razor">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="Layout\NavMenu.razor">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\Images\logoInverted.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\Images\Logo.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\css\open-iconic\FONT-LICENSE" />
+    <None Include="wwwroot\css\open-iconic\font\fonts\open-iconic.svg" />
+    <None Include="wwwroot\css\open-iconic\ICON-LICENSE" />
+    <None Include="wwwroot\css\open-iconic\README.md" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,26 @@
+﻿@using ECSM.Models.DTO
+@using ECSM.Services.Cases
+
+@inject ICaseService caseService
+@if (Cases.Count() != 0)
+{
+    <div class="heading-gap-myCase-container">
+        <ECSM.Portal.Components.UI.MainHeading HeadingText="@HeadingText" />
+    </div>
+}
+
+<div class="case-row">
+    @foreach (var caseItem in Cases)
+    {
+        <div class="case-tile">
+            <a @onclick="@(() => GoToCaseDetails(caseItem.CaseId))">
+                <p class="cases-information">
+                    <i class="material-symbols-outlined">
+                        Bookmark
+                    </i> <a style="font-weight:600">@GetHighlightedText(caseItem.CaseNumber)</a> @GetHighlightedText(caseItem.CaseTitle)
+                </p>
+            </a>
+        </div>
+    }
+</div>
+

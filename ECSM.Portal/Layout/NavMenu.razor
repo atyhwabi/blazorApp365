@@ -1,0 +1,81 @@
+﻿@using System.Web
+
+<head>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+
+  <!-- Bootstrap JavaScript -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<div class="top-row navigation-row">
+  <div class="container">
+    <nav class="Navbar navbar-expand-lg navbar-light NavBackground">
+      @if (authManager.IsAuthenticated().Result && !string.IsNullOrWhiteSpace(Logo))
+      {
+        <a class="navbar-brand" href="/"><img src="@Logo" alt="Logo" class="logo-image-header" /></a>
+      }
+      <button class="navbar-toggler navBurgerButton" type="button" @onclick="ToggleNavMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse @(isCollapsed ? "show" : "")" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          @if (isAuthenticated)
+          {
+            <li class="nav-button">
+              <NavLink class="nav-link" style="color:var(--primary-color)" @onclick="@(() => this.NavigateTo("/"))">
+                Home
+              </NavLink>
+            </li>
+            <li class="nav-button">
+              <NavLink class="nav-link" style="color:var(--primary-color)" @onclick="@(() => this.NavigateTo("mycases"))">
+                My Cases
+              </NavLink>
+            </li>
+            <li class="nav-button">
+              <NavLink class="nav-link" style="color:var(--primary-color)" @onclick="@(() => this.NavigateTo("knowledgebase"))">
+                Knowledge base
+              </NavLink>
+            </li>
+          }
+          <li class="dropdown nav-item nav-linkItem nav-button">
+            <NavLink class="nav-dropdown-item">
+              <div class="dropdown">
+                <button @onclick="ToggleDropdownMenu" class="btn logoutDropdown nav-button" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                  Links
+                </button>
+                <ul class="dropdown-menu dropdownItem @(isDropdownCollapsed ? "show" : "")" aria-labelledby="dropdownMenuButton">
+                  @if (portalLinkDtOs.Any())
+                  {
+                    @foreach (var link in portalLinkDtOs)
+                    {
+                      <li class="dropdown-li-Item"><a class="logoutButton" href="@link.URL" target="_blank">@link.Name</a></li>
+                    }
+                  }
+                </ul>
+              </div>
+            </NavLink>
+          </li>
+          @if (this.isAuthenticated)
+          {
+            <li class="dropdown nav-item nav-linkItem nav-button">
+              <NavLink class="nav-dropdown-item">
+                <div class="dropdown">
+                  <button @onclick="ToggleLogoutMenu" class="btn logoutDropdown nav-button" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="material-symbols-outlined">account_circle</i>
+                  </button>
+                  <ul class="dropdown-menu logoutdropdownItem @(isLogoutCollapsed ? "show" : "")" aria-labelledby="dropdownMenuButton">
+                    <li class="dropdown-li-Item"><button class="logoutButton" @onclick="LogOut">Logout</button></li>
+                  </ul>
+                </div>
+              </NavLink>
+            </li>
+          }
+        </ul>
+      </div>
+    </nav>
+  </div>
+</div>

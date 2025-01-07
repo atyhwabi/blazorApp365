@@ -1,0 +1,80 @@
+﻿hr {
+  border: none;
+  height: 2px;
+  margin: 20px 0;
+  color: var(--primary-color);
+  margin-bottom: 0px;
+  font-weight: 100;
+}
+
+.category-artictle {
+  color: #98A0BD;
+  font-size: var(--tertiary-font-size);
+  font-style: italic;
+}
+
+.category-artictle {
+  color: #98A0BD;
+  font-size: var(--tertiary-font-size);
+  font-style: italic;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.main {
+  padding-top: 10px
+}
+
+.container-catalogue-heading {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 10px;
+}
+
+.full {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  padding: 24px 30px;
+}
+
+.container {
+  background-color: var(--white);;
+}
+
+.additional {
+  margin-top: 24px;
+  padding: 0;
+  margin-bottom: 24px;
+}
+
+.category-artictle {
+  color: #98A0BD;
+  font-size: var(--tertiary-font-size);
+  font-style: italic;
+}
+
+.content-border {
+  padding: 18px 24px 12px 24px;
+  border: var(--primary-color);
+  border-style: groove;
+  border-width: 1px;
+}
+
+.additional-knowledge {
+  padding-bottom: 0px;
+}
+
+.category-row-info {
+  font-size: var(--quaternary-font-size);
+  color: #98A0BD;
+}
+
+a.Article-card {
+  text-decoration: none;
+  padding: 0;
+}
+
+  a.Article-card:hover {
+    background-color: #E7EBF9;
+    cursor: pointer;
+  }

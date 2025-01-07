@@ -1,0 +1,74 @@
+﻿.section-card {
+  height: auto;
+  width: 50%;
+  padding: 24px 24px;
+}
+
+.line-item {
+  height: 1px;
+}
+
+.articleItem {
+  color: var(--primary-color);
+}
+
+.log-case-button {
+  background: var(--primary-color);
+  width: 100%;
+  height: 51px;
+  color: var(--Mono-Colours-White, #FFF);
+  text-align: center;
+  border: none;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: var(--primary-font-family);
+  font-size: var(--primary-font-size);
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.self-help-section {
+  display: flex;
+  gap: 30px;
+}
+
+.container{
+  padding: 0;
+}
+
+.case-detail-container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: var(--white);;
+    padding: 24px;
+    height: auto;
+    border: 1px solid #E0E0E0;
+    border-radius: 5px;
+}
+
+.self-help-section {
+  display: flex;
+  flex-direction: row; /* For side-by-side layout */
+}
+
+.download-file-section {
+  margin-bottom: 8px;
+  margin-right: 8px
+}
+
+.attachement-section {
+  padding-bottom: 5px; 
+}
+
+@media (max-width: 768px) {
+  .self-help-section {
+    flex-direction: column; /* Stack boxes on smaller screens */
+  }
+
+  .section-card {
+    width: 100%;
+  }
+}
+
+
+

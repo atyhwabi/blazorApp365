@@ -1,0 +1,22 @@
+﻿@using ECSM.Models.DTO
+
+<div class="information-section">
+    <div class="container">
+        <div class="row">
+            @if(authManager.IsAuthenticated().Result)
+            {
+                <ECSM.Portal.Components.UI.InformationList.MyCasesComponent Cases="Cases" />
+            }
+            <ECSM.Portal.Components.UI.InformationList.LatestArticlesComponent knowledgeArticle="knowledgeArticle" />
+        </div>
+    </div>
+</div>
+
+@code
+{
+    [Parameter]
+    public KnowledgeItemDTO[] knowledgeArticle { get; set; } = [];
+
+    [Parameter]
+    public CasesItemDTO[] Cases { get; set; } = [];
+}

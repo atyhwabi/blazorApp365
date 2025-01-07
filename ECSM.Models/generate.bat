@@ -1,0 +1,1 @@
+EC.DynamicsClient.Generator generate -p "./Dynamics/" -n "ECSM.Models.Dynamics" -l "ecsm_service_catalogue_item" -u

@@ -1,0 +1,181 @@
+﻿.container-margins {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.nav.nav-tabs {
+  border: none !important;
+  border-bottom: none !important;
+}
+
+ul li {
+  text-decoration: none !important;
+}
+
+svg {
+  margin-bottom: 5px;
+  padding-right: 5px;
+}
+
+.container-fluid-main[b-cs86004k94] {
+  background-color: var(--white);;
+  width: 95.6%;
+  height: auto;
+  padding-top: 20rem;
+  border-style: initial;
+  padding: 10px;
+  border-bottom: none;
+  margin-top: -1.5em;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-bottom: 30px;
+}
+
+
+.container-fluid-main {
+  background-color: var(--white);;
+  border-style: initial;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 24px;
+  padding-top: 24px;
+  border-bottom: none;
+}
+
+.dim-heading {
+  color: #98A0BD;
+  font-family: var(--secondary-font-family);
+  font-size: var(--secondary-font-size);
+  font-style: normal;
+  font-weight: var(--secondary-font-weight);
+  line-height: normal;
+  letter-spacing: 0.2px;
+}
+
+a {
+  color: #98A0BD !important;
+  font-family: var(--secondary-font-family);
+  font-size: var(--secondary-font-size);
+  font-style: normal;
+  font-weight: var(--secondary-font-weight);
+  line-height: normal;
+  letter-spacing: 0.2px;
+  text-decoration: none;
+}
+
+  a:hover {
+    color: var(--primary-color) !important;
+    cursor: pointer;
+  }
+
+.light-heading {
+  color: var(--primary-color);
+  font-family: var(--secondary-font-family);
+  font-size: var(--secondary-font-size);
+  font-style: normal;
+  font-weight: var(--secondary-font-weight);
+  line-height: 1.6;
+  letter-spacing: 0.2px;
+  margin: 0;
+}
+
+.knowledge-base-head {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.header-underline {
+  width: 1176px;
+  margin-top: 10px;
+  height: 1px;
+  background-color: #B2B7CE;
+}
+
+.header-two-underline {
+  width: 1176px;
+  margin-top: 30px;
+  height: 1px;
+  background-color: #B2B7CE;
+}
+
+.para-container {
+  color: var(--Blue-Grey, #98A0BD);
+  font-family: var(--secondary-font-family);
+  font-size: var(--secondary-font-size);
+  font-style: normal;
+  font-weight: var(--secondary-font-weight);
+  line-height: normal;
+  letter-spacing: 0.2px;
+  padding-top: 10px;
+}
+
+.para-key-container {
+  color: var(--Blue-Grey, #98A0BD);
+  font-family: var(--secondary-font-family);
+  font-size: var(--secondary-font-size);
+  font-style: normal;
+  font-weight: var(--secondary-font-weight);
+  line-height: normal;
+  letter-spacing: 0.2px;
+  padding-top: 0px;
+  margin-top: 20px;
+}
+
+.para-two-container {
+  color: var(--Blue-Grey, #98A0BD);
+  font-family: var(--secondary-font-family);
+  font-size: var(--secondary-font-size);
+  font-style: normal;
+  font-weight: var(--secondary-font-weight);
+  line-height: normal;
+  letter-spacing: 0.2px;
+  padding-top: 0px;
+  margin-top: -1em;
+}
+
+.para-third-container {
+  color: var(--Blue-Grey, #98A0BD);
+  font-family: var(--secondary-font-family);
+  font-size: var(--secondary-font-size);
+  font-style: normal;
+  font-weight: var(--secondary-font-weight);
+  line-height: normal;
+  letter-spacing: 0.2px;
+  padding-top: 0px;
+  margin-top: -1em;
+}
+
+.para-thirds-container {
+  color: var(--Blue-Grey, #98A0BD);
+  font-family: var(--secondary-font-family);
+  font-size: var(--secondary-font-size);
+  font-style: normal;
+  font-weight: var(--secondary-font-weight);
+  line-height: normal;
+  letter-spacing: 0.2px;
+  padding-top: 0px;
+  margin-top: -1em;
+  padding-bottom: 30px;
+}
+
+.knowldge-base-first-sub-head {
+  color: var(--primary-color);
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: var(--secondary-font-family);
+  font-size: var(--primary-font-size);
+  font-style: normal;
+  font-weight: var(--primary-font-weight);
+  line-height: normal;
+  padding-top: 10px;
+}
+
+.knowldge-base-fourth-sub-head {
+  color: var(--primary-color);
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: var(--secondary-font-family);
+  font-size: var(--primary-font-size);
+  font-style: normal;
+  font-weight: var(--primary-font-weight);
+  line-height: normal;
+  padding-top: 30px;
+}

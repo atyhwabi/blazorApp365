@@ -1,0 +1,101 @@
+﻿
+.container-fluid-main {
+    background-color: var(--white);;
+    height: auto;
+    padding-top: 23rem;
+    border-style: initial;
+    padding: 10px;
+    border-bottom: none;
+    margin-top: 2em;
+}
+
+.search-textbox {
+    background-color: #F5F5F5;
+}
+
+.k-input-inner {
+    background-color: #F5F5F5 !important;
+}
+
+.k-treeview-lines k-treeview-group {
+    color: var(--primary-color);
+}
+
+.k-treeview-group {
+    color: var(--primary-color);
+}
+
+.k-treeview-leaf {
+    color: #1D3688 !important
+}
+
+
+/* Default (Desktop) Layout */
+.deflector-container {
+    margin-bottom: 30px;
+    display: flex;
+    gap: 30px;
+    flex-direction: row; /* Ensure horizontal layout by default */
+}
+
+.tree-container {
+    background-color: var(--white);;
+    border-radius: 5px;
+    border: 1px solid #E0E0E0;
+    width: 45%;
+}
+
+.managment-container {
+    background-color: var(--white);;
+    padding: 24px;
+    border-radius: 5px;
+    border: 1px solid #E0E0E0;
+    width: 100%;
+}
+
+.child-Container {
+    margin: -30px 0px;
+    width: 100%;
+    padding: -15px;
+}
+
+/* Mobile Layout (screen width less than 768px) */
+@media screen and (max-width: 768px) {
+    .deflector-container {
+        flex-direction: column; /* Stack vertically on small screens */
+        gap: 10px; /* Reduce gap for better mobile view */
+    }
+
+    .tree-container, .managment-container {
+        width: 100%; /* Full width for both containers on mobile */
+    }
+}
+
+.search-textbox {
+    background-color: #F5F5F5;
+}
+
+.search-container {
+    width: 100%;
+    background-color: var(--white); !important;
+    background: #fff;
+    padding: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    border: 1px solid #E0E0E0;
+    width: 100%;
+}
+
+.search-field {
+    background-color: #F5F5F5;
+    padding: 10px;
+    display: flex;
+}
+/*
+.icon-container {
+  align-content: center;
+  padding: 0;
+  margin: 0;
+  height: 20px;
+}*/

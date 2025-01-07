@@ -1,0 +1,231 @@
+﻿@media(max-width:799px) {
+    h4 {
+        position: relative;
+        top: calc(99%/3);
+        display: inline-block;
+        font-size: var(--secondary-font-size);
+        color: var(--white);;
+        height: 165px;
+    }
+
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .fill {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden
+    }
+
+    .noHover {
+        transition: all 100s ease-in-out;
+    }
+
+  .inprogress-button {
+    font-family: var(--primary-font-family);
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    margin-top: auto;
+    color: white;
+    width: 230px;
+    height: 72px;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    gap: 24px;
+    padding: 24px;
+    background-color: var(--primary-color);
+  }
+
+  .newstudent-button {
+    font-family: var(--primary-font-family);
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    margin-top: auto;
+    color: white !important;
+    width: 230px;
+    height: 72px;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    gap: 24px;
+    padding: 24px;
+    background-color: #b0eb33;
+  }
+
+  .returning-button {
+    font-family: var(--primary-font-family);
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    margin-top: auto;
+    color: white !important;
+    width: 230px;
+    height: 72px;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    gap: 24px;
+    padding: 24px;
+    background-color: #ee2141;
+    border: hidden;
+    text-decoration: none
+  }
+
+    .containerBox {
+        position: relative;
+    }
+
+    .text-box {
+        position: absolute;
+        height: 100%;
+        text-align: center;
+        width: 100%;
+    }
+
+        .text-box:before {
+            content: '';
+            height: 100%;
+            vertical-align: middle;
+        }
+}
+
+@media(min-width:800px) {
+    h4 {
+        position: relative;
+        top: calc(99%/3);
+        display: inline-block;
+        font-size: 20px;
+        color: var(--white);;
+        height: 230px;
+        min-width: 100%;
+    }
+
+    img {
+        display: block;
+        max-width: 100%;
+        height: 90%;
+    }
+
+    .fill {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden
+    }
+
+        .fill img {
+            flex-shrink: 0;
+            min-width: 100%;
+            min-height: 100%
+        }
+
+    .noHover {
+        transition: all 100s ease-in-out;
+    }
+
+  .inprogress-button {
+    font-family: var(--primary-font-family);
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-top: auto;
+    color: white !important;
+    width: 280px;
+    height: 116px;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    gap: 24px;
+    padding: 24px;
+    background-color: var(--primary-color);
+  }
+
+  .newstudent-button {
+    font-family: var(--primary-font-family);
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-top: auto;
+    color: white !important;
+    width: 280px;
+    height: 116px;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    gap: 24px;
+    padding: 24px;
+    background-color: #b0eb33;
+    align-self: center;
+  }
+
+  .returning-button {
+    font-family: var(--primary-font-family);
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-top: auto;
+    color: white !important;
+    width: 280px;
+    height: 116px;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    gap: 24px;
+    padding: 24px;
+    background-color: #ee2141;
+    border: hidden;
+    text-decoration: none
+  }
+
+    .containerBox {
+        position: relative;
+    }
+
+    .text-box {
+        position: absolute;
+        height: 100%;
+        text-align: center;
+        width: 100%;
+    }
+
+        .text-box:before {
+            content: '';
+            height: 100%;
+            vertical-align: middle;
+        }
+}
+
+.boxpadding{
+    padding: 0px;
+}

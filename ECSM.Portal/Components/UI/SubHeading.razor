@@ -1,0 +1,12 @@
+﻿
+<p class="sub-heading-card-title" style="@Style">
+    @ChildContent
+</p>
+
+@code {
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+
+    [Parameter]
+    public string? Style { get; set; }
+}

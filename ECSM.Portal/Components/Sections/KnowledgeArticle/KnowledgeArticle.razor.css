@@ -1,0 +1,135 @@
+﻿hr {
+  border: none;
+  height: 1px;
+  margin: 5px 0 13px 0; /* Add margin top and bottom */
+  color: var(--primary-color);
+  font-weight: 100;
+  width: -webkit-fill-available;
+}
+
+p {
+  font-size: var(--tertiary-font-size);
+  color: var(--primary-color);
+}
+
+label {
+  color: var(--primary-color);
+  font-size: var(--paragraph-font-size);
+}
+
+
+.category-artictle {
+  color: #98A0BD;
+  font-size: var(--tertiary-font-size);
+  font-style: italic;
+}
+
+.category-artictle {
+  color: #98A0BD;
+  font-size: var(--tertiary-font-size);
+  font-style: italic;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.main {
+  padding-top: 0px;
+}
+
+.faq-knowledgebsse-page{
+  padding-top: 12px;
+}
+.customAccordion {
+  color: var(--primary-color) !important;
+  background-color: white !important;
+  border: none !important;
+}
+
+.customAccordionBorder {
+  border: none;
+  border-bottom: 1px solid #B2B7CE;
+}
+
+.accordion-header {
+  color: var(--Primary-Blue, var(--primary-color));
+  font-family: var(--secondary-font-family);
+  font-size: var(--secondary-font-size);
+  font-style: normal;
+  font-weight: var(--secondary-font-weight);
+  line-height: normal;
+  letter-spacing: 0.2px;
+}
+
+.container-catalogue-heading {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 4px;
+}
+
+.full {
+  padding: 24px 24px;
+}
+
+.container {
+  background-color: var(--white);;
+}
+
+.additional {
+  margin-top: 0px;
+  padding: 0 15px;
+  margin-bottom: 0px;
+}
+
+label {
+}
+
+.category-artictle {
+  color: #98A0BD;
+  font-style: italic;
+  color: #98A0BD;
+  font-size: var(--quaternary-font-size);
+  margin-bottom: 8px;
+  margin-top: 4px;
+}
+
+.content-border {
+  padding: 24px 24px 0px 24px;
+  border: var(--primary-color);
+  border-style: groove;
+  border-width: 1px;
+}
+
+.additional-knowledge {
+  padding-bottom: 0px;
+}
+
+.category-row-info {
+  font-size: var(--quaternary-font-size);
+  font-family: var(--secondary-font-family);
+}
+
+.col-md-12 {
+  padding-top: 10px;
+}
+
+.col-sm-12 {
+  padding-top: 10px;
+}
+
+a.Article-card {
+  text-decoration: none;
+}
+
+  a.Article-card:hover {
+    cursor: pointer;
+  }
+
+    a.Article-card:hover div,
+    a.Article-card:hover div .category-artictle {
+      background-color: #E7EBF9;
+      cursor: pointer;
+    }
+
+.article-container {
+  padding: 24px 16px 0 16px;
+}

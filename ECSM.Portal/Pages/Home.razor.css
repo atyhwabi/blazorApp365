@@ -1,0 +1,124 @@
+﻿
+span.k-input-inner ::placeholder,
+span.k-picker ::placeholder {
+    color: red;
+}
+
+span.k-input-inner ::-webkit-input-placeholder, span.k-picker ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: red;
+}
+
+#Search.k-input-inner::-moz-placeholder { /* Firefox 19+ */
+    color: #ff0000;
+}
+
+#Search.k-input-inner:-ms-input-placeholder { /* IE 10+ */
+    color: #ff0000;
+}
+
+#Search.k-input-inner:-moz-placeholder { /* Firefox 18- */
+    color: #ff0000;
+}
+
+/*Welcome section------------------*/
+.welcome-row p {
+    font-size: var(--welcome-paragraph-font-size);
+}
+
+.tb-icon-container {
+    position: relative;
+}
+
+    /* these rules position the icon. Update with your own selector if you add HTML elements for click events */
+    .tb-icon-container .k-icon {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0.5em;
+    }
+
+    /* no floating label */
+    .tb-icon-container input.k-textbox,
+    /* for the floating label */
+    .tb-icon-container .k-textbox input,
+    .tb-icon-container .k-state-empty .k-label {
+        padding-left: 2em;
+    }
+
+    /* this rule also positions the icon for the floating label scenario, tweak it with your own selectors if you use other HTML */
+    .tb-icon-container.with-label .k-icon {
+        top: 0.5em;
+    }
+
+.category-row-header h4 {
+    color: var(--primary-color);
+    margin-bottom: 0px;
+    font-weight: 100;
+}
+
+.catalogue-heading {
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+    .catalogue-heading strong {
+        color: var(--primary-color);
+    }
+
+.category-row-info {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    max-width: 100%;
+    white-space: normal;
+    color: #98A0BD;
+    font-size: var(--paragraph-font-size);
+}
+
+
+/*Articles ------------*/
+.articles-heading {
+    color: var(--primary-color);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/*Cases ------------*/
+.cases-heading {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: var(--primary-color);
+}
+.services-row {
+    background-color: var(--primary-color);
+}
+.services-row strong{
+    color: white;
+}
+.material-symbols-outlined {
+    font-size: var(--material-icon-font-size);
+    vertical-align: bottom;
+}
+
+.category-row-info {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    max-width: 100%;
+    white-space: normal;
+    color: #98A0BD;
+    font-size: var(--paragraph-font-size);
+}
+
+.category-row-header h4 {
+    color: var(--primary-color);
+    margin-bottom: 0px;
+    font-weight: 100;
+}
+
+.announcements {
+    margin-top: 30px;
+}
+

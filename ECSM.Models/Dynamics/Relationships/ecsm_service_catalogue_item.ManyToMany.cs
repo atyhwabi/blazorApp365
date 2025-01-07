@@ -1,0 +1,12 @@
+namespace ECSM.Models.Dynamics;
+
+public static partial class ecsm_service_catalogue_itemManyToMany
+{
+	/// <summary>Entity1IntersectAttribute: ecsm_portal_roleid, Entity1LogicalName: ecsm_portal_role, Entity1NavigationPropertyName: ecsm_service_catalogue_item_ecsm_portal_role_ecsm_portal_role, Entity2IntersectAttribute: ecsm_service_catalogue_itemid, Entity2LogicalName: ecsm_service_catalogue_item, Entity2NavigationPropertyName: ecsm_service_catalogue_item_ecsm_portal_role_ecsm_portal_role, IntersectEntityName: ecsm_service_catalogue_item_ecsm_portal, SchemaName: ecsm_service_catalogue_item_ecsm_portal_role_ecsm_portal_role, SecurityTypes: None, IntroducedVersion: 1.0.0.0. </summary>
+	public const string ecsm_service_catalogue_item_ecsm_portal_role_ecsm_portal_role = "ecsm_service_catalogue_item_ecsm_portal_role_ecsm_portal_role";
+
+	/// <summary>Entity1IntersectAttribute: knowledgearticleid, Entity1LogicalName: knowledgearticle, Entity1NavigationPropertyName: ecsm_service_catalogue_item_KnowledgeArticle_KnowledgeArticle, Entity2IntersectAttribute: ecsm_service_catalogue_itemid, Entity2LogicalName: ecsm_service_catalogue_item, Entity2NavigationPropertyName: ecsm_service_catalogue_item_KnowledgeArticle_KnowledgeArticle, IntersectEntityName: ecsm_service_catalogue_item_knowledgear, SchemaName: ecsm_service_catalogue_item_KnowledgeArticle_KnowledgeArticle, SecurityTypes: None, IntroducedVersion: 1.0.0.0. </summary>
+	public const string ecsm_service_catalogue_item_KnowledgeArticle_KnowledgeArticle = "ecsm_service_catalogue_item_KnowledgeArticle_KnowledgeArticle";
+
+}
+

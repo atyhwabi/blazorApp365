@@ -1,0 +1,28 @@
+﻿@inject IKnowledgeService knowledgeService
+@using ECSM.Models.DTO
+<div class="knowledge-base-head">
+  <ECSM.Portal.Components.UI.MainHeading HeadingText=@KnowledgeArticle?.Title />
+</div>
+<hr class="header-underline" />
+<div class="articleInfo col-md-12 col-sm-12">
+  @GetInstructionsMarkup()
+</div>
+<hr class="header-two-underline" />
+<div>
+  <p class="para-key-container">Keywords: @KnowledgeArticle?.Keywords</p>
+</div>
+<hr class="header-two-underline" />
+@if (KnowledgeArticle?.Attachment.Count() > 0)
+{
+  <div class="knowldge-base-first-sub-head">
+    <ECSM.Portal.Components.UI.SubHeadingText SubHeadText="Attached Documents" />
+  </div>
+  <div>
+    <ul class="nav nav-tabs">
+      @foreach (var attachment in KnowledgeArticle.Attachment)
+      {
+        <li class="attachmentItem" @onclick="() => DownloadFile(attachment.File_Download, attachment.FileName)"><i class="material-symbols-outlined" b-aa9kkrrecp="">attach_file</i>@attachment.FileName</li>
+      }
+    </ul>
+  </div>
+}

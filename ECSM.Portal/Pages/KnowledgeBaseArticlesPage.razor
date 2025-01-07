@@ -1,0 +1,52 @@
+﻿@page "/knowledgebasearticlespage/{id}"
+@page "/{Publicparameter}/knowledgebasearticlespage/{id}"
+@inject IKnowledgeService knowledgeService
+@inject SearchResults SearchResults
+@inherits BaseComponent
+@using ECSM.Models.DTO
+<SearchSectionComponent />
+
+<div class="container container-margins">
+  <div class="container-fluid-main">
+    @if (SearchResults.SearchText == "")
+    {
+      <ul class="nav nav-tabs">
+        <li>
+          <h6 class="dim-heading">
+            <a @onclick="@(() => navKnowledgebasePage())">Knowledge base</a>  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M6.11499 20.23L7.88499 22L17.885 12L7.88499 2L6.11499 3.77L14.345 12L6.11499 20.23Z" fill="gray" />
+            </svg>
+          </h6>
+        </li>
+        <li>
+          <h6 class="light-heading">@ID</h6>
+        </li>
+      </ul>
+    }
+    else
+    {
+      <ul class="nav nav-tabs">
+        <li>
+          <h6 class="dim-heading">
+            <a @onclick="@(() => navKnowledgebasePage())">Knowledge base</a> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M6.11499 20.23L7.88499 22L17.885 12L7.88499 2L6.11499 3.77L14.345 12L6.11499 20.23Z" fill="gray" />
+            </svg>
+          </h6>
+        </li>
+        <li>
+          <h6 class="dim-heading">
+            <a @onclick="@(() => navSearchPage(SearchResults.SearchText))">@SearchResults.SearchText</a> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M6.11499 20.23L7.88499 22L17.885 12L7.88499 2L6.11499 3.77L14.345 12L6.11499 20.23Z" fill="gray" />
+            </svg>
+          </h6>
+
+        </li>
+        <li>
+          <h6 class="light-heading">@ID</h6>
+        </li>
+      </ul>
+    }
+    <KnowledgeSingleArticle ID="@ID" />
+  </div>
+</div>
+

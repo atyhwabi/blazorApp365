@@ -1,0 +1,96 @@
+﻿.container-catalogue-heading {
+    padding-top: 10px;
+}
+
+.category-artictle {
+    font-style: italic!important;
+    color: #98A0BD;
+    margin-left: 20px;
+}
+
+.knowledgebase-container {
+    padding-top: -0.5rem;
+}
+
+.articleContent {
+    color: var(--primary-color);
+    margin-left: 20px;
+}
+
+.nav-link {
+    padding-top: 0px;
+}
+
+.articleHead {
+    color: var(--primary-color);
+    font-size: var(--secondary-font-size);
+    font-family: var(--secondary-font-family);
+    font-size: var(--secondary-font-size);
+    font-style: normal;
+    font-weight: var(--primary-font-weight);
+    line-height: normal;
+    letter-spacing: 0.2px;
+    margin-left: 20px;
+}
+
+.nav-link {
+    padding-top: -1.0rem !important;
+    padding-bottom: -1.0rem !important;
+}
+
+.knowledgebase-container {
+    margin-top: -9px;
+}
+
+  .knowledgebase-container:hover {
+    background-color: #E7EBF9;
+  }
+
+
+.articleContent {
+  color: var(--primary-color);
+  font-size: var(--secondary-font-size);
+  font-style: normal;
+  font-weight: var(--secondary-font-weight);
+  line-height: normal;
+  letter-spacing: 0.2px;
+  margin-left: 20px;
+}
+
+.nav-link {
+    display: block;
+    padding: .5rem 1rem;
+    color: #0d6efd;
+    text-decoration: none;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+    padding-top: 0px;
+}
+
+.category-artictle {
+    color: #B2B7CE;
+    font-family: var(--secondary-font-family);
+    font-size: var(--tertiary-font-size);
+    font-style: normal;
+    font-weight: var(--secondary-font-weight);
+    line-height: normal;
+    letter-spacing: 0.2px;
+    padding-top: 0px;
+}
+
+.no-underline {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.knowledgebase-container {
+    cursor: pointer;
+}
+
+.underline {
+    margin-top: 0.4em;
+}
+
+.heading-gap-container {
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
+}

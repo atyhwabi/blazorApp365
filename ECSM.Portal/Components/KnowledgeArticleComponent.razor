@@ -1,0 +1,30 @@
+﻿@using ECSM.Models.DTO
+@using ECSM.Services
+
+@inject IKnowledgeService ArticleQueries
+@inject SearchResults SearchResults;
+
+@if (articles.Count() != 0)
+{
+    <div class="heading-gap-container">
+        <ECSM.Portal.Components.UI.MainHeading HeadingText="@HeadingText" />
+    </div>
+}
+@foreach (var article in articles)
+{
+    <div class="knowledgebase-container">
+        <a @onclick="@(() => SetSearch(article.PublicNumber))">
+            <div class="container-catalogue-heading">
+            </div>
+            <div>
+                <label class="articleContent">@GetHighlightedText(article.Title)</label>
+            </div>
+            <div>
+                <label class="category-artictle">@GetHighlightedText(article.Description)</label>
+            </div>
+            <hr class="underline">
+        </a>
+    </div>
+}
+
+

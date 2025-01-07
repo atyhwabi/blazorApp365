@@ -1,0 +1,213 @@
+﻿.container-margins {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.nav nav-tabs {
+  border: none !important;
+  border-bottom: none !important;
+}
+
+li:hover {
+  background-color: #E7EBF9;
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  text-decoration: none !important;
+}
+
+ul {
+  padding: 0;
+}
+
+.container-fluid-main[b-cs86004k94] {
+  background-color: var(--white);;
+  width: 95.6%;
+  height: auto;
+  padding-top: 20rem;
+  border-style: initial;
+  padding: 10px;
+  border-bottom: none;
+  margin-top: -1.5em;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-bottom: 30px;
+}
+
+.attachmentItem {
+  color: var(--primary-color);
+  padding-right: 20px;
+  padding-bottom: 0px;
+  margin-bottom: 20px;
+  font-size: var(--tertiary-font-size);
+  line-height: 2;
+}
+
+.container-fluid-main {
+  background-color: var(--white);;
+  border-style: initial;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 24px;
+  padding-top: 24px;
+  border-bottom: none;
+}
+
+.dim-heading {
+  color: var(--Blue-Grey, #98A0BD);
+  font-family: var(--secondary-font-family);
+  font-size: var(--secondary-font-size);
+  font-style: normal;
+  font-weight: var(--secondary-font-weight);
+  line-height: normal;
+  letter-spacing: 0.2px;
+}
+
+.knowledge-base-head {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.header-underline {
+  width: auto;
+  margin-top: 0;
+  height: 1px;
+  background: #B2B7CE;
+  border-top: none;
+}
+
+.header-two-underline {
+  width: auto;
+  margin-top: 24px;
+  height: 1px;
+  background-color: #B2B7CE;
+}
+
+.para-container {
+  color: var(--Blue-Grey, #98A0BD);
+  font-family: var(--secondary-font-family);
+  font-size: var(--secondary-font-size);
+  font-style: normal;
+  font-weight: var(--secondary-font-weight);
+  line-height: normal;
+  letter-spacing: 0.2px;
+  padding-top: 10px;
+}
+
+.para-key-container {
+  color: #98A0BD;
+  font-family: var(--secondary-font-family);
+  font-size: var(--secondary-font-size);
+  font-style: normal;
+  font-weight: var(--secondary-font-weight);
+  line-height: normal;
+  letter-spacing: 0.2px;
+  padding-top: 0px;
+  margin-top: 30px;
+}
+
+.para-two-container {
+  color: var(--Blue-Grey, #98A0BD);
+  font-family: var(--secondary-font-family);
+  font-size: var(--secondary-font-size);
+  font-style: normal;
+  font-weight: var(--secondary-font-weight);
+  line-height: normal;
+  letter-spacing: 0.2px;
+  padding-top: 0px;
+  margin-top: -1em;
+}
+
+.para-third-container {
+  color: #98A0BD;
+  font-family: var(--secondary-font-family);
+  font-size: var(--secondary-font-size);
+  font-style: normal;
+  font-weight: var(--secondary-font-weight);
+  line-height: normal;
+  letter-spacing: 0.2px;
+  margin-bottom: 10px;
+}
+
+.para-thirds-container {
+  color: var(--Blue-Grey, #98A0BD);
+  font-family: var(--secondary-font-family);
+  font-size: var(--secondary-font-size);
+  font-style: normal;
+  font-weight: var(--secondary-font-weight);
+  line-height: normal;
+  letter-spacing: 0.2px;
+  padding-top: 0px;
+  margin-top: -1em;
+  padding-bottom: 30px;
+}
+
+.serviceList li {
+  list-style-type: none;
+  color: var(--primary-color);
+  font-size: var(--tertiary-font-size);
+  width: fit-content;
+  padding-right: 5px;
+}
+
+  .serviceList li:before {
+    content: "chevron_right";
+    font-family: var(--primary-font-family);
+    list-style-type: none;
+    vertical-align: bottom;
+    font-size: 20px;
+    line-height: 1;
+    padding-right: 10px;
+  }
+
+.ServiceItem {
+  color: var(--primary-color);
+  /* 14 Regular */
+  font-family: var(--secondary-font-family);
+  font-size: var(--tertiary-font-size);
+  font-style: normal;
+  font-weight: var(--secondary-font-weight);
+  line-height: normal;
+  letter-spacing: 0.2px;
+  margin-bottom: 10px;
+}
+
+.attachmentItem .material-symbols-outlined {
+  transform: rotate(45deg);
+  font-size: var(--primary-font-size);
+  line-height: 1.2;
+  padding-right: 10px;
+}
+
+.knowldge-base-first-sub-head {
+  color: var(--primary-color);
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: var(--secondary-font-family);
+  font-size: var(--primary-font-size);
+  font-style: normal;
+  font-weight: var(--primary-font-weight);
+  line-height: normal;
+  padding-top: 10px;
+}
+
+.knowldge-base-fourth-sub-head {
+  color: var(--primary-color);
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: var(--secondary-font-family);
+  font-size: var(--primary-font-size);
+  font-style: normal;
+  font-weight: var(--primary-font-weight);
+  line-height: normal;
+  padding-top: 30px;
+  padding-bottom: 14px;
+}

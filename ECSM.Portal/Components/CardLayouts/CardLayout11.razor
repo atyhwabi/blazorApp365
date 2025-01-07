@@ -1,0 +1,66 @@
+﻿@using ECSM.Models.DTO
+@using ECSM.Models.DTO.ServiceCatalogue
+@using ECSM.Services.Category
+
+<div @onclick="OnCardClick" class="layoutWithImageTop">
+  <ECSM.Portal.Components.UI.BaseCard OnCardClick="NavigateToDeflectorPage" style="@style">
+    <div class="how-img">
+      <img src="@CategoryImage" class="img-fluid rounded-3" alt="" />
+    </div>
+    <div class="card-details">
+      <div class="brand">Brand</div>
+      <ECSM.Portal.Components.UI.SubHeading>
+        <div class="d-flex flex-wrap">
+          <div style="width:80%" class="mb-0">@catalogueCardDTO.Name</div>
+        </div>
+      </ECSM.Portal.Components.UI.SubHeading>
+
+      <ECSM.Portal.Components.UI.DescriptionCard>
+        @catalogueCardDTO.Description
+      </ECSM.Portal.Components.UI.DescriptionCard>
+      <div class="price">R1 000.00</div>
+    </div>
+  </ECSM.Portal.Components.UI.BaseCard>
+</div>
+
+@code {
+
+  [Parameter]
+  public CatalogueCardDTO catalogueCardDTO { get; set; }
+
+  [Parameter]
+  public string? style { get; set; }
+
+  [Parameter]
+  public EventCallback OnCardClick { get; set; }
+
+  [Inject]
+  private ICategoryService categoryService { get; set; }
+
+  public string CategoryImage { get; set; } = string.Empty;
+
+  protected override async Task OnAfterRenderAsync(bool firstRender)
+  {
+    if (firstRender)
+    {
+      var imageData = await this.categoryService.PopulateSettingWithFileDataAsync((Guid)catalogueCardDTO.CategoryID);
+      CategoryImage = $"data:{imageData.FileData?.MimeType};base64,{imageData.FileData?.Base64String}";
+      StateHasChanged();
+    }
+
+    await base.OnAfterRenderAsync(firstRender);
+  }
+
+  private void NavigateToDeflectorPage()
+  {
+    if (catalogueCardDTO.IsCatalogue)
+    {
+      navigationManager.NavigateTo($"Catalogue/{catalogueCardDTO.ServiceCatalogueId}/{catalogueCardDTO.CategoryID}", ispublic: navigationManager.GetUri().Contains("public"));
+    }
+    else
+    {
+      navigationManager.NavigateTo($"Catalogue/{catalogueCardDTO.ServiceCatalogueId}", ispublic: navigationManager.GetUri().Contains("public"));
+    }
+  }
+
+}

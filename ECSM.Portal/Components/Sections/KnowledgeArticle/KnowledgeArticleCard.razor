@@ -1,0 +1,66 @@
+﻿@inject IKnowledgeService knowledgeService
+@inject SearchResults SearchResults;
+@using ECSM.Models.DTO
+<div class="container catalogue-heading">
+  <div class="row">
+    <ECSM.Portal.Components.UI.MainHeading HeadingText="@HeadingText" />
+  </div>
+  <div class="row content-border additional-knowledge-card-container">
+    @if (KnowledgeItems.Any())
+    {
+      @foreach (var item in KnowledgeItems)
+      {
+
+        <a class="Article-card helveticaFontSizeUp" @onclick="@(() => SetSearch(item.PublicNumber))">
+          <div class="additional-knowledge">
+            <span class="category-row-info">
+              @item.CreatedOnFormatted
+              <ECSM.Portal.Components.UI.MainHeading HeadingText=@item.Title />
+            </span>
+          </div>
+        </a>
+      }
+    }
+    else
+    {
+      <p>No Articles Found</p>
+    }
+  </div>
+</div>
+
+@code {
+  [Parameter]
+  public string HeadingText { get; set; }
+
+  [Parameter]
+  public string Collection { get; set; }
+
+  KnowledgeItemDTO[] KnowledgeItems = [];
+
+  protected override async Task OnAfterRenderAsync(bool firstReder)
+  {
+    if (firstReder)
+    {
+      switch (Collection)
+      {
+        case "KnowledgeArticlesRating":
+          KnowledgeItems = await knowledgeService.GetKnowledgeItemsTop3Rating();
+          break;
+
+        case "KnowledgeArticlesLatest":
+          KnowledgeItems = await knowledgeService.GetKnowledgeItemsTop5Latest();
+          break;
+
+        case "GetKnowledgePopular":
+          KnowledgeItems = await knowledgeService.GetKnowledgeItemsTop3Popular();
+          break;
+      }
+      await InvokeAsync(StateHasChanged);
+    }
+  }
+  private void SetSearch(string publicNumber)
+  {
+    SearchResults.SearchText = "";
+    navigationManager.NavigateTo($"/knowledgebasearticlespage/{publicNumber}", ispublic: navigationManager.UriContains("public"));
+  }
+}

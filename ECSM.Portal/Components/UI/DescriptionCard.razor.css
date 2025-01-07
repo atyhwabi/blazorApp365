@@ -1,0 +1,67 @@
+﻿.card-description {
+  font-family: var(--secondary-font-family);
+  color: #98A0BD;
+  font-size: var(--tertiary-font-size);
+  font-style: normal;
+  font-weight: var(--secondary-font-weight);
+  line-height: 16px;
+  margin-bottom: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  white-space: normal;
+  padding-left: 32px;
+}
+
+.layoutWithImage .card-description {
+  font-family: var(--secondary-font-family);
+  color: var(--quaternary-color);
+  font-size: var(--tertiary-font-size);
+  font-style: normal;
+  font-weight: var(--secondary-font-weight);
+  line-height: 16px;
+  margin-bottom: 0;
+  font-weight: 400;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  white-space: normal;
+  padding-left: 0px;
+}
+
+.layoutWithImageTop .card-description {
+  font-family: var(--secondary-font-family);
+  color: var(--quaternary-color);
+  font-size: var(--tertiary-font-size);
+  font-style: normal;
+  font-weight: var(--secondary-font-weight);
+  line-height: 16px;
+  margin-bottom: 0;
+  font-weight: 400;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  white-space: normal;
+  padding-left: 0px;
+}
+
+.services-section .card-description {
+  -webkit-line-clamp: 2;
+}
+.list-section .card-description {
+  -webkit-line-clamp: 4;
+  padding-left: 32px;
+}
+
+.layoutWithImageTop .card-description {
+  -webkit-line-clamp: 4;
+  padding-left: 0px;
+}
+.layoutWithImage .card-description {
+  -webkit-line-clamp: 4;
+  padding-left: 0px;
+}
+

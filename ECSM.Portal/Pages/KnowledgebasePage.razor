@@ -1,0 +1,14 @@
+﻿@page "/knowledgebase"
+@page "/{publicParameter}/knowledgebase"
+@inherits BaseComponent
+@using ECSM.Models.DTO
+@using Microsoft.AspNetCore.Components
+
+<div class="container-fluid knowledge-page">
+  <KnowledgeArticle />
+</div>
+
+@code {
+  [Parameter]
+  public string publicParameter { get; set; }
+}

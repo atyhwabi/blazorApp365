@@ -1,0 +1,74 @@
+﻿@page "/CaseDetails/{ServiceCatalogueItemId}"
+@page "/{PublicParameter}/CaseDetails/{ServiceCatalogueItemId}"
+@using ECSM.Models.DTO
+@using ECSM.Models.Dynamics
+@using ECSM.Portal.Components.UI
+@inherits BaseComponent
+
+<div class="container">
+  <div class="case-detail-container">
+
+        @if (ServiceCatalogueItemDTO.CatalogueItemId != null)
+        {
+            <ECSM.Portal.Components.UI.MainHeading HeadingText="@ServiceCatalogueItemDTO.Name" />
+            @foreach (var item in ServiceCatalogueItemDTO.CatalogueItemDTO.Announcements.Where(c => c.ExpiryDate > DateTime.Now))
+            {
+                <AnnouncementComponent announcementDTO="item" />
+            }
+            @if (ServiceCatalogueItemDTO.KnowledgeArticles.Any(x => x.IsFAQ.HasValue && x.IsFAQ.Value))
+            {
+                <div class="row pb-4">
+                    <div class="col-lg-12">
+                        <FAQComponent HeadingText="FAQs..." KnowledgeWithFAQ="@ServiceCatalogueItemDTO.KnowledgeArticles.Where(x => x.IsFAQ.HasValue && x.IsFAQ.Value).ToArray()" />
+                    </div>
+                </div>
+            }
+            <div class="self-help-section">
+                <div class="border section-card">
+                    <ECSM.Portal.Components.UI.SubHeadingText SubHeadText="Self Help" />
+                    @foreach (var item in ServiceCatalogueItemDTO.KnowledgeArticles)
+                    {
+                        if(!item.IsFAQ.HasValue || !item.IsFAQ.Value)
+                        {
+                          <p class="articleItem helveticaFont" @onclick="() => NavigateToArticle(item.PublicNumber)">@item.Title</p>
+                        }
+                    }
+                </div>
+                <div class="border section-card">
+                    @foreach (var item in ServiceCatalogueItemDTO.CatalogueItemDTO.ContentBlocks)
+                    {
+                        if (item.ContentType == ecsm_content_block_type.Heading || item.ContentType == ecsm_content_block_type.Text)
+                        {
+                            <div class="selfx-section">
+                                @((MarkupString)item.ContentText)
+                            </div>
+                        }
+                        if (item.ContentType == ecsm_content_block_type.File)
+                        {
+                            <div class="attachement-section">
+                                <span class="articleItem" @onclick="() => DownloadFile(item)"><TelerikSvgIcon Icon="SvgIcon.Paperclip" Size="@ThemeConstants.SvgIcon.Size.Medium" Class="notifaction-icon" /> @item.FileName </span>
+                            </div>
+                        }
+                    }
+                    <hr class="line-item" />
+                    <button @onclick="NavigateToLogTickte" class="primary-button log-case-button">Log a Case</button>
+                </div>
+            </div>
+        }
+        else
+        {
+            @if (IsLoading)
+            {
+                <ECSM.Portal.Components.UI.MainHeading HeadingText="Loading Catalogue Details" />
+            }
+            else
+            {
+                <ECSM.Portal.Components.UI.MainHeading HeadingText="No Catalogue Item found" />
+            }
+        }
+    </div>
+</div>
+<TelerikNotification @ref="@Notification"
+                     VerticalPosition="@NotificationVerticalPosition.Top"
+                     HorizontalPosition="@NotificationHorizontalPosition.Right">
+</TelerikNotification>

@@ -1,0 +1,10 @@
+﻿.main-heading {
+  color: var(--white);;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: var(--primary-font-family);
+  font-size: var(--primary-font-size);
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding-bottom: 20px;
+}

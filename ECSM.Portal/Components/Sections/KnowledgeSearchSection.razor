@@ -1,0 +1,54 @@
+﻿<style>
+    #Search.k-input-inner {
+        background-color: var(--white);;
+        border: none;
+        color: var(--primary-color);
+        font-weight: 600;
+    }
+
+        #Search.k-input-inner::placeholder {
+            background-color: var(--white);;
+            border: none;
+            color: var(--Blue-Grey, #98A0BD);
+            font-feature-settings: 'clig' off, 'liga' off;
+            font-family: var(--secondary-font-family);
+            font-size: var(--secondary-font-size);
+            font-style: normal;
+            font-weight: var(--secondary-font-weight);
+            line-height: 18px; 
+        }
+
+    .k-svg-icon {
+        width: 20px;
+        height: 20px;
+        color: var(--primary-color);
+        outline: 0;
+        line-height: 1;
+        display: inline-flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;
+        vertical-align: middle;
+        position: relative;
+        font-weight: 600;
+    }
+</style>
+
+<div class="welcome-row">
+    <div class="container">
+        <p class="welcome-heading">Knowledge Base</p>
+    </div>
+</div>
+<div class="container-fluid search-row">
+  <div class="container">
+    <div class="search-field">
+      <div class="container-fluid">
+        <TelerikSvgIcon Icon="@SvgIcon.Search" Class="search-icon" />
+        <span @onkeypress="HandleKeyPress">
+          <TelerikTextBox @bind-Value="@searchValue" Name="Search" Placeholder="Search Knowledge base Articles" TabIndex="1" Class="search-textbox" Id="Search" Width="85%"></TelerikTextBox>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+

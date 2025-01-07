@@ -1,0 +1,15 @@
+﻿@page "/SignIn"
+
+@code
+{
+  protected override async Task OnAfterRenderAsync(bool firstRender)
+  {
+    if (firstRender)
+    {
+
+      navigationManager.NavigateTo("/Authentication/SignIn?scheme=B2C");
+    }
+
+    await base.OnAfterRenderAsync(firstRender);
+  }
+}

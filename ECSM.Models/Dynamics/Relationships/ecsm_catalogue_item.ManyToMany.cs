@@ -1,0 +1,9 @@
+namespace ECSM.Models.Dynamics;
+
+public static partial class ecsm_catalogue_itemManyToMany
+{
+	/// <summary>Entity1IntersectAttribute: ecsm_catalogue_itemid, Entity1LogicalName: ecsm_catalogue_item, Entity1NavigationPropertyName: ecsm_announcement_ecsm_catalogue_item_ecsm_catalogue_item, Entity2IntersectAttribute: ecsm_announcementid, Entity2LogicalName: ecsm_announcement, Entity2NavigationPropertyName: ecsm_announcement_ecsm_catalogue_item_ecsm_catalogue_item, IntersectEntityName: ecsm_announcement_ecsm_catalogue_item, SchemaName: ecsm_announcement_ecsm_catalogue_item_ecsm_catalogue_item, SecurityTypes: None, IntroducedVersion: 1.0.0.0. </summary>
+	public const string ecsm_announcement_ecsm_catalogue_item_ecsm_catalogue_item = "ecsm_announcement_ecsm_catalogue_item_ecsm_catalogue_item";
+
+}
+

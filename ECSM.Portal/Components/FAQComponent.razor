@@ -1,0 +1,28 @@
+﻿@using ECSM.Services
+
+@inject IKnowledgeService KnowledgeArticleQueries
+@using ECSM.Models.DTO
+
+@if (KnowledgeWithFAQ.Length != 0)
+{
+    <div class="pt-4">
+        <ECSM.Portal.Components.UI.MainHeading HeadingText="@HeadingText" />
+    </div>
+    <div class="accordion" id="accordionExample">
+        @foreach (var item in KnowledgeWithFAQ)
+        {
+            <div class="accordion-item customAccordionBorder">
+                <h2 class="accordion-header">
+                    <button class="accordion-button customAccordion @(item.show ? "": "collapsed")" type="button" aria-expanded="@item.show" @onclick=" ( ) => {item.show = !item.show; StateHasChanged();}">
+                        @GetHighlightedText(item.Title)
+                    </button>
+                </h2>
+                <div class="accordion-collapse collapse @(item.show ? "show": "")">
+                    <div class="accordion-body" style="color: #989FBD">
+                        @((MarkupString)GetHighlightedText(item.Content))
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}

@@ -1,0 +1,38 @@
+﻿.sub-text {
+  color: #1D3688;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-size: var(--secondary-font-size);
+  font-style: normal;
+  line-height: normal;
+  font-weight: 600;
+}
+
+.knowldge-base-first-sub-head .sub-text {
+  color: var(--primary-color);
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: var(--primary-font-family);
+  font-size: var(--primary-font-size);
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.knowldge-base-fourth-sub-head .sub-text {
+  color: var(--primary-color);
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: var(--primary-font-family);
+  font-size: var(--primary-font-size);
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.self-help-section .border.section-card .sub-text {
+  color: var(--primary-color);
+  font-family: var(--primary-font-family);
+  font-size: var(--secondary-font-size);
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.2px;
+}

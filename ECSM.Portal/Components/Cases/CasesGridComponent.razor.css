@@ -1,0 +1,22 @@
+﻿
+.Header {
+    font-family: var(--secondary-font-family);
+    font-weight: 600;
+    font-size: var(--tertiary-font-size);
+    line-height: 28px;
+    color: var(--primary-color);
+}
+
+.gridText{
+    font: var(--secondary-font-family);
+}
+
+.white-body {
+    background-color: white !important;
+    min-height: 649px;
+}
+
+
+.row-grid {
+    justify-content: center;
+}

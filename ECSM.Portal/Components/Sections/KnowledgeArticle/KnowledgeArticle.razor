@@ -1,0 +1,75 @@
+﻿@using ECSM.Models.DTO
+@inject IJSRuntime JS
+
+<div class="container section-body-small full">
+  <div class="row">
+    <div class="container">
+      <div class="catalogue-heading main">
+        <ECSM.Portal.Components.UI.MainHeading HeadingText="Latest Articles" />
+      </div>
+    </div>
+    <div class="article-container">
+      @if (KnowledgeArticlesLatest.Any())
+      {
+        KnowledgeCounter = KnowledgeArticlesLatest.Count();
+        @foreach (var item in KnowledgeArticlesLatest)
+        {
+
+          <a class="Article-card " @onclick="@(() => SetSearch(item.PublicNumber))">
+            <div>
+              <div class="container-catalogue-heading">
+                <ECSM.Portal.Components.UI.MainHeading HeadingText="@item.Title" />
+              </div>
+              <label class="category-artictle helveticaFont">
+                @item.Description
+              </label>
+            </div>
+          </a>
+          <hr>
+        }
+      }
+      else
+      {
+        <p>No Articles Found</p>
+      }
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container section-body-small full">
+  <div class="row" style="padding-bottom:16px;">
+    <div class="container">
+      <div class="catalogue-heading main faq-knowledgebsse-page">
+        <ECSM.Portal.Components.UI.MainHeading HeadingText="Latest FAQ's" />
+      </div>
+    </div>
+    <div class="article-container">
+      @if (FaqArticlesLatest.Any())
+      {
+        FaqCounter = FaqArticlesLatest.Count();
+        @foreach (var item in FaqArticlesLatest)
+        {
+
+          <div class="accordion-item customAccordionBorder">
+            <h2 class="accordion-header">
+              <button class="accordion-button customAccordion @(item.show ? "": "collapsed")" type="button" aria-expanded="@item.show" @onclick=" ( ) => {item.show = !item.show; StateHasChanged();}">
+                @item.Title
+              </button>
+            </h2>
+            <div class="accordion-collapse collapse @(item.show ? "show": "")">
+              <div class="accordion-body" style="color: #989FBD">
+                @((MarkupString)item.Content)
+              </div>
+            </div>
+          </div>
+        }
+      }
+      else
+      {
+        <p>No FAQ's Found</p>
+      }
+    </div>
+  </div>
+</div>

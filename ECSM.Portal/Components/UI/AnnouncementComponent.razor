@@ -1,0 +1,79 @@
+﻿@using ECSM.Models.DTO
+@using ECSM.Models.DTO.Announcement
+@using ECSM.Models.Dynamics
+
+<div class="notification" style="background-color:@GetBackgroundColor();">
+  <div class="notification-text">
+    <TelerikSvgIcon Icon="@GetIcon()" Size="@ThemeConstants.SvgIcon.Size.Large" Class="notifaction-icon" />
+    <strong class="notification-heading">@announcementDTO.Title</strong><br>
+    <div class="message-section">
+      <span class="notifcation-message">
+        @((MarkupString)announcementDTO.Body)
+      </span>
+    </div>
+  </div>
+</div>
+
+@code
+{
+  [Parameter]
+  public AnnouncementDTO announcementDTO { get; set; }
+
+  private ISvgIcon svgIcon { get; set; }
+
+  private string backGroundColor { get; set; }
+
+  private ISvgIcon GetIcon()
+  {
+    var icon = SvgIcon.InfoCircle;
+    switch (announcementDTO.AnnouncementType)
+    {
+      case ecsm_announcement_type.Information:
+        icon = SvgIcon.InfoCircle;
+        break;
+
+      case ecsm_announcement_type.News:
+        icon = SvgIcon.InfoCircle;
+        break;
+
+      case ecsm_announcement_type.Warning:
+        icon = SvgIcon.InfoCircle;
+        break;
+      case ecsm_announcement_type.Issue:
+        icon = SvgIcon.WarningTriangle;
+        break;
+      case ecsm_announcement_type.Outage:
+        icon = SvgIcon.WarningTriangle;
+        break;
+    }
+    return icon;
+  }
+
+  private string GetBackgroundColor()
+  {
+    var color = "";
+    switch (announcementDTO.AnnouncementType)
+    {
+      case ecsm_announcement_type.Information:
+        color = "#D4DEFF";
+        break;
+
+      case ecsm_announcement_type.News:
+        color = "#E2FFD4";
+        break;
+
+      case ecsm_announcement_type.Warning:
+        color = "#FFE8AE";
+        break;
+
+      case ecsm_announcement_type.Issue:
+        color = "#FFAEAE";
+        break;
+
+      case ecsm_announcement_type.Outage:
+        color = "#FFAEAE";
+        break;
+    }
+    return color;
+  }
+}

@@ -1,0 +1,43 @@
+﻿@using ECSM.Models.DTO
+@using ECSM.Models.DTO.ServiceCatalogue
+
+<div @onclick="OnCardClick" class="layout5">
+  <ECSM.Portal.Components.UI.BaseCard OnCardClick="NavigateToDeflectorPage" style="@style">
+    <ECSM.Portal.Components.UI.SubHeading>
+      <div class="d-flex flex-wrap">
+        <i class="mr-2 card-icon material-symbols-outlined" style="font-size:20px">@catalogueCardDTO.IconCode</i>
+        <div style="width:80%" class="mb-0">@catalogueCardDTO.Name</div>
+      </div>
+    </ECSM.Portal.Components.UI.SubHeading>
+    <div class="brand">Brand</div>
+    <ECSM.Portal.Components.UI.DescriptionCard>
+      @catalogueCardDTO.Description
+    </ECSM.Portal.Components.UI.DescriptionCard>
+    <div class="price">R1 000.00</div>
+  </ECSM.Portal.Components.UI.BaseCard>
+</div>
+
+@code {
+
+  [Parameter]
+  public CatalogueCardDTO catalogueCardDTO { get; set; }
+
+  [Parameter]
+  public string? style { get; set; }
+
+  [Parameter]
+  public EventCallback OnCardClick { get; set; }
+
+  private void NavigateToDeflectorPage()
+  {
+    if (catalogueCardDTO.IsCatalogue)
+    {
+      navigationManager.NavigateTo($"Catalogue/{catalogueCardDTO.ServiceCatalogueId}/{catalogueCardDTO.CategoryID}", ispublic: navigationManager.GetUri().Contains("public"));
+    }
+    else
+    {
+      navigationManager.NavigateTo($"Catalogue/{catalogueCardDTO.ServiceCatalogueId}", ispublic: navigationManager.GetUri().Contains("public"));
+    }
+  }
+
+}

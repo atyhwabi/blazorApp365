@@ -1,0 +1,93 @@
+﻿@using ECSM.Models.DTO
+<style>
+    .myGrid .k-header, .k-table-thead, .k-table-header, .k-table-group-sticky-header, .k-table-th, .td, .k-table-td, .k-table-row, .k-grid-header-table, .k-table, .k-table-md {
+        font-family: var(--secondary-font-family);
+        font-weight: 400 !important;
+        font-size: var(--tertiary-font-size);
+        line-height: 28px;
+        border-bottom: 1px solid #D4D4D1 !important;
+        background-color: white;
+        border-left: none !important;
+        border-right: none !important;
+    }
+
+    .myGridborder .k-grid {
+        border-bottom: 2px solid !important;
+        border-left: 2px solid !important;
+        border-right: 2px solid !important;
+        border-top: 2px solid !important;
+    }
+
+    .myGridOverflow .grid-no-scroll, .k-grid-content {
+        overflow-y: auto;
+        cursor: pointer;
+    }
+
+    .myGridPadding .grid-no-scroll, .k-grid-header, .grid-no-scroll, .k-grid-footer {
+        padding-right: 0;
+    }
+
+    .myGridBorder .grid-no-scroll, .k-grid-header-wrap, .grid-no-scroll, .k-grid-footer-wrap {
+        border-right-width: 0;
+    }
+
+    .gridButton .k-button-flat, .k-button, .k-button-flat-primary, .k-button-md, .k-selected {
+        color: #3F51B5 !important;
+        border-radius: 5px;
+    }
+
+    .gridfooter .k-pager, .k-pager, .k-grid-pager {
+        background-color: white !important;
+        border-top: none !important;
+        border-left: 1px solid #D4D4D1;
+        border-right: 1px solid #D4D4D1;
+        border-bottom: 1px solid #D4D4D1;
+    }
+
+    myGridOuterBorder .k-grid, .k-grid-md {
+        border-color: #D4D4D1 !important;
+    }
+</style>
+<div class="container-fluid white-body">
+    <div class="row row-grid">
+        <div class="col-lg-8 pt-5 pb-5">
+            <TelerikGrid Class="myGrid myGridOverflow myGridPadding myGridBorder gridButton gridfooter myGridOuterBorder gridText"
+                         Data=@this.myCases
+                         Pageable="true"
+                         OnRowClick="@OnRowClickHandler"
+                         @bind-PageSize="@PageSize"
+                         @bind-Page="@CurrentPage">
+                <GridSettings>
+                    <GridPagerSettings InputType="PagerInputType.Buttons"
+                                       PageSizes="@PageSizes"
+                                       ButtonCount="5"
+                                       Adaptive="true"
+                                       Position="PagerPosition.Bottom">
+                    </GridPagerSettings>
+                </GridSettings>
+                <GridColumns>
+                    <GridColumn Field="@nameof(CasesItemDTO.CaseTitle)" TextAlign="@ColumnTextAlign.Left">
+                        <HeaderTemplate>
+                                <p class="Header">Case Name</p>
+                        </HeaderTemplate>
+                    </GridColumn>
+                    <GridColumn Field="@nameof(CasesItemDTO.CaseNumber)" TextAlign="@ColumnTextAlign.Left">
+                        <HeaderTemplate>
+                            <p class="Header">Case Number</p>
+                        </HeaderTemplate>
+                    </GridColumn>
+                    <GridColumn Field="@nameof(CasesItemDTO.ModifiedOn)" TextAlign="@ColumnTextAlign.Left">
+                        <HeaderTemplate>
+                            <p class="Header">Date Update</p>
+                        </HeaderTemplate>
+                    </GridColumn>
+                    <GridColumn Field="@nameof(CasesItemDTO.StatusReason)" TextAlign="@ColumnTextAlign.Left" Width="180px">
+                        <HeaderTemplate>
+                            <p class="Header">Status</p>
+                        </HeaderTemplate>
+                    </GridColumn>
+                </GridColumns>
+            </TelerikGrid>
+        </div>
+    </div>
+</div>

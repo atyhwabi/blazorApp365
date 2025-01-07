@@ -1,0 +1,10 @@
+﻿.services-section {
+    display: flex;
+    gap: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.container-fluid {
+    background-color: #1D3688;
+    padding: 10px 0 10px 0;
+}

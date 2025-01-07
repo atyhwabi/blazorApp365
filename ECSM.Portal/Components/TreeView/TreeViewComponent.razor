@@ -1,0 +1,61 @@
+﻿@using ECSM.Models.DTO.TreeView
+<div class="container Catalogues-List">
+    <span class="tree-heading">Browse the catalogue</span>
+  <hr />
+
+  <TelerikTreeView Data="@catalogueData" @bind-ExpandedItems="@ExpandedItems" OnItemClick="@OnItemClick">
+    <TreeViewBindings>
+      <TreeViewBinding ParentIdField="ParentIdValue">
+        <ItemTemplate>
+          @{
+            var item = context as TreeItem;
+            <div class="custom-tree-item">
+              <p class="tree-item-text">@item.Text</p>
+            </div>
+          }
+        </ItemTemplate>
+
+      </TreeViewBinding>
+    </TreeViewBindings>
+  </TelerikTreeView>
+
+</div>
+
+<style>
+  .tree-item-text {
+    color: var(--primary-color);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: var(--secondary-font-family);
+    font-size: var(--secondary-font-size);
+    font-style: normal;
+    font-weight: var(--secondary-font-weight);
+    line-height: normal;
+    margin: 0px;
+  }
+
+  .k-treeview-leaf {
+    width: 100%;
+    align-content: center;
+  }
+
+    .k-treeview-leaf:hover {
+      background: #E7EBF9;
+      cursor: pointer;
+    }
+
+    .k-treeview-leaf:active {
+      background: #E7EBF9;
+    }
+
+  .k-focus {
+    background: #E7EBF9;
+    border: none;
+  }
+
+  .custom-tree-item {
+    padding: 6px;
+    width: 100%;
+    gap: 4px;
+    align-content: center;
+  }
+</style>
